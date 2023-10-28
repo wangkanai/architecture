@@ -1,0 +1,36 @@
+<Project>
+    <PropertyGroup>
+        <Company>Wangkanai</Company>
+        <Authors>Sarin Na Wangkanai</Authors>
+        <Copyright>©2014-2024 Sarin Na Wangkanai, All rights reserved</Copyright>
+
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>git://github.com/wangkanai/architecture</RepositoryUrl>
+
+        <PackageProjectUrl>https://github.com/wangkanai/architecture</PackageProjectUrl>
+        <PackageLicense>https://github.com/wangkanai/architecture/blob/main/LICENSE</PackageLicense>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+        <!--<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>-->
+    </PropertyGroup>
+
+    <!-- GitHub Source Link -->
+    <ItemGroup>
+        <PackageReference Include="Microsoft.SourceLink.GitHub"/>
+    </ItemGroup>
+
+    <!-- xUnit Tests-->
+    <ItemGroup Condition="$(MSBuildProjectName.Contains('Tests'))">
+        <PackageReference Include="Microsoft.AspNetCore.TestHost"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk"/>
+        <PackageReference Include="Moq"/>
+        <PackageReference Include="xunit"/>
+        <PackageReference Include="xunit.runner.visualstudio"/>
+        <PackageReference Include="coverlet.collector"/>
+        <PackageReference Include="coverlet.msbuild"/>
+    </ItemGroup>
+</Project>
