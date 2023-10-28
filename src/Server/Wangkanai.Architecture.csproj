@@ -1,19 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-	  <TargetFramework>$(TargetFramework)</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-Wangkanai.Architecture-0078d4df-171d-499d-9374-36c84a116eb3</UserSecretsId>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>$(TargetFramework)</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>aspnet-Wangkanai.Architecture-0078d4df-171d-499d-9374-36c84a116eb3</UserSecretsId>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Client\Wangkanai.Architecture.Client.csproj" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0-rc.2.23480.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.0-rc.2.23480.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0-rc.2.23480.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0-rc.2.23480.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0-rc.2.23480.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Client\Wangkanai.Architecture.Client.csproj"/>
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server"/>
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore"/>
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer"/>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools"/>
+		<ProjectReference Include="..\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj" />
+	</ItemGroup>
 
 </Project>

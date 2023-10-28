@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>$(TargetFramework)</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Wangkanai.System"/>
+		<!--<PackageReference Include="Wangkanai.Validation"/>-->
+		<PackageReference Include="Wangkanai.Domain"/>
+	</ItemGroup>
+
+</Project>

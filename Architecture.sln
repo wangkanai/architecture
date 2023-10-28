@@ -29,6 +29,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Client", "src\Client\Wangkanai.Architecture.Client.csproj", "{E851B3AD-A553-46BE-A2EA-3B771C835E7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Domain", "src\Domain\Wangkanai.Architecture.Domain.csproj", "{C650CBC9-8A06-4C2D-A64D-611623E1882A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application", "src\Application\Wangkanai.Architecture.Application.csproj", "{C1703F13-046C-4DAC-99E0-45F23C8CA849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Infrastructure", "src\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj", "{52F2EF65-D6EA-447F-B6AC-EEBB62604ACB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +65,18 @@ Global
 		{E851B3AD-A553-46BE-A2EA-3B771C835E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E851B3AD-A553-46BE-A2EA-3B771C835E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E851B3AD-A553-46BE-A2EA-3B771C835E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C650CBC9-8A06-4C2D-A64D-611623E1882A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C650CBC9-8A06-4C2D-A64D-611623E1882A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C650CBC9-8A06-4C2D-A64D-611623E1882A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C650CBC9-8A06-4C2D-A64D-611623E1882A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1703F13-046C-4DAC-99E0-45F23C8CA849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1703F13-046C-4DAC-99E0-45F23C8CA849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1703F13-046C-4DAC-99E0-45F23C8CA849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1703F13-046C-4DAC-99E0-45F23C8CA849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52F2EF65-D6EA-447F-B6AC-EEBB62604ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52F2EF65-D6EA-447F-B6AC-EEBB62604ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52F2EF65-D6EA-447F-B6AC-EEBB62604ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52F2EF65-D6EA-447F-B6AC-EEBB62604ACB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
