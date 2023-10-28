@@ -17,27 +17,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{93AB00AB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmark", "benchmark", "{4EEA8D47-F55A-408B-8226-7235D18A234A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Architecture.Domain.UnitTests", "tests\Domain\Architecture.Domain.UnitTests.csproj", "{156767FE-5A1C-4175-B168-485D745A6313}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Domain.UnitTests", "tests\Domain\Wangkanai.Architecture.Domain.UnitTests.csproj", "{156767FE-5A1C-4175-B168-485D745A6313}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Architecture.Application.UnitTests", "tests\Application\Architecture.Application.UnitTests.csproj", "{C7668D28-1D47-4412-AB0F-266972DC914C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Application.UnitTests", "tests\Application\Wangkanai.Architecture.Application.UnitTests.csproj", "{C7668D28-1D47-4412-AB0F-266972DC914C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Architecture.Application.IntegrationTests", "tests\Integration\Architecture.Application.IntegrationTests.csproj", "{2FBE8805-0030-4C98-B953-568FB1496155}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Application.IntegrationTests", "tests\Integration\Wangkanai.Architecture.Application.IntegrationTests.csproj", "{2FBE8805-0030-4C98-B953-568FB1496155}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Architecture.Benchmark", "benchmark\Architecture.Benchmark.csproj", "{9A4CD93F-DC4B-4031-812F-9CD640A39258}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Benchmark", "benchmark\Wangkanai.Architecture.Benchmark.csproj", "{9A4CD93F-DC4B-4031-812F-9CD640A39258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture", "Wangkanai.Architecture\Wangkanai.Architecture\Wangkanai.Architecture.csproj", "{12B05608-2F35-437F-A24F-54E3D942D3C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Client", "Wangkanai.Architecture\Wangkanai.Architecture.Client\Wangkanai.Architecture.Client.csproj", "{E851B3AD-A553-46BE-A2EA-3B771C835E7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{156767FE-5A1C-4175-B168-485D745A6313} = {93AB00AB-8168-4E49-8C0C-0F3B09DAB7B4}
-		{C7668D28-1D47-4412-AB0F-266972DC914C} = {93AB00AB-8168-4E49-8C0C-0F3B09DAB7B4}
-		{2FBE8805-0030-4C98-B953-568FB1496155} = {93AB00AB-8168-4E49-8C0C-0F3B09DAB7B4}
-		{9A4CD93F-DC4B-4031-812F-9CD640A39258} = {4EEA8D47-F55A-408B-8226-7235D18A234A}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{156767FE-5A1C-4175-B168-485D745A6313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -56,5 +51,22 @@ Global
 		{9A4CD93F-DC4B-4031-812F-9CD640A39258}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A4CD93F-DC4B-4031-812F-9CD640A39258}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A4CD93F-DC4B-4031-812F-9CD640A39258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B05608-2F35-437F-A24F-54E3D942D3C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B05608-2F35-437F-A24F-54E3D942D3C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B05608-2F35-437F-A24F-54E3D942D3C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B05608-2F35-437F-A24F-54E3D942D3C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E851B3AD-A553-46BE-A2EA-3B771C835E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E851B3AD-A553-46BE-A2EA-3B771C835E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E851B3AD-A553-46BE-A2EA-3B771C835E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E851B3AD-A553-46BE-A2EA-3B771C835E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{156767FE-5A1C-4175-B168-485D745A6313} = {93AB00AB-8168-4E49-8C0C-0F3B09DAB7B4}
+		{C7668D28-1D47-4412-AB0F-266972DC914C} = {93AB00AB-8168-4E49-8C0C-0F3B09DAB7B4}
+		{2FBE8805-0030-4C98-B953-568FB1496155} = {93AB00AB-8168-4E49-8C0C-0F3B09DAB7B4}
+		{9A4CD93F-DC4B-4031-812F-9CD640A39258} = {4EEA8D47-F55A-408B-8226-7235D18A234A}
 	EndGlobalSection
 EndGlobal

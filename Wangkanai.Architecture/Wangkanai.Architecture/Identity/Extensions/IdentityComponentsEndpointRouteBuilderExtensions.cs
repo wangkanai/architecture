@@ -31,8 +31,8 @@ namespace Microsoft.AspNetCore.Routing
 				[FromForm] string returnUrl) =>
 			{
 				IEnumerable<KeyValuePair<string, StringValues>> query = [
-					new("ReturnUrl", returnUrl),
-					new("Action", ExternalLogin.LoginCallbackAction)];
+					new KeyValuePair<string, StringValues>("ReturnUrl", returnUrl),
+					new KeyValuePair<string, StringValues>("Action", ExternalLogin.LoginCallbackAction)];
 
 				var redirectUrl = UriHelper.BuildRelative(
 					context.Request.PathBase,
