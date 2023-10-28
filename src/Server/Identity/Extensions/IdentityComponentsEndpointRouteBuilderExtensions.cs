@@ -12,6 +12,7 @@ using Microsoft.Extensions.Primitives;
 using Wangkanai.Architecture.Components.Pages.Account;
 using Wangkanai.Architecture.Components.Pages.Account.Manage;
 using Wangkanai.Architecture.Data;
+using Wangkanai.Architecture.Identity;
 
 namespace Microsoft.AspNetCore.Routing
 {
