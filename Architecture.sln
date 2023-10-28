@@ -25,9 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Appl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Benchmark", "benchmark\Wangkanai.Architecture.Benchmark.csproj", "{9A4CD93F-DC4B-4031-812F-9CD640A39258}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture", "Wangkanai.Architecture\Wangkanai.Architecture\Wangkanai.Architecture.csproj", "{12B05608-2F35-437F-A24F-54E3D942D3C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture", "src\Server\Wangkanai.Architecture.csproj", "{12B05608-2F35-437F-A24F-54E3D942D3C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Client", "Wangkanai.Architecture\Wangkanai.Architecture.Client\Wangkanai.Architecture.Client.csproj", "{E851B3AD-A553-46BE-A2EA-3B771C835E7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Client", "src\Client\Wangkanai.Architecture.Client.csproj", "{E851B3AD-A553-46BE-A2EA-3B771C835E7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
