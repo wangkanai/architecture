@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+	<PropertyGroup>
+		<TargetFramework>$(TargetFramework)</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
+		<StaticWebAssetProjectMode>Default</StaticWebAssetProjectMode>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly"/>
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication"/>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Application\Wangkanai.Architecture.Application.csproj" />
+	</ItemGroup>
+
+</Project>

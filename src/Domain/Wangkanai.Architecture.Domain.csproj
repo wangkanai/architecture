@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>$(TargetFramework)</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Wangkanai.Architecture</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
+		
+		<PackageReference Include="Wangkanai.System"/>
+		<PackageReference Include="Wangkanai.Domain"/>
+		<!--<PackageReference Include="Wangkanai.Validation"/>-->
+	</ItemGroup>
+
+</Project>
