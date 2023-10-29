@@ -11,7 +11,9 @@ namespace Wangkanai.Architecture.Infrastructure.Persistence;
 public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
 	: IdentityDbContext<ApplicationUser, ApplicationRole, string>(options)
 {
-	public DbSet<Pipeline>     Pipelines     { get; set; }
+	public DbSet<Lead>         Leads         { get; set; }
+	public DbSet<Deal>         Deals         { get; set; }
+	public DbSet<Category>     Categories    { get; set; }
 	public DbSet<Product>      Products      { get; set; }
 	public DbSet<Brand>        Brands        { get; set; }
 	public DbSet<Country>      Countries     { get; set; }

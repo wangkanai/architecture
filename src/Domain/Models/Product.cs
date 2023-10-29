@@ -8,6 +8,6 @@ public class Product : AuditableEntity<int>
 {
 	public string      Title       { get; set; }
 	public string      Description { get; set; }
-	public Brand       Brand       { get; set; }
+	public Brand?      Brand       { get; set; }
 	public List<Stock> Stock       { get; set; }
 }
