@@ -9,10 +9,10 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
-		
+
 		<PackageReference Include="Wangkanai.System"/>
 		<PackageReference Include="Wangkanai.Domain"/>
-		<!--<PackageReference Include="Wangkanai.Validation"/>-->
+		<PackageReference Include="Wangkanai.Validation"/>
 	</ItemGroup>
 
 </Project>
