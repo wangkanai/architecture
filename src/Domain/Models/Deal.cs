@@ -7,7 +7,7 @@ namespace Wangkanai.Architecture.Models;
 
 public class Deal : AuditableEntity<int>
 {
-	public string        Title        { get; set; }
+	public string?       Title        { get; set; }
 	public string?       Description  { get; set; }
 	public DateOnly?     Expended     { get; set; }
 	public Stage         Stage        { get; set; }
@@ -21,5 +21,5 @@ public class Deal : AuditableEntity<int>
 public class DealTag : AuditableEntity<int>
 {
 	public string Title { get; set; }
-	//public Color  Color { get; set; }
+	public Color  Color { get; set; }
 }
