@@ -6,8 +6,8 @@ namespace Wangkanai.Architecture.Authorization;
 public enum ApplicationPermissions
 {
 	None   = 0,
-	View   = 1,
-	Edit   = 2,
-	Delete = 4,
+	View   = 1 << 0,
+	Edit   = 1 << 1,
+	Delete = 1 << 2,
 	All    = ~None
 }
