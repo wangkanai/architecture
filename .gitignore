@@ -5,6 +5,7 @@
 
 .vs/
 .idea/
+Migrations/
 
 # User-specific files
 *.rsuser
