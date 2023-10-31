@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Wangkanai.Architecture.Identity;
 
-public class ApplicationRole : IdentityRole<int>
+public class ApplicationUserRole : IdentityUserRole<int>
 {
-	public string? Description { get; set; }
+	public virtual ApplicationUser User { get; set; } = default!;
+	public virtual ApplicationRole Role { get; set; } = default!;
 
-	public virtual List<ApplicationUserRole> Users { get; set; }
 }

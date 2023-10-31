@@ -8,7 +8,15 @@ using Wangkanai.Architecture.Models;
 namespace Wangkanai.Architecture.Infrastructure.Persistence;
 
 public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-	: IdentityDbContext<ApplicationUser, ApplicationRole, string>(options)
+	: IdentityDbContext<
+		ApplicationUser,
+		ApplicationRole,
+		int,
+		ApplicationUserClaim,
+		ApplicationUserRole,
+		ApplicationUserLogin,
+		ApplicationRoleClaim,
+		ApplicationUserToken>(options)
 {
 	public DbSet<Lead>         Leads         { get; set; }
 	public DbSet<Deal>         Deals         { get; set; }
