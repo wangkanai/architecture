@@ -6,8 +6,10 @@ namespace Wangkanai.Architecture.Models;
 
 public class Stock : AuditableEntity<int>
 {
-	public Product Product { get; set; }
-	public string  Sku     { get; set; }
-	public decimal Price   { get; set; }
-	public int     Qty     { get; set; }
+	public Product Product       { get; set; }
+	public string  Sku           { get; set; }
+	public Unit    Unit          { get; set; }
+	public int     Quantity      { get; set; }
+	public decimal PricePurchase { get; set; }
+	public decimal PriceSale     { get; set; }
 }
