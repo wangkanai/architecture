@@ -31,14 +31,14 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
 	public DbSet<Contact>      Contacts      { get; set; }
 	public DbSet<Unit>         Units         { get; set; }
 
-	protected override void OnConfiguring(DbContextOptionsBuilder builder)
-	{
-		base.OnConfiguring(builder);
-		//builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-	}
-
 	protected override void OnModelCreating(ModelBuilder builder)
 	{
 		base.OnModelCreating(builder);
+		builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+	}
+
+	protected override void OnConfiguring(DbContextOptionsBuilder builder)
+	{
+		base.OnConfiguring(builder);
 	}
 }
