@@ -6,4 +6,5 @@ namespace Wangkanai.Architecture.Identity;
 
 public class ApplicationRole : IdentityRole
 {
+
 }

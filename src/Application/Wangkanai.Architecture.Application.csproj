@@ -10,8 +10,4 @@
 	  <ProjectReference Include="..\Domain\Wangkanai.Architecture.Domain.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="Authorization\" />
-	</ItemGroup>
-
 </Project>
