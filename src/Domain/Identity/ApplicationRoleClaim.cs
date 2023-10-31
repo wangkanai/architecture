@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Wangkanai.Architecture.Identity;
 
-public class ApplicationRoleClaim : IdentityRoleClaim<int>
+public class ApplicationRoleClaim : IdentityRoleClaim<string>
 {
 	public string? Description { get; set; }
 

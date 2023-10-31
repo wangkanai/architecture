@@ -18,5 +18,5 @@ public class Lead : AuditableEntity<int>
 public class LeadTag : AuditableEntity<int>
 {
 	public string Title { get; set; }
-	public Color  Color { get; set; }
+	//public Color  Color { get; set; }
 }

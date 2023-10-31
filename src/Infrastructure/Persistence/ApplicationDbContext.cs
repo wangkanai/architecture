@@ -1,5 +1,7 @@
 // Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.Apache License, Version 2.0
 
+using System.Reflection;
+
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 using Wangkanai.Architecture.Identity;
@@ -11,7 +13,7 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
 	: IdentityDbContext<
 		ApplicationUser,
 		ApplicationRole,
-		int,
+		string,
 		ApplicationUserClaim,
 		ApplicationUserRole,
 		ApplicationUserLogin,
@@ -28,4 +30,15 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
 	public DbSet<Organization> Organizations { get; set; }
 	public DbSet<Contact>      Contacts      { get; set; }
 	public DbSet<Unit>         Units         { get; set; }
+
+	protected override void OnConfiguring(DbContextOptionsBuilder builder)
+	{
+		base.OnConfiguring(builder);
+		//builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+	}
+
+	protected override void OnModelCreating(ModelBuilder builder)
+	{
+		base.OnModelCreating(builder);
+	}
 }

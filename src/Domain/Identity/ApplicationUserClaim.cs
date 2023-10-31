@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Wangkanai.Architecture.Identity;
 
-public class ApplicationUserClaim : IdentityUserClaim<int>
+public class ApplicationUserClaim : IdentityUserClaim<string>
 {
 	public string? Description { get; set; }
 

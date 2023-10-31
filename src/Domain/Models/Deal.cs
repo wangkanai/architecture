@@ -21,5 +21,5 @@ public class Deal : AuditableEntity<int>
 public class DealTag : AuditableEntity<int>
 {
 	public string Title { get; set; }
-	public Color  Color { get; set; }
+	//public Color  Color { get; set; }
 }

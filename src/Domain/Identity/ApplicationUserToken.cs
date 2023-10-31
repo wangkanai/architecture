@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Wangkanai.Architecture.Identity;
 
-public class ApplicationUserToken : IdentityUserToken<int>
+public class ApplicationUserToken : IdentityUserToken<string>
 {
 	public virtual ApplicationUser User { get; set; } = default!;
 }
