@@ -7,7 +7,7 @@ namespace Wangkanai.Architecture.Models;
 
 public class Lead : AuditableEntity<int>
 {
-	public string        Title        { get; set; }
+	public string?       Title        { get; set; }
 	public DateOnly?     Expended     { get; set; }
 	public decimal       Value        { get; set; }
 	public Currency      Currency     { get; set; }
@@ -17,6 +17,6 @@ public class Lead : AuditableEntity<int>
 
 public class LeadTag : AuditableEntity<int>
 {
-	public string Title { get; set; }
-	public Color  Color { get; set; }
+	public string? Title { get; set; }
+	public Color   Color { get; set; }
 }

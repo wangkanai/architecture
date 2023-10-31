@@ -9,12 +9,15 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Client\Wangkanai.Architecture.Client.csproj"/>
+		<ProjectReference Include="..\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj" />
+
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server"/>
 		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore"/>
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer"/>
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools"/>
-		<ProjectReference Include="..\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj" />
+
+		<PackageReference Include="Wangkanai.Detection"/>
 	</ItemGroup>
 
 </Project>

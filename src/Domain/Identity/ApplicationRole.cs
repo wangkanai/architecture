@@ -4,6 +4,10 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Wangkanai.Architecture.Identity;
 
-public class ApplicationRole : IdentityRole
+public class ApplicationRole : IdentityRole<string>
 {
+	public string? Description { get; set; }
+
+	public virtual List<ApplicationUserRole>  UserRoles  { get; set; }
+	public virtual List<ApplicationRoleClaim> RoleClaims { get; set; }
 }

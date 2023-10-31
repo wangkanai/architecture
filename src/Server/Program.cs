@@ -18,6 +18,8 @@ builder.Services.AddRazorComponents()
        .AddInteractiveServerComponents()
        .AddInteractiveWebAssemblyComponents();
 
+builder.Services.AddDetection();
+
 builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<UserAccessor>();
 builder.Services.AddScoped<IdentityRedirectManager>();
@@ -28,8 +30,11 @@ builder.Services.AddAuthentication(IdentityConstants.ApplicationScheme)
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ??
                        throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-	options.UseSqlServer(connectionString));
+	options.UseSqlServer(
+		connectionString,
+		optionsBuilder => optionsBuilder.MigrationsAssembly("Wangkanai.Architecture")));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -59,6 +64,8 @@ app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseAntiforgery();
+
+app.UseDetection();
 
 app.MapRazorComponents<App>()
    .AddInteractiveServerRenderMode()
