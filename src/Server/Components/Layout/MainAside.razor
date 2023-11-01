@@ -1,11 +1,15 @@
 ﻿@using Wangkanai.Architecture.Components.Layout.Aside
+@using Wangkanai.Architecture.Components.Layout.Offcanvas
 
-<div class="container-fluid">
-	<AsideBrand/>
-	<AsideNavbar />
-	<AsideMenu />
-</div>
+<aside class="navbar navbar-vertical navbar-expand-lg">
+	<div class="container-fluid">
+		<AsideBrand />
+		<AsideNavbar />
+		<AsideMenu ShowSetting="SettingOpenOffcanvas" />
+	</div>
+</aside>
+<OffcanvasSetting Show="@SettingOpenOffcanvas" />
 
 @code {
-
+	private bool SettingOpenOffcanvas = false;
 }

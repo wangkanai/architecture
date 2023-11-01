@@ -6,109 +6,14 @@
 		<AsideMenuProject />
 		<AsideMenuContact />
 		<AsideMenuProduct />
-		<li class="nav-item dropdown">
-			<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-auto-close="false" data-bs-toggle="dropdown" href="#navbar-base" role="button">
-				<span class="nav-link-icon d-md-none d-lg-inline-block">
-					<i class="ti ti-package"></i>
-				</span>
-				<span class="nav-link-title">Interface</span>
-			</a>
-			<div class="dropdown-menu">
-				<div class="dropdown-menu-columns">
-					<div class="dropdown-menu-column">
-						<a class="dropdown-item" href="./alerts.html">Alerts</a>
-					</div>
-					<div class="dropdown-menu-column">
-						<a class="dropdown-item" href="./lightbox.html">Lightbox<span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span></a>
-					</div>
-				</div>
-			</div>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="./form-elements.html">
-				<span class="nav-link-icon d-md-none d-lg-inline-block">
-					<i class="ti ti-checkbox"></i>
-				</span>
-				<span class="nav-link-title">Forms</span>
-			</a>
-		</li>
-		<li class="nav-item dropdown">
-			<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-auto-close="false" data-bs-toggle="dropdown" href="#navbar-extra" role="button">
-				<span class="nav-link-icon d-md-none d-lg-inline-block">
-					<i class="ti ti-star"></i>
-				</span>
-				<span class="nav-link-title">Extra</span>
-			</a>
-			<div class="dropdown-menu">
-				<div class="dropdown-menu-columns">
-					<div class="dropdown-menu-column">
-						<a class="dropdown-item" href="./empty.html">Empty page</a>
-					</div>
-					<div class="dropdown-menu-column">
-						<a class="dropdown-item" href="./logs.html">Logs <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span></a>
-					</div>
-				</div>
-			</div>
-		</li>
-		<li class="nav-item active dropdown">
-			<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-auto-close="false" data-bs-toggle="dropdown" href="#navbar-layout" role="button">
-				<span class="nav-link-icon d-md-none d-lg-inline-block">
-					<i class="ti ti-layout-2"></i>
-				</span>
-				<span class="nav-link-title">Layout</span>
-			</a>
-			<div class="dropdown-menu">
-				<div class="dropdown-menu-columns">
-					<div class="dropdown-menu-column">
-						<a class="dropdown-item" href="./layout-horizontal.html">Horizontal</a>
-					</div>
-					<div class="dropdown-menu-column">
-						<a class="dropdown-item" href="./layout-navbar-dark.html">Navbar dark</a>
-					</div>
-				</div>
-			</div>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="./icons.html">
-				<span class="nav-link-icon d-md-none d-lg-inline-block">
-					<i class="ti ti-ghost"></i>
-				</span>
-				<span class="nav-link-title">4713 icons</span>
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="./emails.html">
-				<span class="nav-link-icon d-md-none d-lg-inline-block">
-					<i class="ti ti-mail-opened"></i>
-				</span>
-				<span class="nav-link-title">Email templates</span>
-			</a>
-		</li>
-		<li class="nav-item dropdown">
-			<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-auto-close="false" data-bs-toggle="dropdown" href="#navbar-help" role="button">
-				<span class="nav-link-icon d-md-none d-lg-inline-block">
-					<i class="ti ti-lifebuoy"></i>
-				</span>
-				<span class="nav-link-title">Help</span>
-			</a>
-			<div class="dropdown-menu">
-				<a class="dropdown-item" href="https://tabler.wangkanai.com/docs" rel="noopener" target="_blank">
-					Documentation
-				</a>
-				<a class="dropdown-item" href="./changelog.html">
-					Changelog
-				</a>
-				<a class="dropdown-item" href="https://github.com/wangkanai/architecture" rel="noopener" target="_blank">
-					Source code
-				</a>
-				<a class="dropdown-item text-pink" href="https://github.com/sponsors/wangkanai" rel="noopener" target="_blank">
-					<i class="ti ti-heart"></i> Sponsor project!
-				</a>
-			</div>
-		</li>
+		<AsideMenuReport />
+		<AsideMenuSetting Show="ShowSetting" />
 	</ul>
 </div>
 
 @code {
+
+	[Parameter]
+	public bool ShowSetting { get; set; }
 
 }
