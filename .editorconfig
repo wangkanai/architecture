@@ -28,6 +28,7 @@ resharper_enforce_line_ending_style=true
 resharper_for_built_in_types=use_explicit_type
 resharper_for_other_types=use_explicit_type
 resharper_for_simple_types=use_explicit_type
+resharper_html_space_before_self_closing=true
 resharper_int_align_assignments=true
 resharper_int_align_comments=true
 resharper_int_align_fields=true
@@ -43,7 +44,9 @@ resharper_keep_existing_embedded_block_arrangement=true
 resharper_keep_existing_enum_arrangement=true
 resharper_keep_existing_initializer_arrangement=false
 resharper_modifiers_order=public private protected internal static extern new virtual abstract sealed override readonly unsafe volatile async file required
+resharper_no_indent_inside_elements=html,thead,tbody,tfoot
 resharper_parentheses_group_non_obvious_operations=none, arithmetic, relational, conditional
+resharper_sort_attributes=true
 resharper_use_heuristics_for_body_style=false
 resharper_use_indent_from_vs=false
 
@@ -68,6 +71,12 @@ resharper_web_config_wrong_module_highlighting=warning
 # Xml files
 [*.xml]
 indent_size=2
+
+[*.{razor, html, cshtml}]
+indent_size=2
+resharper_html_allow_far_alignment=true
+resharper_html_linebreaks_inside_tags_for_elements_with_child_elements=false
+ij_html_do_not_indent_children_of_tags=false
 
 # C# files
 [*.cs]

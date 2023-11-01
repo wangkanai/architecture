@@ -1,0 +1,12 @@
+{
+	"name": "wangkanai",
+	"version": "1.0.0",
+	"description": "Wangkanai Blazor Clean Architecture",
+	"author": "Sarin Na Wangkanai",
+	"license": "ISC",
+	"private": true,
+	"style": "wwwroot/app.css",
+	"sass": "wwwroot/scss/app.scss",
+	"scripts": {
+	}
+}
