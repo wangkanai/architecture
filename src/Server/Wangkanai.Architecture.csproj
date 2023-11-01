@@ -35,8 +35,5 @@
 		<Exec Command="npm run --silent lib" Condition="$(Configuration) != 'DEBUG'"/>
 		<Exec Command="npm run --silent scss" Condition="$(Configuration) != 'DEBUG'"/>
 	</Target>
-	<Target Name="NpmRunWatch" DependsOnTargets="NpmInstall" BeforeTargets="BeforeBuild">
-		<Exec Command="npm run --silent scss" Condition="$(Configuration) == 'DEBUG'"/>
-	</Target>
 
 </Project>

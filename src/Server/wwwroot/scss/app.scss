@@ -45,3 +45,13 @@ h1:focus {
 		content: "An error has occurred."
 	}
 }
+
+i.ti {
+	display: block;
+	align-items: center;
+	--tblr-icon-size: 1.25rem;
+	width: var(--tblr-icon-size);
+	height: var(--tblr-icon-size);
+	font-size: var(--tblr-icon-size);
+	stroke-width: 0.75em;
+}

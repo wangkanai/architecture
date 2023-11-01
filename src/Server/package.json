@@ -11,17 +11,17 @@
 		"scss": "npm-run-all scss-compile scss-minify",
 		"scss-compile": "sass --style expanded --source-map --embed-sources --no-error-css wwwroot/scss/app.scss wwwroot/app.css",
 		"scss-minify": "cleancss -O1 wwwroot/app.css --output wwwroot/app.min.css --input-source-map wwwroot/app.css.map --format breakWith=lf --with-rebase",
-		"watch": "npm-run-all --parallel watch-scss watch-lint",
+		"watch": "npm-run-all --parallel watch-scss",
 		"watch-scss": "nodemon --watch wwwroot/scss/ --ext scss --exec \"npm-run-all scss-compile scss-minify\"",
 		"watch-lint": "nodemon --watch wwwroot/scss/ --ext scss --exec \"npm-run-all scss-lint scss-compile\"",
 		"clean": "rimraf wwwroot/lib/",
 		"lib": "npm-run-all --parallel lib-*",
 		"lib-tabler": "cpy node_modules/@tabler/core/**/*.* wwwroot/lib/tabler/",
-		"lib-icons": "cpy node_modules/@tabler/icons/**/*.* wwwroot/lib/icons/"
+		"lib-icons": "cpy node_modules/@tabler/icons-webfont/**/*.* wwwroot/lib/icons/"
 	},
 	"dependencies": {
 		"@tabler/core": "1.0.0-beta20",
-		"@tabler/icons": "^2.39.0",
+		"@tabler/icons-webfont": "^2.40.0",
 		"apexcharts": "^3.44.0",
 		"rfs": "^10.0.0"
 	},
