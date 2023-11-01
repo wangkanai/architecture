@@ -5,7 +5,13 @@
 
 .vs/
 .idea/
+lib/
 Migrations/
+
+package-lock.json
+
+**/wwwroot/*.css
+**/wwwroot/*.css.map
 
 # User-specific files
 *.rsuser
