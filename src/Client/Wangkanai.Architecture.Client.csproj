@@ -11,10 +11,12 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly"/>
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication"/>
+
+		<PackageReference Include="Wangkanai.Tabler"/>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Application\Wangkanai.Architecture.Application.csproj" />
+		<ProjectReference Include="..\Application\Wangkanai.Architecture.Application.csproj"/>
 	</ItemGroup>
 
 </Project>
