@@ -8,5 +8,33 @@
 	"style": "wwwroot/app.css",
 	"sass": "wwwroot/scss/app.scss",
 	"scripts": {
+		"scss": "npm-run-all scss-compile scss-minify",
+		"scss-compile": "sass --style expanded --source-map --embed-sources --no-error-css wwwroot/scss/app.scss wwwroot/app.css",
+		"scss-minify": "cleancss -O1 wwwroot/app.css --output wwwroot/app.min.css --input-source-map wwwroot/app.css.map --format breakWith=lf --with-rebase",
+		"watch": "npm-run-all --parallel watch-scss watch-lint",
+		"watch-scss": "nodemon --watch wwwroot/scss/ --ext scss --exec \"npm-run-all scss-compile scss-minify\"",
+		"watch-lint": "nodemon --watch wwwroot/scss/ --ext scss --exec \"npm-run-all scss-lint scss-compile\"",
+		"clean": "rimraf wwwroot/lib/",
+		"lib": "npm-run-all --parallel lib-*",
+		"lib-tabler": "cpy node_modules/@tabler/core/**/*.* wwwroot/lib/tabler/",
+		"lib-icons": "cpy node_modules/@tabler/icons/**/*.* wwwroot/lib/icons/"
+	},
+	"dependencies": {
+		"@tabler/core": "1.0.0-beta20",
+		"@tabler/icons": "^2.39.0",
+		"apexcharts": "^3.44.0",
+		"rfs": "^10.0.0"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.8.0",
+		"@typescript-eslint/parser": "^6.8.0",
+		"cpy-cli": "^5.0.0",
+		"eslint": "^8.51.0",
+		"node-sass": "^9.0.0",
+		"node-sass-package-importer": "^5.3.3",
+		"nodemon": "^3.0.1",
+		"npm-run-all": "4.1.5",
+		"rimraf": "^5.0.5",
+		"sass": "^1.69.4"
 	}
 }

@@ -5,7 +5,10 @@
 
 .vs/
 .idea/
+lib/
 Migrations/
+
+package-lock.json
 
 # User-specific files
 *.rsuser
