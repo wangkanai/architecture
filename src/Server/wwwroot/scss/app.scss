@@ -55,3 +55,11 @@ i.ti {
 	font-size: var(--tblr-icon-size);
 	stroke-width: 0.75em;
 }
+
+.offcanvas{
+	--tblr-offcanvas-width: 15rem;
+	--tblr-offcanvas-bg: #263e5e;
+	&.offcanvas-start{
+		left: 15rem;
+	}
+}

@@ -19,4 +19,21 @@
 		<ProjectReference Include="..\Application\Wangkanai.Architecture.Application.csproj"/>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <AdditionalFiles Include="Components\Layout\Aside\AsideBrand.razor" />
+	  <AdditionalFiles Include="Components\Layout\Aside\AsideMenuContact.razor" />
+	  <AdditionalFiles Include="Components\Layout\Aside\AsideMenuDeal.razor" />
+	  <AdditionalFiles Include="Components\Layout\Aside\AsideMenuHome.razor" />
+	  <AdditionalFiles Include="Components\Layout\Aside\AsideMenuLead.razor" />
+	  <AdditionalFiles Include="Components\Layout\Aside\AsideMenuProduct.razor" />
+	  <AdditionalFiles Include="Components\Layout\Aside\AsideMenuProject.razor" />
+	  <AdditionalFiles Include="Components\Layout\Aside\AsideMenuReport.razor" />
+	  <AdditionalFiles Include="Components\Layout\Aside\AsideMenuSetting.razor" />
+	  <AdditionalFiles Include="Components\Layout\Aside\AsideNavbar.razor" />
+	  <AdditionalFiles Include="Components\Layout\Aside\AsideNavbarNotification.razor" />
+	  <AdditionalFiles Include="Components\Layout\Aside\AsideNavbarProfile.razor" />
+	  <AdditionalFiles Include="Components\Layout\Aside\AsideNavbarSponsor.razor" />
+	  <AdditionalFiles Include="Components\Layout\Aside\_imports.razor" />
+	</ItemGroup>
+
 </Project>

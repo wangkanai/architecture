@@ -1,0 +1,34 @@
+﻿@using Wangkanai.Architecture.Client.Components.Layout.Aside
+@attribute [RenderModeInteractiveAuto]
+
+<aside class="navbar navbar-vertical navbar-expand-lg">
+	<div class="container-fluid">
+		<AsideBrand />
+		<AsideNavbar />
+		<div class="navbar-collapse collapse" id="sidebar-menu" style="">
+			<ul class="navbar-nav pt-lg-3">
+				<AsideMenuLead />
+				<AsideMenuDeal />
+				<AsideMenuProject />
+				<AsideMenuContact />
+				<AsideMenuProduct />
+				<AsideMenuReport />
+				<li class="nav-item">
+					<a class="nav-link" @onclick="Toggle" role="button">
+						<span class="nav-link-icon d-md-none d-lg-inline-block">
+							<i class="ti ti-dots"></i>
+						</span>
+						<span class="nav-link-title">More</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</aside>
+<MainAsideMore Show="Show" />
+
+@code {
+	private bool Show = false;
+	private string? show => Show ? "show" : null;
+	void Toggle() => Show = !Show;
+}
