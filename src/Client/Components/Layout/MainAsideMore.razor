@@ -16,16 +16,13 @@
 </div>
 
 @code {
-
+	[Parameter]
+	public EventCallback<bool> ShowHasChanged { get; set; }
 	[Parameter]
 	public bool Show { get; set; }
 
 	private string? show => Show ? "show" : null;
 
-	private async Task Toggle()
-	{
-		Show = !Show;
-		await InvokeAsync(StateHasChanged);
-	}
+	private async Task Toggle() => await ShowHasChanged.InvokeAsync(!Show);
 
 }

@@ -1,0 +1,29 @@
+﻿@inherits LayoutComponentBase
+@layout MainLayout
+
+<header class="navbar navbar-expand-md bg-blue-lt text-white d-print-none">
+	<div class="container-xl">
+		<div class="navbar-nav flex-row">
+			<div class="nav-item">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<NavLink href="/">
+							<i class="ti ti-home"></i>
+						</NavLink>
+					</li>
+					<li class="breadcrumb-item active">
+						Reports
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="page-header"></div>
+<div class="page-body">
+	@Body
+</div>
+
+@code {
+
+}

@@ -1,0 +1,22 @@
+﻿<li class="nav-item @active">
+	<a class="nav-link" @onclick="Toggle" role="button">
+		<span class="nav-link-icon d-md-none d-lg-inline-block">
+			<i class="ti ti-dots"></i>
+		</span>
+		<span class="nav-link-title">More</span>
+	</a>
+</li>
+
+@code {
+
+	[Parameter]
+	public EventCallback<bool> ShowHasChanged { get; set; }
+
+	[Parameter]
+	public bool Show { get; set; }
+
+	private string? active => Show ? "active" : null;
+
+	private async Task Toggle() => await ShowHasChanged.InvokeAsync(true);
+
+}
