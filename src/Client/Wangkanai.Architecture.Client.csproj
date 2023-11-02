@@ -28,7 +28,6 @@
 	  <AdditionalFiles Include="Components\Layout\Aside\AsideMenuProduct.razor" />
 	  <AdditionalFiles Include="Components\Layout\Aside\AsideMenuProject.razor" />
 	  <AdditionalFiles Include="Components\Layout\Aside\AsideMenuReport.razor" />
-	  <AdditionalFiles Include="Components\Layout\Aside\AsideMenuSetting.razor" />
 	  <AdditionalFiles Include="Components\Layout\Aside\AsideNavbar.razor" />
 	  <AdditionalFiles Include="Components\Layout\Aside\AsideNavbarNotification.razor" />
 	  <AdditionalFiles Include="Components\Layout\Aside\AsideNavbarProfile.razor" />
