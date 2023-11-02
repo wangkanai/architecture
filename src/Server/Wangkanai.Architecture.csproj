@@ -43,6 +43,9 @@
 	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideNavbarSponsor.razor" />
 	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\_imports.razor" />
 	  <_ContentIncludedByDefault Remove="Components\Layout\Offcanvas\OffcanvasSetting.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Sidebar\SidebarBrand.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Sidebar\SidebarMenu.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Sidebar\SidebarMenuItem.razor" />
 	</ItemGroup>
 
 	<ItemGroup>

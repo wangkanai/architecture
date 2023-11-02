@@ -1,4 +1,6 @@
-﻿<ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+﻿@attribute [RenderModeInteractiveAuto]
+
+<ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
 	<SidebarMenuItem Path="/Lead" Tooltip="Leads"><i class="ti ti-target"></i></SidebarMenuItem>
 	<SidebarMenuItem Path="/Deal" Tooltip="Deals"><i class="ti ti-coin"></i></SidebarMenuItem>
 	<SidebarMenuItem Path="/Project" Tooltip="Projects"><i class="ti ti-clipboard-check"></i></SidebarMenuItem>
@@ -6,7 +8,6 @@
 	<SidebarMenuItem Path="/Contact" Tooltip="Contacts"><i class="ti ti-address-book"></i></SidebarMenuItem>
 	<SidebarMenuItem Path="/Product" Tooltip="Products"><i class="ti ti-package"></i></SidebarMenuItem>
 	<SidebarMenuItem Path="/Report" Tooltip="Report"><i class="ti ti-chart-dots"></i></SidebarMenuItem>
-	<SidebarMenuItem Tooltip="More"><i class="ti ti-dots"></i></SidebarMenuItem>
 </ul>
 
 @code {
