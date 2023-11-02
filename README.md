@@ -1,6 +1,10 @@
 # Wangkanai Blazor Clean Architecture
 
 [![Build Status](https://dev.azure.com/wangkanai/GitHub/_apis/build/status%2Farchitecture-ai?branchName=refs%2Fpull%2F3%2Fmerge)](https://dev.azure.com/wangkanai/GitHub/_build/latest?definitionId=38&branchName=refs%2Fpull%2F3%2Fmerge)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=wangkanai_architecture&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=wangkanai_architecture)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=wangkanai_architecture&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=wangkanai_architecture)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=wangkanai_architecture&metric=coverage)](https://sonarcloud.io/summary/new_code?id=wangkanai_architecture)
+
 
 [![Open Collective](https://img.shields.io/badge/open%20collective-support%20me-3385FF.svg)](https://opencollective.com/wangkanai)
 [![Patreon](https://img.shields.io/badge/patreon-support%20me-d9643a.svg)](https://www.patreon.com/wangkanai)
