@@ -45,15 +45,25 @@ h1:focus {
 		content: "An error has occurred."
 	}
 }
+.navbar-brand-image{
+	width: 1.50rem;
+}
 
-i.ti {
-	display: block;
-	align-items: center;
-	--tblr-icon-size: 1.25rem;
-	width: var(--tblr-icon-size);
-	height: var(--tblr-icon-size);
-	font-size: var(--tblr-icon-size);
-	stroke-width: 0.75em;
+.nav-link{
+	color: #e1f5ff;
+	&:hover{
+		text-decoration: none;
+		color: #96afcb;
+	}
+	i.ti {
+		display: block;
+		align-items: center;
+		--tblr-icon-size: 1.75rem;
+		width: var(--tblr-icon-size);
+		height: var(--tblr-icon-size);
+		font-size: var(--tblr-icon-size);
+		stroke-width: 0.25rem;
+	}
 }
 
 .offcanvas {

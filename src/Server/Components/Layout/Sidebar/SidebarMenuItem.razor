@@ -1,0 +1,18 @@
+﻿<li class="nav-item">
+	<NavLink href="@Path" class="nav-link py-3 rounded-0" ActiveClass="active" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="@Tooltip" data-bs-original-title="@Tooltip">
+		@ChildContent
+	</NavLink>
+</li>
+
+@code {
+
+	[Parameter]
+	public string Path { get; set; }
+
+	[Parameter]
+	public string Tooltip { get; set; }
+
+	[Parameter]
+	public RenderFragment ChildContent { get; set; }
+
+}
