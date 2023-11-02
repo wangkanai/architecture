@@ -31,7 +31,7 @@ resharper_modifiers_order = public private protected internal static extern new 
 resharper_no_indent_inside_elements = thead, tbody, tfoot
 resharper_no_indent_inside_if_element_longer_than = 200
 resharper_parentheses_group_non_obvious_operations = none, arithmetic, relational, conditional
-resharper_sort_attributes = true
+resharper_sort_attributes = false
 resharper_use_heuristics_for_body_style = false
 resharper_use_indent_from_vs = false
 

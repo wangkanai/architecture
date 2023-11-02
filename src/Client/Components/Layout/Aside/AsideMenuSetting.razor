@@ -1,0 +1,25 @@
+﻿<li class="nav-item dropdown">
+	<a aria-controls="offcanvasStart" aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="offcanvas" role="button" @onclick="Toggle">
+		<span class="nav-link-icon d-md-none d-lg-inline-block">
+			<i class="ti ti-dots"></i>
+		</span>
+		<span class="nav-link-title">Settings</span>
+	</a>
+</li>
+
+@code {
+
+	[Parameter]
+	public bool Show { get; set; }
+
+	[Parameter]
+	public EventCallback<bool> ShowSettingChanged { get; set; }
+
+	private string show => Show ? "show" : "";
+	protected async Task Toggle()
+	{
+		Show = !Show;
+		await ShowSettingChanged.InvokeAsync(Show);
+	}
+
+}

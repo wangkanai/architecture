@@ -26,6 +26,25 @@
 		<Content Include="wwwroot\lib\**" Watch="false"/>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideBrand.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenu.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuContact.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuDeal.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuHome.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuLead.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuProduct.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuProject.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuReport.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuSetting.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideNavbar.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideNavbarNotification.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideNavbarProfile.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideNavbarSponsor.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\_imports.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Offcanvas\OffcanvasSetting.razor" />
+	</ItemGroup>
+
 	<Target Name="NpmInstall" Inputs="package.json" Outputs="node_modules/.install-stamp">
 		<Exec Command="npm ci" Condition="$(RestorePackagesWithLockFile) == 'true'"/>
 		<Exec Command="npm install" Condition="$(RestorePackagesWithLockFile) != 'true'"/>
