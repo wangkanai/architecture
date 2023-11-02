@@ -1,5 +1,16 @@
-﻿<h3>MainHeader</h3>
+﻿<header class="navbar navbar-expand-md bg-blue-lt text-white d-print-none">
+	<div class="container-fluid">
+		<div class="navbar-nav flex-row">
+			<div class="nav-item">
+				<HeaderBreadcrumb Title="@Title"/>
+			</div>
+		</div>
+	</div>
+</header>
 
 @code {
-	
+
+	[Parameter]
+	public string Title { get; set; }
+
 }
