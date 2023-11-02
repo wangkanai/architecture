@@ -7,6 +7,9 @@ public enum ApplicationFeatures
 {
 	None     = 0,
 	Pipeline = 1 << 0,
-	Identity = 1 << 1,
+	Contact  = 1 << 1,
+	Activity = 1 << 2,
+	Product  = 1 << 3,
+	Identity = 1 << 4,
 	All      = ~None
 }
