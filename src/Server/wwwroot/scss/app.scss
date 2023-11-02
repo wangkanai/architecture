@@ -94,6 +94,10 @@ i.ti {
 .breadcrumb{
 	a{
 		color: var(--tblr-nav-link-color);
+		&:hover{
+			text-decoration: none;
+			color: #96afcb;
+		}
 	}
 	&-item{
 		&.active{
