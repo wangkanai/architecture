@@ -95,6 +95,11 @@ i.ti {
 	a{
 		color: var(--tblr-nav-link-color);
 	}
+	&-item{
+		&.active{
+			color: #949494;
+		}
+	}
 }
 .breadcrumb-item+.breadcrumb-item::before{
 	font-size: 1.1rem;
