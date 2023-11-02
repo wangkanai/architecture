@@ -89,7 +89,13 @@ i.ti {
 			}
 		}
 	}
-	.navbar-expand-lg.navbar-vertical ~ .navbar,
-	.navbar-expand-lg.navbar-vertical ~ .page-wrapper {
+}
+
+.breadcrumb{
+	a{
+		color: var(--tblr-nav-link-color);
 	}
+}
+.breadcrumb-item+.breadcrumb-item::before{
+	font-size: 1.1rem;
 }
