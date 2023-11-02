@@ -13,22 +13,14 @@
 				<AsideMenuContact />
 				<AsideMenuProduct />
 				<AsideMenuReport />
-				<li class="nav-item">
-					<a class="nav-link" @onclick="Toggle" role="button">
-						<span class="nav-link-icon d-md-none d-lg-inline-block">
-							<i class="ti ti-dots"></i>
-						</span>
-						<span class="nav-link-title">More</span>
-					</a>
-				</li>
+				<AsideMenuMore Show="Show" ShowHasChanged="Toggle" />
 			</ul>
 		</div>
 	</div>
 </aside>
-<MainAsideMore Show="Show" />
+<MainAsideMore Show="Show" ShowHasChanged="Toggle" />
 
 @code {
-	private bool Show = false;
-	private string? show => Show ? "show" : null;
+	protected bool Show { get; set; }
 	void Toggle() => Show = !Show;
 }

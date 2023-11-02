@@ -46,15 +46,6 @@ h1:focus {
 	}
 }
 
-
-.navbar-vertical {
-	&.navbar-expand-lg {
-		@media (min-width: 992px) {
-			width: 10rem;
-		}
-	}
-}
-
 i.ti {
 	display: block;
 	align-items: center;
@@ -66,10 +57,27 @@ i.ti {
 }
 
 .offcanvas {
-	--tblr-offcanvas-width: 15rem;
+	z-index: -1;
+	--tblr-offcanvas-width: 20rem;
 	--tblr-offcanvas-bg: #263e5e;
 
 	&.offcanvas-start {
-		left: 10rem;
+		padding-left: 10rem;
+		//left: 10rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar-vertical {
+		&.navbar-expand-lg {
+			width: 10rem;
+		}
+	}
+	.navbar-expand-lg {
+		.nav-item{
+			&.active {
+				background-color: var(--tblr-offcanvas-bg);
+			}
+		}
 	}
 }
