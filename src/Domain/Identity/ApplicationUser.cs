@@ -6,9 +6,10 @@ namespace Wangkanai.Architecture.Identity;
 
 public class ApplicationUser : IdentityUser<string>
 {
-	public string Firstname  { get; set; }
-	public string Middlename { get; set; }
-	public string Lastname   { get; set; }
+	public string FirstName   { get; set; }
+	public string MiddleName  { get; set; }
+	public string LastName    { get; set; }
+	public string DisplayName { get; set; }
 
 	public virtual List<ApplicationUserClaim> UserClaims { get; set; }
 	public virtual List<ApplicationUserRole>  UserRoles  { get; set; }

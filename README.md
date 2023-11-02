@@ -14,17 +14,17 @@ The application design architecture is to have everything in there separate proj
 This allows for the application to be broken down into smaller pieces and allows for easier maintenance and development.
 The application is broken down into the following projects:
 
-## Src
+### Source
 - `Wangkanai.Architecture.Domain` - The domain layer is the core of the application, containing all the business logic and entities. It has no dependencies on any other layer.
 - `Wangkanai.Architecture.Application` - The application layer contains classes for interacting with external resources such as databases or web services. It depends on the domain layer, but has no dependencies on any other layer.
 - `Wangkanai.Architecture.Infrastructure` - The infrastructure layer contains classes for accessing external resources such as file systems, web services, smtp, and so on. These classes should be based on interfaces defined within the domain layer.
 - `Wangkanai.Architecture.Client` - The WebAssembly Blazor Client App project.
 - `Wangkanai.Architecture` - The main Blazor Server Apps project.
 
-## Tests
+### Tests
 - `Wangkanai.Architecture.Domain.UnitTests` - The unit test project for the domain layer.
 - `Wangkanai.Architecture.Application.UnitTests` - The unit test project for the application layer.
 - `Wangkanai.Architecture.Application.IntegrationTests` - The integration test project for the application layer.
 
-## Benchmark
+### Benchmark
 - `Wangkanai.Architecture.Benchmark` - The benchmark project for the clean architecture.
