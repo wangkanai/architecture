@@ -57,7 +57,7 @@ i.ti {
 }
 
 .offcanvas {
-	z-index: -1;
+	z-index: 1020;
 	--tblr-offcanvas-width: 20rem;
 	--tblr-offcanvas-bg: #263e5e;
 
@@ -71,13 +71,25 @@ i.ti {
 	.navbar-vertical {
 		&.navbar-expand-lg {
 			width: 10rem;
+			padding-right: 0;
 		}
 	}
 	.navbar-expand-lg {
-		.nav-item{
+		.nav-item {
 			&.active {
-				background-color: var(--tblr-offcanvas-bg);
+				background-color: #263e5e;
 			}
 		}
+	}
+	.navbar-expand-lg {
+		&.navbar-vertical {
+			& ~ .navbar,
+			& ~ .page-wrapper {
+				margin-left: 10rem;
+			}
+		}
+	}
+	.navbar-expand-lg.navbar-vertical ~ .navbar,
+	.navbar-expand-lg.navbar-vertical ~ .page-wrapper {
 	}
 }
