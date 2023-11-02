@@ -35,6 +35,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Appl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Infrastructure", "src\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj", "{52F2EF65-D6EA-447F-B6AC-EEBB62604ACB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".sonar", ".sonar", "{E5A79B79-26B7-4E41-BE1D-8DEFBDEFD913}"
+	ProjectSection(SolutionItems) = preProject
+		sonar-begin.ps1 = sonar-begin.ps1
+		sonar-prep.ps1 = sonar-prep.ps1
+		SonarQube.Analysis.xml = SonarQube.Analysis.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
