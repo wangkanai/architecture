@@ -45,6 +45,12 @@
 	  <_ContentIncludedByDefault Remove="Components\Layout\Offcanvas\OffcanvasSetting.razor" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Components\Pages\Activity\" />
+	  <Folder Include="Components\Pages\Contact\" />
+	  <Folder Include="Components\Pages\Report\" />
+	</ItemGroup>
+
 	<Target Name="NpmInstall" Inputs="package.json" Outputs="node_modules/.install-stamp">
 		<Exec Command="npm ci" Condition="$(RestorePackagesWithLockFile) == 'true'"/>
 		<Exec Command="npm install" Condition="$(RestorePackagesWithLockFile) != 'true'"/>
