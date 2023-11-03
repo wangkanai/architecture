@@ -69,41 +69,6 @@ h1:focus {
 	}
 }
 
-.offcanvas {
-	z-index: 1020;
-	--tblr-offcanvas-width: 20rem;
-	--tblr-offcanvas-bg: #263e5e;
-
-	&.offcanvas-start {
-		padding-left: 10rem;
-		//left: 10rem;
-	}
-}
-
-@media (min-width: 992px) {
-	.navbar-vertical {
-		&.navbar-expand-lg {
-			width: 10rem;
-			padding-right: 0;
-		}
-	}
-	.navbar-expand-lg {
-		.nav-item {
-			&.active {
-				background-color: #263e5e;
-			}
-		}
-	}
-	.navbar-expand-lg {
-		&.navbar-vertical {
-			& ~ .navbar,
-			& ~ .page-wrapper {
-				margin-left: 10rem;
-			}
-		}
-	}
-}
-
 .breadcrumb {
 
 	a {
