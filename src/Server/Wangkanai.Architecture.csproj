@@ -1,9 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
-		<TargetFramework>$(TargetFramework)</TargetFramework>
-		<Nullable>enable</Nullable>
-		<ImplicitUsings>enable</ImplicitUsings>
 		<UserSecretsId>aspnet-Wangkanai.Architecture-0078d4df-171d-499d-9374-36c84a116eb3</UserSecretsId>
 	</PropertyGroup>
 
@@ -24,28 +21,6 @@
 	<ItemGroup>
 		<Content Remove="wwwroot\lib\**"/>
 		<Content Include="wwwroot\lib\**" Watch="false"/>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideBrand.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenu.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuContact.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuDeal.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuHome.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuLead.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuProduct.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuProject.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuReport.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideMenuSetting.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideNavbar.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideNavbarNotification.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideNavbarProfile.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\AsideNavbarSponsor.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Aside\_imports.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Offcanvas\OffcanvasSetting.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Sidebar\SidebarBrand.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Sidebar\SidebarMenu.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Sidebar\SidebarMenuItem.razor" />
 	</ItemGroup>
 
 	<ItemGroup>
