@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{
 		LICENSE = LICENSE
 		README.md = README.md
 		Directory.Build.targets = Directory.Build.targets
+		Architecture.nuspec = Architecture.nuspec
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{93AB00AB-8168-4E49-8C0C-0F3B09DAB7B4}"

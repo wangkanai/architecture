@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+	<metadata>
+
+		<id>Wangkanai.Architecture.Template</id>
+		<version>8.0.0-rc2</version>
+		<title>Blazor Clean Architecture Solution Template</title>
+		<authors>Sarin Na Wangkanai</authors>
+		<description>Clean Architecture Solution Template for .NET 8 Blazor.</description>
+		<summary>A Clean Architecture Solution Template for creating apps using .NET 8 ASP.NET Core Blazor</summary>
+		<releaseNotes>Update CICD workflow to request required permissions.</releaseNotes>
+
+		<projectUrl>https://github.com/wangkanai/architecture</projectUrl>
+		<repository type="git" url="https://github.com/wangkanai/architecture.git" branch="main"/>
+
+		<license type="expression">MIT</license>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<tags>clean-architecture project template csharp dotnet blazor</tags>
+
+		<packageTypes>
+			<packageType name="Template"/>
+		</packageTypes>
+	</metadata>
+	<files>
+		<file src=".template.config\icon.png"/>
+		<file src="README.md"/>
+		<file src=".\**" target="content"
+					exclude="**\node_modules\**;**\bin\**;**\obj\**;.\.vs\**;.\.vscode\**;**\ClientApp\dist\**;**\wwwroot\dist\**;content\Directory.Build.*;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\icon.png;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;"/>
+	</files>
+</package>
