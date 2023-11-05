@@ -1,13 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>$(TargetFramework)</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-
-		<IsPackable>false</IsPackable>
 		<IsTestProject>true</IsTestProject>
-		<RootNamespace>Architecture.Domain.UnitTests</RootNamespace>
+		<IsPackable>false</IsPackable>
 	</PropertyGroup>
 
 </Project>

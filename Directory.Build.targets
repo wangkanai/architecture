@@ -1,48 +1,16 @@
 <Project>
-	<PropertyGroup>
-		<DefaultFrameworkVersion>8.0</DefaultFrameworkVersion>
-
-		<FrameworkVersion>8.0.0-rc.2.*</FrameworkVersion>
-	</PropertyGroup>
-
+	<!-- GitHub Source Link -->
 	<ItemGroup>
-		<!--sourcelink-->
-		<PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
-
-		<!--framework-->
-		<PackageReference Update="Microsoft.AspNetCore.Components.WebAssembly" Version="$(FrameworkVersion)"/>
-		<PackageReference Update="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="$(FrameworkVersion)"/>
-		<PackageReference Update="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="$(FrameworkVersion)"/>
-		<PackageReference Update="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="$(FrameworkVersion)"/>
-		<PackageReference Update="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="$(FrameworkVersion)"/>
-
-		<!--entity framework-->
-		<PackageReference Update="Microsoft.EntityFrameworkCore" Version="$(FrameworkVersion)"/>
-		<PackageReference Update="Microsoft.EntityFrameworkCore.SqlServer" Version="$(FrameworkVersion)"/>
-		<PackageReference Update="Microsoft.EntityFrameworkCore.Sqlite" Version="$(FrameworkVersion)"/>
-		<PackageReference Update="Microsoft.EntityFrameworkCore.InMemory" Version="$(FrameworkVersion)"/>
-		<PackageReference Update="Microsoft.EntityFrameworkCore.Design" Version="$(FrameworkVersion)" PrivateAssets="all"/>
-		<PackageReference Update="Microsoft.EntityFrameworkCore.Tools" Version="$(FrameworkVersion)" PrivateAssets="all"/>
-		<PackageReference Update="Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(FrameworkVersion)" PrivateAssets="all"/>
-
-		<!--tests-->
-		<PackageReference Update="Microsoft.AspNetCore.TestHost" Version="$(FrameworkVersion)"/>
-		<PackageReference Update="Microsoft.NET.Test.Sdk" Version="17.7.2"/>
-		<PackageReference Update="Moq" Version="4.20.69"/>
-		<PackageReference Update="xunit" Version="2.6.0"/>
-		<PackageReference Update="xunit.runner.visualstudio" Version="2.5.3" PrivateAssets="all"/>
-		<PackageReference Update="coverlet.collector" Version="6.0.0" PrivateAssets="all"/>
-		<PackageReference Update="coverlet.msbuild" Version="6.0.0" PrivateAssets="all"/>
-
-		<!--benchmark-->
-		<PackageReference Update="BenchmarkDotNet" Version="0.13.9"/>
-
-		<!--wangkanai-->
-		<PackageReference Update="Wangkanai.System" Version="3.6.0"/>
-		<PackageReference Update="Wangkanai.Validation" Version="3.6.0"/>
-		<PackageReference Update="Wangkanai.Domain" Version="3.6.0"/>
-		<PackageReference Update="Wangkanai.Detection" Version="8.7.0"/>
-		<PackageReference Update="Wangkanai.Blazor" Version="3.6.0"/>
-		<PackageReference Update="Wangkanai.Tabler" Version="3.6.0"/>
+		<PackageReference Include="Microsoft.SourceLink.GitHub"/>
+	</ItemGroup>
+	<!-- xUnit Tests-->
+	<ItemGroup Condition="$(MSBuildProjectName.Contains('Tests'))">
+		<PackageReference Include="Microsoft.AspNetCore.TestHost"/>
+		<PackageReference Include="Microsoft.NET.Test.Sdk"/>
+		<PackageReference Include="Moq"/>
+		<PackageReference Include="xunit"/>
+		<PackageReference Include="xunit.runner.visualstudio"/>
+		<PackageReference Include="coverlet.collector"/>
+		<PackageReference Include="coverlet.msbuild"/>
 	</ItemGroup>
 </Project>
