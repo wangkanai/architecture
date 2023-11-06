@@ -1,10 +1,17 @@
 {
 	"$schema": "http://json.schemastore.org/template",
 	"author": "Sarin Na Wangkanai",
+	"name": "Blazor Clean Architecture",
+	"identity": "Wangkanai.Architecture.Template",
+	"shortName": "Wangkanai.Architecture.Template",
+	"tags": {
+		"language": "C#",
+		"type": "item"
+	  },
 	"classifications": [
 		"Web",
 		"Blazor",
 		"ASP.NET Core",
-		"Clean Architecture"],
-	  "name": "Blazor Clean Architecture"
+		"Clean Architecture"
+	]
 }
