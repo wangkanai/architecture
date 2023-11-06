@@ -11,7 +11,7 @@ using Wangkanai.Architecture.Data;
 using Wangkanai.Architecture.Identity;
 using Wangkanai.Architecture.Infrastructure.Persistence;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -28,8 +28,8 @@ builder.Services.AddScoped<AuthenticationStateProvider, PersistingRevalidatingAu
 builder.Services.AddAuthentication(IdentityConstants.ApplicationScheme)
        .AddIdentityCookies();
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ??
-                       throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+string? connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ??
+                           throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 	options.UseSqlServer(
@@ -46,7 +46,7 @@ builder.Services.AddSingleton<IEmailSender, NoOpEmailSender>();
 
 builder.Services.AddWangkanai();
 
-var app = builder.Build();
+WebApplication? app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -55,7 +55,7 @@ if (app.Environment.IsDevelopment())
 }
 else
 {
-	app.UseExceptionHandler("/Error", createScopeForErrors: true);
+	app.UseExceptionHandler("/Error", true);
 	// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 	app.UseHsts();
 }

@@ -9,39 +9,43 @@
 
 @if ((_externalLogins?.Count ?? 0) == 0)
 {
-    <div>
-        <p>
-            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-            about setting up this ASP.NET application to support logging in via external services</a>.
-        </p>
-    </div>
+	<div>
+		<p>
+			There are no external authentication services configured. See this
+			<a href="https://go.microsoft.com/fwlink/?LinkID=532715">
+				article
+				about setting up this ASP.NET application to support logging in via external services
+			</a>.
+		</p>
+	</div>
 }
 else
 {
-    <form id="external-account" class="form-horizontal" action="/Account/PerformExternalLogin" method="post">
-        <div>
-            <AntiforgeryToken />
-            <input type="hidden" name="ReturnUrl" value="@ReturnUrl" />
-            <p>
-                @foreach (var provider in _externalLogins!)
-                {
-                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                }
-            </p>
-        </div>
-    </form>
+	<form id="external-account" class="form-horizontal" action="/Account/PerformExternalLogin" method="post">
+		<div>
+			<AntiforgeryToken/>
+			<input type="hidden" name="ReturnUrl" value="@ReturnUrl"/>
+			<p>
+				@foreach (AuthenticationScheme? provider in _externalLogins!)
+				{
+					<button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+				}
+			</p>
+		</div>
+	</form>
 }
 
 @code {
-    private IList<AuthenticationScheme>? _externalLogins;
+	private IList<AuthenticationScheme>? _externalLogins;
 
-    [SupplyParameterFromQuery]
-    private string ReturnUrl { get; set; } = default!;
+	[SupplyParameterFromQuery]
+	private string ReturnUrl { get; set; } = default!;
 
-    protected override async Task OnInitializedAsync()
-    {
-        ReturnUrl ??= "/";
+	protected override async Task OnInitializedAsync()
+	{
+		ReturnUrl ??= "/";
 
-        _externalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-    }
+		_externalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+	}
+
 }

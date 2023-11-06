@@ -13,7 +13,12 @@ public class Color : ValueObject
 {
 	static Color() { }
 	private Color() { }
-	private Color(string code) => Code = code;
+
+	private Color(string code)
+	{
+		Code = code;
+	}
+
 	public string Code { get; private set; }
 
 	public static Color White  => new("#FFFFFF");
@@ -42,20 +47,29 @@ public class Color : ValueObject
 
 	public static Color From(string code)
 	{
-		var color = new Color { Code = code };
+		Color? color = new Color { Code = code };
 		if (!SupportedColors.Contains(color))
+		{
 			throw new UnreachableException();
+		}
+
 		return color;
 	}
 
 	public static implicit operator string(Color color)
-		=> color.ToString();
+	{
+		return color.ToString();
+	}
 
 	public static explicit operator Color(string code)
-		=> From(code);
+	{
+		return From(code);
+	}
 
 	public override string ToString()
-		=> Code;
+	{
+		return Code;
+	}
 
 	protected override IEnumerable<object> GetEqualityComponents()
 	{

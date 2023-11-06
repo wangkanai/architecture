@@ -1,6 +1,6 @@
-$buildDir    = $env:AGENT_BUILDDIRECTORY
-$sourceDir   = $env:BUILD_SOURCESDIRECTORY
-$version     = 1.0
+$buildDir = $env:AGENT_BUILDDIRECTORY
+$sourceDir = $env:BUILD_SOURCESDIRECTORY
+$version = 1.0
 
 # Get-ChildItem -Path Env:\ | Format-List
 
@@ -11,10 +11,10 @@ write-host "Version:               " $version
 if ("main" -ne $env:BUILD_SOURCEBRANCHNAME)
 {
 	$pullrequest = $true
-	$source      = $env:BUILD_SOURCEBRANCH
-	$base        = $env:SYSTEM_PULLREQUEST_TARGETBRANCH
-	$branch      = $env:SYSTEM_PULLREQUEST_SOURCEBRANCH
-	$key         = $env:SYSTEM_PULLREQUEST_PULLREQUESTNUMBER
+	$source = $env:BUILD_SOURCEBRANCH
+	$base = $env:SYSTEM_PULLREQUEST_TARGETBRANCH
+	$branch = $env:SYSTEM_PULLREQUEST_SOURCEBRANCH
+	$key = $env:SYSTEM_PULLREQUEST_PULLREQUESTNUMBER
 
 	Write-Host "PR Yes:                   " $pullrequest
 	Write-Host "soruce:                   " $source
@@ -25,7 +25,7 @@ if ("main" -ne $env:BUILD_SOURCEBRANCHNAME)
 else
 {
 	$pullrequest = $false
-	$base        = "main"
+	$base = "main"
 
 	Write-Host "PR Not:            "   $pullrequest
 	Write-Host "sonar.branch.name: "   $base

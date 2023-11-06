@@ -2,7 +2,4 @@
 
 namespace Wangkanai.Architecture.Exceptions;
 
-public class UnsupportedColorException : Exception
-{
-
-}
+public class UnsupportedColorException : Exception { }

@@ -2,7 +2,4 @@
 
 namespace Wangkanai.Architecture.Application;
 
-public static class ApplicationConstants
-{
-
-}
+public static class ApplicationConstants { }

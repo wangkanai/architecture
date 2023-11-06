@@ -10,7 +10,8 @@
 [![GitHub](https://img.shields.io/github/license/wangkanai/detection)](https://github.com/wangkanai/Detection/blob/dev/LICENSE)
 
 Blazor Clean Architecture design template build natively for .NET 8 using Blazor Identity UI with Tabler admin portal.
-This is template is designed to be a starting point for your Blazor application using the principal of domain driven design (DDD).
+This is template is designed to be a starting point for your Blazor application using the principal of domain driven
+design (DDD).
 
 If you find this project useful, please give it a star. Thanks! ⭐
 

@@ -4,64 +4,65 @@ using System.Diagnostics.CodeAnalysis;
 
 using Microsoft.AspNetCore.Components;
 
-namespace Wangkanai.Architecture.Identity
+namespace Wangkanai.Architecture.Identity;
+
+internal sealed class IdentityRedirectManager(
+	NavigationManager    navigationManager,
+	IHttpContextAccessor httpContextAccessor)
 {
-	internal sealed class IdentityRedirectManager(
-		NavigationManager navigationManager,
-		IHttpContextAccessor httpContextAccessor)
+	public const string StatusCookieName = "Identity.StatusMessage";
+
+	private static readonly CookieBuilder _statusCookieBuilder = new()
 	{
-		public const string StatusCookieName = "Identity.StatusMessage";
+		SameSite = SameSiteMode.Strict, HttpOnly = true, IsEssential = true, MaxAge = TimeSpan.FromSeconds(5)
+	};
 
-		private static readonly CookieBuilder _statusCookieBuilder = new CookieBuilder
+	[DoesNotReturn]
+	public void RedirectTo(string uri)
+	{
+		if (!Uri.IsWellFormedUriString(uri, UriKind.Relative))
 		{
-			SameSite = SameSiteMode.Strict,
-			HttpOnly = true,
-			IsEssential = true,
-			MaxAge = TimeSpan.FromSeconds(5),
-		};
-
-		[DoesNotReturn]
-		public void RedirectTo(string uri)
-		{
-			if (!Uri.IsWellFormedUriString(uri, UriKind.Relative))
-			{
-				uri = navigationManager.ToBaseRelativePath(uri);
-			}
-
-			// This works because either:
-			// [1] NavigateTo() throws NavigationException, which is handled by the framework as a redirect.
-			// [2] NavigateTo() throws some other exception, which gets treated as a normal unhandled exception.
-			// [3] NavigateTo() does not throw an exception, meaning we're not rendering from an endpoint, so we throw
-			//     an InvalidOperationException to indicate that we can't redirect.
-			navigationManager.NavigateTo(uri);
-			throw new InvalidOperationException($"Can only redirect when rendering from an endpoint.");
+			uri = navigationManager.ToBaseRelativePath(uri);
 		}
 
-		[DoesNotReturn]
-		public void RedirectTo(string uri, Dictionary<string, object?> queryParameters)
-		{
-			var uriWithoutQuery = navigationManager.ToAbsoluteUri(uri).GetLeftPart(UriPartial.Path);
-			var newUri = navigationManager.GetUriWithQueryParameters(uriWithoutQuery, queryParameters);
+		// This works because either:
+		// [1] NavigateTo() throws NavigationException, which is handled by the framework as a redirect.
+		// [2] NavigateTo() throws some other exception, which gets treated as a normal unhandled exception.
+		// [3] NavigateTo() does not throw an exception, meaning we're not rendering from an endpoint, so we throw
+		//     an InvalidOperationException to indicate that we can't redirect.
+		navigationManager.NavigateTo(uri);
+		throw new InvalidOperationException($"Can only redirect when rendering from an endpoint.");
+	}
 
-			RedirectTo(newUri);
-		}
+	[DoesNotReturn]
+	public void RedirectTo(string uri, Dictionary<string, object?> queryParameters)
+	{
+		string? uriWithoutQuery = navigationManager.ToAbsoluteUri(uri).GetLeftPart(UriPartial.Path);
+		string? newUri          = navigationManager.GetUriWithQueryParameters(uriWithoutQuery, queryParameters);
 
-		[DoesNotReturn]
-		public void RedirectToWithStatus(string uri, string message)
-		{
-			var httpContext = httpContextAccessor.HttpContext ??
-				throw new InvalidOperationException($"{nameof(RedirectToWithStatus)} requires access to an {nameof(HttpContext)}.");
-			httpContext.Response.Cookies.Append(StatusCookieName, message, _statusCookieBuilder.Build(httpContext));
+		RedirectTo(newUri);
+	}
 
-			RedirectTo(uri);
-		}
+	[DoesNotReturn]
+	public void RedirectToWithStatus(string uri, string message)
+	{
+		HttpContext? httpContext = httpContextAccessor.HttpContext ??
+		                           throw new InvalidOperationException(
+			                           $"{nameof(RedirectToWithStatus)} requires access to an {nameof(HttpContext)}.");
+		httpContext.Response.Cookies.Append(StatusCookieName, message, _statusCookieBuilder.Build(httpContext));
 
-		[DoesNotReturn]
-		public void RedirectToCurrentPage()
-			=> RedirectTo(navigationManager.Uri);
+		RedirectTo(uri);
+	}
 
-		[DoesNotReturn]
-		public void RedirectToCurrentPageWithStatus(string message)
-			=> RedirectToWithStatus(navigationManager.Uri, message);
+	[DoesNotReturn]
+	public void RedirectToCurrentPage()
+	{
+		RedirectTo(navigationManager.Uri);
+	}
+
+	[DoesNotReturn]
+	public void RedirectToCurrentPageWithStatus(string message)
+	{
+		RedirectToWithStatus(navigationManager.Uri, message);
 	}
 }
