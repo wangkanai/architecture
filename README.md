@@ -16,4 +16,5 @@ If you find this project useful, please give it a star. Thanks! ⭐
 
 The application design architecture is to have everything in there separate project.
 This allows for the application to be broken down into smaller pieces and allows for easier maintenance and development.
-The application is broken down into the following projects:
+The application template utilizes lots of NuGet packages dependencies from [wangkanai](https://github.com/wangkanai/wangkanai). It’s provide extra tools and extensions to help simplify software development and let you focus on what is important to get everything startup and running as soon as possible.
+
