@@ -44,6 +44,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".sonar", ".sonar", "{E5A79B
 		SonarQube.Analysis.xml = SonarQube.Analysis.xml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".scripts", ".scripts", "{D1A87542-7D4D-4F16-B489-62E84D8C13EC}"
+	ProjectSection(SolutionItems) = preProject
+		.scripts\check.ps1 = .scripts\check.ps1
+		.scripts\cleanup.ps1 = .scripts\cleanup.ps1
+		.scripts\environments.json = .scripts\environments.json
+		.scripts\setup.ps1 = .scripts\setup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".template.config", "{7BFC954A-148A-439D-AB20-3CB2404688E9}"
+	ProjectSection(SolutionItems) = preProject
+		.template.config\dotnetcli.host.json = .template.config\dotnetcli.host.json
+		.template.config\ide.host.json = .template.config\ide.host.json
+		.template.config\template.json = .template.config\template.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
