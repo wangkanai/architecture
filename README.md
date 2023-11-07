@@ -28,5 +28,47 @@ The easily way to get started using this template is install the following templ
 dotnet new install wangkanai.architecture.template
 ```
 
-Once installed, you can give a new solution using the template.
+Once installed, you can create a new solution using the template. At this customization is still limited and will be improve in the future.
 
+```powershell
+dotnet new blazor-clean -n YourSolutionName -o YourOutputDirectory
+```
+
+Launch the app:
+```powershell
+cd src\Server
+dotnet watch
+```
+
+To learn more about what options are available, run `dotnet new blazor-clean --help`.
+```powershell
+dotnet new blazor-clean --help
+```
+
+## Database
+
+The template is configured to use SQL Server by default. To use a different database, you will need to update the following command:
+
+```powershell
+dotnet new blazor-clean --use-dbproivder <dbproivder>
+```
+
+When you run the application the database will be created (if it does not already exist) and the latest migrations will be applied. Running database migrations is very simple. Just add the flags to your command (assume that you are executing from the repository root):
+
+* `--project src\Infrastructure`
+* `--startup-project src\Server`
+* `--output-dir Data\Migrations`
+
+For example, too add a new migration named `Initial` you would run the following command from the root folder:
+
+```powershell
+dotnet ef migrations add "Initial" --project src\Infrastructure --startup-project src\Server --output-dir Data\Migrations
+```
+
+## Support
+
+If you need any help, please let me know by opening a new [GitHub issue](https://github.com/wangkanai/architecture/issues/new).
+
+## License
+
+This project is licensed with the [Apache-2.0 license](LICENSE).
