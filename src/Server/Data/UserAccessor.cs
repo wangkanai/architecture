@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Identity;
 
 using Wangkanai.Architecture.Identity;
 
-namespace Wangkanai.Architecture.Data;
+namespace Wangkanai.Architecture.Server.Data;
 
 internal sealed class UserAccessor(
 	IHttpContextAccessor         httpContextAccessor,

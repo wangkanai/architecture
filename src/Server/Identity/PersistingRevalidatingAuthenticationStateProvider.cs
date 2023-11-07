@@ -13,7 +13,7 @@ using Microsoft.Extensions.Options;
 using Wangkanai.Architecture.Client;
 using Wangkanai.Architecture.Data;
 
-namespace Wangkanai.Architecture.Identity;
+namespace Wangkanai.Architecture.Server.Identity;
 
 public class PersistingRevalidatingAuthenticationStateProvider : RevalidatingServerAuthenticationStateProvider
 {
