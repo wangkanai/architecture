@@ -1,0 +1,17 @@
+﻿@using System.Reflection
+@using Wangkanai.Extensions
+
+<ul class="list-inline list-inline-dots mb-0">
+	<li class="list-inline-item">
+		Copyright© 2023 <NavLink href="/" class="link-secondary">Wangkanai</NavLink>. All rights reserved.
+	</li>
+	<li class="list-inline-item">
+		<NavLink href="/changelog" class="link-secondary" rel="noopener">
+			@Assembly.GetExecutingAssembly().GetVersion()
+		</NavLink>
+	</li>
+</ul>
+
+@code {
+
+}
