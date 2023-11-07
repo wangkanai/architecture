@@ -1,0 +1,31 @@
+﻿@using Wangkanai.Architecture.Server.Components.Layout.Aside
+
+<aside class="navbar navbar-vertical navbar-expand-lg" data-bs-theme="dark">
+	<div class="container-fluid">
+		<AsideToggler />
+		<h1 class="navbar-brand navbar-brand-autodark">
+			<NavLink href="/">
+				<img src="./images/logo.svg" width="110" height="32" alt="wangkanai" class="navbar-brand-image">
+			</NavLink>
+		</h1>
+		<div class="navbar-nav flex-row d-lg-none">
+			<div class="nav-item d-none d-lg-flex me-3">
+				<AsideSponsor />
+			</div>
+			<div class="d-none d-lg-flex">
+				<AsideTheme />
+				<AsideNotification />
+			</div>
+			<div class="nav-item dropdown">
+				<AsideProfile />
+			</div>
+		</div>
+		<div class="collapse navbar-collapse" id="sidebar-menu">
+			<AsideMenu />
+		</div>
+	</div>
+</aside>
+
+@code {
+
+}

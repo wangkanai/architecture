@@ -19,6 +19,11 @@
 		<Content Include="wwwroot\lib\**" Watch="false"/>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Components\Layout\Footer\" />
+	  <Folder Include="Components\Layout\Header\" />
+	</ItemGroup>
+
 	<Target Name="NpmInstall" Inputs="package.json" Outputs="node_modules/.install-stamp">
 		<Exec Command="npm ci" Condition="$(RestorePackagesWithLockFile) == 'true'"/>
 		<Exec Command="npm install" Condition="$(RestorePackagesWithLockFile) != 'true'"/>
