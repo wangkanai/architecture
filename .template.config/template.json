@@ -13,7 +13,25 @@
 	"classifications": [
 		"Web",
 		"Blazor",
-		"ASP.NET Core",
-		"Clean Architecture"
+		"Clean"
+	],
+	"symbols": {
+	},
+	"sources": [
+		{
+			"source": "./",
+			"target": "./",
+			"exclude": [
+				".template.config/**/*",
+				"templates/**/*",
+				"**/*.filelist",
+				"**/*.user",
+				"**/*.lock.json",
+				"*.nuspec"
+			],
+			"rename": {
+				"README-template.md": "README.md"
+			}
+		}
 	]
 }

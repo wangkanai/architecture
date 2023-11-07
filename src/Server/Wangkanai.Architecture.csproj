@@ -24,9 +24,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Components\Pages\Activity\"/>
-		<Folder Include="Components\Pages\Contact\"/>
-		<Folder Include="Components\Pages\Report\"/>
+	  <_ContentIncludedByDefault Remove="Components\Pages\Deal\Index.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Pages\Deal\_Imports.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Pages\Leads\Index.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Pages\Leads\_Imports.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Pages\Product\Index.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Pages\Product\_Imports.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Pages\Project\Index.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Pages\Project\_Imports.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Header\HeaderBreadcrumb.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Layout\Header\HeaderProfile.razor" />
 	</ItemGroup>
 
 	<Target Name="NpmInstall" Inputs="package.json" Outputs="node_modules/.install-stamp">

@@ -17,7 +17,6 @@ The application template utilizes lots of NuGet packages dependencies from [wang
 
 If you find this project useful, please give it a star. Thanks! ⭐
 
-
 ## Getting Start
 
 The easily way to get started using this template is install the following template below:

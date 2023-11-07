@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- The package metadata. Fill in the properties marked as TODO below -->
+		<!-- Follow the instructions on https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices -->
+		<PackageId>Wangkanai.Architecture.Templates</PackageId>
+		<PackageVersion>1.0</PackageVersion>
+		<Title>Blazor Clean Architecture</Title>
+		<Authors>Sarin Na Wangkanai</Authors>
+		<Description>Blazor Clean Architecture design template build natively for .NET 8 using Blazor Identity UI with Tabler admin portal. This is template is designed to be a starting point for your Blazor application using the principle of domain driven design (DDD).</Description>
+		<PackageTags>Blazor, Architecture, Template</PackageTags>
+		<PackageProjectUrl>https://github.com/wangkanai/architecture</PackageProjectUrl>
+
+		<!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->
+		<PackageType>Template</PackageType>
+		<TargetFramework>net8.0</TargetFramework>
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<!-- <ContentTargetFolders>.\</ContentTargetFolders> -->
+		<NoWarn>$(NoWarn);NU5128</NoWarn>
+		<NoDefaultExcludes>true</NoDefaultExcludes>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RootNamespace>Templates</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<LocalizeTemplates>false</LocalizeTemplates>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.TemplateEngine.Tasks" Version="*" PrivateAssets="all" IsImplicitlyDefined="true"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="**\*" Exclude="**\bin\**;**\obj\**"/>
+		<Compile Remove="**\*"/>
+		<Content Remove="assets\**"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath=""/>
+		<None Remove="assets\**"/>
+	</ItemGroup>
+
+</Project>
