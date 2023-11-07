@@ -1,6 +1,9 @@
 # Blazor Clean Architecture
 
 [![Build Status](https://dev.azure.com/wangkanai/GitHub/_apis/build/status%2Farchitecture-ai?branchName=refs%2Fpull%2F3%2Fmerge)](https://dev.azure.com/wangkanai/GitHub/_build/latest?definitionId=38&branchName=refs%2Fpull%2F3%2Fmerge)
+[![Nuget](https://img.shields.io/nuget/v/Wangkanai.Architecture.Template?label=NuGet)](https://www.nuget.org/packages/Wangkanai.Architecture.Template)
+[![Nuget](https://img.shields.io/nuget/dt/Wangkanai.Architecture.Template?label=Downloads)](https://www.nuget.org/packages/Wangkanai.Architecture.Template)
+
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=wangkanai_architecture&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=wangkanai_architecture)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=wangkanai_architecture&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=wangkanai_architecture)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=wangkanai_architecture&metric=coverage)](https://sonarcloud.io/summary/new_code?id=wangkanai_architecture)
