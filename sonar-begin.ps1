@@ -25,7 +25,7 @@ if ("main" -ne $env:BUILD_SOURCEBRANCHNAME)
             /o:wangkanai `
             /v:$version `
             /s:$sourceDir/SonarQube.Analysis.xml `
-            /d:sonar.host.url = https://sonarcloud.io `
+            /d:sonar.host.url=https://sonarcloud.io `
             /d:sonar.cs.vscoveragexml.reportsPaths=$sourceDir/coverage.xml `
             /d:sonar.pullrequest.base=$base `
             /d:sonar.pullrequest.branch=$branch `
