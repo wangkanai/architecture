@@ -9,14 +9,13 @@
 [![Patreon](https://img.shields.io/badge/patreon-support%20me-d9643a.svg)](https://www.patreon.com/wangkanai)
 [![GitHub](https://img.shields.io/github/license/wangkanai/detection)](https://github.com/wangkanai/Detection/blob/dev/LICENSE)
 
+
 Blazor Clean Architecture design template build natively for .NET 8 using Blazor Identity UI (added extend functionality) with Tabler admin portal.
 This is template is designed to be a starting point for your Blazor application using the principle of domain driven design (DDD). The application design architecture is to have everything in their separate project.
 This allows for the application to be broken down into smaller pieces and allows for easier maintenance and development.
 The application template utilizes lots of NuGet packages dependencies from [wangkanai](https://github.com/wangkanai/wangkanai). It’s provide extra tools and extensions to help simplify software development and let you focus on what is important to get everything startup and running as soon as possible.
 
-
 If you find this project useful, please give it a star. Thanks! ⭐
-
 
 ## Getting Start
 

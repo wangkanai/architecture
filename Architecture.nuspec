@@ -3,7 +3,7 @@
 	<metadata>
 
 		<id>Wangkanai.Architecture.Template</id>
-		<version>8.0.0-rc2</version>
+		<version>8.0.0-preview2</version>
 		<title>Blazor Clean Architecture Solution Template</title>
 		<authors>Sarin Na Wangkanai</authors>
 		<description>Clean Architecture Solution Template for .NET 8 Blazor.</description>
@@ -22,9 +22,9 @@
 		</packageTypes>
 	</metadata>
 	<files>
-		<file src=".template.config\icon.png"/>
+		<file src="assets\icon.png"/>
 		<file src="README.md"/>
 		<file src=".\**" target="content"
-					exclude="**\node_modules\**;**\bin\**;**\obj\**;.\.vs\**;.\.vscode\**;**\ClientApp\dist\**;**\wwwroot\dist\**;content\Directory.Build.*;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\icon.png;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;"/>
+					exclude="**\node_modules\**;**\bin\**;**\obj\**;.\.vs\**;.\.vscode\**;.\.idea\**;**\wwwroot\dist\**;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\FUNDING.yml;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;.\assets\**;"/>
 	</files>
 </package>

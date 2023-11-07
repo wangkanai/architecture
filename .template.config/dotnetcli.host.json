@@ -1,7 +1,7 @@
 {
 	"symbolInfo": {
-	  "UseSQLite": {
-		"longName": "use-sqlite"
-	  }
+		"UseSQLite": {
+			"longName": "use-sqlite"
+		}
 	}
-  }
+}

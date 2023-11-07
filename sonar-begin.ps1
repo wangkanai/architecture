@@ -1,12 +1,13 @@
-$buildDir    = $env:AGENT_BUILDDIRECTORY
-$sourceDir   = $env:BUILD_SOURCESDIRECTORY
-$version     = 1.0
+$buildDir  = $env:AGENT_BUILDDIRECTORY
+$sourceDir = $env:BUILD_SOURCESDIRECTORY
+$version   = 1.0
 
 write-host "Agent.BuildDirectory:  " $buildDir
 write-host "Build.SourcesDirectoy: " $sourceDir
 write-host "Version:               " $version
 
-if ("main" -ne $env:BUILD_SOURCEBRANCHNAME) {
+if ("main" -ne $env:BUILD_SOURCEBRANCHNAME)
+{
 	$pullrequest = $true
 	$source      = $env:BUILD_SOURCEBRANCH
 	$base        = $env:SYSTEM_PULLREQUEST_TARGETBRANCH
@@ -32,7 +33,7 @@ if ("main" -ne $env:BUILD_SOURCEBRANCHNAME) {
 }
 else
 {
-	$base      = "main"
+	$base = "main"
 
 	Write-Host "PR Not:             " $pullrequest
 	Write-Host "sonar.branch.name : " $base

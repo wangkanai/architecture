@@ -1,8 +1,6 @@
-$buildDir    = $env:AGENT_BUILDDIRECTORY
-$sourceDir   = $env:BUILD_SOURCESDIRECTORY
-$version     = 1.0
-
-# Get-ChildItem -Path Env:\ | Format-List
+$buildDir  = $env:AGENT_BUILDDIRECTORY
+$sourceDir = $env:BUILD_SOURCESDIRECTORY
+$version   = 1.0
 
 write-host "Agent.BuildDirectory:  " $buildDir
 write-host "Build.SourcesDirectoy: " $sourceDir

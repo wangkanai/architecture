@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{
 		README.md = README.md
 		Directory.Build.targets = Directory.Build.targets
 		Architecture.nuspec = Architecture.nuspec
+		pack.ps1 = pack.ps1
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{93AB00AB-8168-4E49-8C0C-0F3B09DAB7B4}"
@@ -57,6 +58,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".templa
 		.template.config\dotnetcli.host.json = .template.config\dotnetcli.host.json
 		.template.config\ide.host.json = .template.config\ide.host.json
 		.template.config\template.json = .template.config\template.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5E26445B-FE56-49FD-930F-8E72E031D331}"
+	ProjectSection(SolutionItems) = preProject
+		.github\FUNDING.yml = .github\FUNDING.yml
 	EndProjectSection
 EndProject
 Global
