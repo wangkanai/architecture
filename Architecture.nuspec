@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
 	<metadata>
 
+		<version>8.0.0-preview5</version>
 		<id>Wangkanai.Architecture.Template</id>
-		<version>8.0.0-preview4</version>
 		<title>Blazor Clean Architecture Solution Template</title>
 		<authors>Sarin Na Wangkanai</authors>
 		<description>Clean Architecture Solution Template for .NET 8 Blazor.</description>
@@ -26,6 +26,6 @@
 		<file src="assets\icon.png"/>
 		<file src="README.md"/>
 		<file src=".\**" target="content"
-					exclude="**\node_modules\**;**\bin\**;**\obj\**;.\.vs\**;.\.vscode\**;.\.idea\**;**\wwwroot\dist\**;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\FUNDING.yml;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;.\assets\**;"/>
+					exclude="**\node_modules\**;**\bin\**;**\obj\**;.\.vs\**;.\.vscode\**;.\.idea\**;**\wwwroot\dist\**;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\FUNDING.yml;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;.\assets\**;.\demo\**;.\pack.ps1;.\sonar-begin.ps1;.\sonar-prep.ps1;.\SonarQube.Analysis.xml;"/>
 	</files>
 </package>
