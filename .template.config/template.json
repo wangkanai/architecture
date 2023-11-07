@@ -27,7 +27,14 @@
 				"**/*.filelist",
 				"**/*.user",
 				"**/*.lock.json",
-				"*.nuspec"
+				"**/FUNDING.yml",
+				".idea/**/*",
+				"assets/**/*",
+				"artifacts/**/*",
+				"packed/**/*",
+				"*.nuspec",
+				"*.ps1",
+				"*.xml"
 			],
 			"rename": {
 				"README-template.md": "README.md"
