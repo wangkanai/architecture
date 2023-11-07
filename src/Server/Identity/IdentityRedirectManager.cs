@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 
 using Microsoft.AspNetCore.Components;
 
-namespace Wangkanai.Architecture.Server.Identity;
+namespace Wangkanai.Architecture.Identity;
 
 internal sealed class IdentityRedirectManager(
 	NavigationManager    navigationManager,
