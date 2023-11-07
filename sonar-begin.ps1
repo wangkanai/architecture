@@ -1,6 +1,6 @@
-$buildDir = $env:AGENT_BUILDDIRECTORY
+$buildDir  = $env:AGENT_BUILDDIRECTORY
 $sourceDir = $env:BUILD_SOURCESDIRECTORY
-$version = 1.0
+$version   = 1.0
 
 write-host "Agent.BuildDirectory:  " $buildDir
 write-host "Build.SourcesDirectoy: " $sourceDir
@@ -9,10 +9,10 @@ write-host "Version:               " $version
 if ("main" -ne $env:BUILD_SOURCEBRANCHNAME)
 {
 	$pullrequest = $true
-	$source = $env:BUILD_SOURCEBRANCH
-	$base = $env:SYSTEM_PULLREQUEST_TARGETBRANCH
-	$branch = $env:SYSTEM_PULLREQUEST_SOURCEBRANCH
-	$key = $env:SYSTEM_PULLREQUEST_PULLREQUESTNUMBER
+	$source      = $env:BUILD_SOURCEBRANCH
+	$base        = $env:SYSTEM_PULLREQUEST_TARGETBRANCH
+	$branch      = $env:SYSTEM_PULLREQUEST_SOURCEBRANCH
+	$key         = $env:SYSTEM_PULLREQUEST_PULLREQUESTNUMBER
 
 	Write-Host "PR Yes:                   " $pullrequest
 	Write-Host "soruce:                   " $source

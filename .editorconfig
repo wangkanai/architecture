@@ -82,6 +82,11 @@ indent_size=2
 [*.json]
 indent_size=3
 
+# PowerShell files
+[*.ps1]
+resharper_int_align_variables=true
+resharper_int_align_assignments=true
+
 [*.{razor, html, cshtml}]
 indent_size=2
 # resharper_html_allow_far_alignment=true
