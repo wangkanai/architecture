@@ -33,8 +33,8 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
 
 	protected override void OnModelCreating(ModelBuilder builder)
 	{
-		base.OnModelCreating(builder);
 		builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+		base.OnModelCreating(builder);
 	}
 
 	protected override void OnConfiguring(DbContextOptionsBuilder builder)

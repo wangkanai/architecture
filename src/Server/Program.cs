@@ -1,5 +1,7 @@
 // Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
 
+using System.Reflection;
+
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
@@ -34,7 +36,7 @@ string? connectionString = builder.Configuration.GetConnectionString("DefaultCon
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 	options.UseSqlServer(
 		connectionString,
-		optionsBuilder => optionsBuilder.MigrationsAssembly("Wangkanai.Architecture")));
+		optionsBuilder => optionsBuilder.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
