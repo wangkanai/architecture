@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
 	<metadata>
 
-		<version>8.0.0-preview5</version>
+		<version>8.0.0-preview6</version>
 		<id>Wangkanai.Architecture.Template</id>
 		<title>Blazor Clean Architecture Solution Template</title>
 		<authors>Sarin Na Wangkanai</authors>

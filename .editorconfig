@@ -95,7 +95,7 @@ indent_size=2
 
 #### .NET Coding Conventions ####
 [*.{cs, vb, cpp, h}]
-file_header_template=Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.Apache License, Version 2.0
+file_header_template=Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
 
 # Organize usings
 dotnet_separate_import_directive_groups=true
