@@ -1,9 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-	<PropertyGroup>
-		<UserSecretsId>aspnet-Wangkanai.Architecture-0078d4df-171d-499d-9374-36c84a116eb3</UserSecretsId>
-	</PropertyGroup>
-
 	<ItemGroup>
 		<ProjectReference Include="..\Client\Wangkanai.Architecture.Client.csproj"/>
 		<ProjectReference Include="..\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj"/>
@@ -24,16 +20,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <_ContentIncludedByDefault Remove="Components\Pages\Deal\Index.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Pages\Deal\_Imports.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Pages\Leads\Index.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Pages\Leads\_Imports.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Pages\Product\Index.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Pages\Product\_Imports.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Pages\Project\Index.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Pages\Project\_Imports.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Header\HeaderBreadcrumb.razor" />
-	  <_ContentIncludedByDefault Remove="Components\Layout\Header\HeaderProfile.razor" />
+	  <Folder Include="Components\Layout\Header\" />
 	</ItemGroup>
 
 	<Target Name="NpmInstall" Inputs="package.json" Outputs="node_modules/.install-stamp">

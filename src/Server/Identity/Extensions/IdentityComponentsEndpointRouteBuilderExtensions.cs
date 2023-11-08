@@ -10,8 +10,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 
-using Wangkanai.Architecture.Components.Pages.Account;
-using Wangkanai.Architecture.Components.Pages.Account.Manage;
+using Wangkanai.Architecture.Server.Components.Pages.Account;
+using Wangkanai.Architecture.Server.Components.Pages.Account.Manage;
 using Wangkanai.Architecture.Data;
 using Wangkanai.Architecture.Identity;
 
