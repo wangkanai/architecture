@@ -17,6 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{
 		sonar-begin.ps1 = sonar-begin.ps1
 		sonar-prep.ps1 = sonar-prep.ps1
 		SonarQube.Analysis.xml = SonarQube.Analysis.xml
+		ef-migrations.ps1 = ef-migrations.ps1
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{93AB00AB-8168-4E49-8C0C-0F3B09DAB7B4}"
