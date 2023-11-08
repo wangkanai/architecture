@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
+using Wangkanai.Architecture.Infrastructure.Persistence;
 using Wangkanai.Architecture.Client.Pages;
 using Wangkanai.Architecture.Identity;
 using Wangkanai.Architecture.Data;
-using Wangkanai.Architecture.Server.Components;
-using Wangkanai.Architecture.Infrastructure.Persistence;
+using Wangkanai.Architecture.Components;
 
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 
