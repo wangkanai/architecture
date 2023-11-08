@@ -1,15 +1,17 @@
-// Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.Apache License, Version 2.0
+// Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
+
+using System.Reflection;
 
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
+using Wangkanai.Architecture.Infrastructure.Persistence;
 using Wangkanai.Architecture.Client.Pages;
 using Wangkanai.Architecture.Identity;
 using Wangkanai.Architecture.Data;
-using Wangkanai.Architecture.Server.Components;
-using Wangkanai.Architecture.Infrastructure.Persistence;
+using Wangkanai.Architecture.Components;
 
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 
@@ -34,7 +36,7 @@ string? connectionString = builder.Configuration.GetConnectionString("DefaultCon
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 	options.UseSqlServer(
 		connectionString,
-		optionsBuilder => optionsBuilder.MigrationsAssembly("Wangkanai.Architecture")));
+		optionsBuilder => optionsBuilder.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)

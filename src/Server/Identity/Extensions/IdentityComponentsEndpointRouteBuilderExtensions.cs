@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.Apache License, Version 2.0
+// Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
 
 using System.Reflection;
 using System.Text.Json;
@@ -10,8 +10,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 
-using Wangkanai.Architecture.Server.Components.Pages.Account;
-using Wangkanai.Architecture.Server.Components.Pages.Account.Manage;
+using Wangkanai.Architecture.Components.Pages.Account;
+using Wangkanai.Architecture.Components.Pages.Account.Manage;
 using Wangkanai.Architecture.Data;
 using Wangkanai.Architecture.Identity;
 

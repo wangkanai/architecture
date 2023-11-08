@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.Apache License, Version 2.0
+// Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
 
 using System.Reflection;
 
@@ -33,8 +33,8 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
 
 	protected override void OnModelCreating(ModelBuilder builder)
 	{
-		base.OnModelCreating(builder);
 		builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+		base.OnModelCreating(builder);
 	}
 
 	protected override void OnConfiguring(DbContextOptionsBuilder builder)
