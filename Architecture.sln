@@ -54,6 +54,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5E26
 		.github\FUNDING.yml = .github\FUNDING.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Mobile", "src\Mobile\Wangkanai.Architecture.Mobile.csproj", "{2AB2C317-519C-4683-9813-B0AF7D6A8EA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,6 +98,10 @@ Global
 		{52F2EF65-D6EA-447F-B6AC-EEBB62604ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52F2EF65-D6EA-447F-B6AC-EEBB62604ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52F2EF65-D6EA-447F-B6AC-EEBB62604ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AB2C317-519C-4683-9813-B0AF7D6A8EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AB2C317-519C-4683-9813-B0AF7D6A8EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AB2C317-519C-4683-9813-B0AF7D6A8EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AB2C317-519C-4683-9813-B0AF7D6A8EA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

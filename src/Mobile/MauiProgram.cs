@@ -1,29 +1,29 @@
-﻿// Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
+// Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
 
 using Microsoft.Extensions.Logging;
 
-namespace Wangkanai.Architecture.Mobile
-{
-	public static class MauiProgram
-	{
-		public static MauiApp CreateMauiApp()
-		{
-			var builder = MauiApp.CreateBuilder();
-			builder
-				.UseMauiApp<App>()
-				.ConfigureFonts(fonts =>
-				{
-					fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				});
+namespace Wangkanai.Architecture.Mobile;
 
-			builder.Services.AddMauiBlazorWebView();
+public static class MauiProgram
+
+{
+	public static MauiApp CreateMauiApp()
+	{
+		var builder = MauiApp.CreateBuilder();
+		builder
+			.UseMauiApp<App>()
+			.ConfigureFonts(fonts =>
+			{
+				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+			});
+
+		builder.Services.AddMauiBlazorWebView();
 
 #if DEBUG
-			builder.Services.AddBlazorWebViewDeveloperTools();
-			builder.Logging.AddDebug();
+		builder.Services.AddBlazorWebViewDeveloperTools();
+		builder.Logging.AddDebug();
 #endif
 
-			return builder.Build();
-		}
+		return builder.Build();
 	}
 }

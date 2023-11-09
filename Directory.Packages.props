@@ -21,6 +21,13 @@
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(EntityFrameworkVersion)" PrivateAssets="all" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="$(EntityFrameworkVersion)" PrivateAssets="all" />
     <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(FrameworkVersion)" PrivateAssets="all" />
+	  <!--extensions-->
+	  <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0-rc.2.23479.6" />
+	  <!--maui-->
+	  <PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+	  <PackageVersion Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+	  <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
+	  
     <!--tests-->
     <PackageVersion Include="Microsoft.AspNetCore.TestHost" Version="$(FrameworkVersion)" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
