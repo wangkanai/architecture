@@ -5,11 +5,15 @@
 		<PackageId>Wangkanai.Architecture.Templates</PackageId>
 		<Title>Clean Architecture Solution Template</Title>
 		<Authors>Sarin Na Wangkanai</Authors>
-		<Description>Clean Architecture Solution Template for .NET 8 Blazor.</Description>
-		<PackageTags>TODO: fill the tags here</PackageTags>
-		<PackageProjectUrl>TODO: include a link to an associated project, repository, or company website</PackageProjectUrl>
+		<Description>Clean Architecture Solution Template for .NET 8 applications with Domain Driven Design (DDD) and Test Driven Design (TDD).</Description>
+		<PackageTags>clean-architecture;project;template;csharp;dotnet;blazor;maui;</PackageTags>
 
-		<!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->
+		<PackageProjectUrl>https://github.com/wangkanai/architecture</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>git://github.com/wangkanai/architecture</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+
 		<PackageType>Template</PackageType>
 		<TargetFramework>net8.0</TargetFramework>
 		<IncludeContentInPack>true</IncludeContentInPack>
@@ -29,8 +33,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\assets\icon.png" Pack="true" PackagePath="\"/>
-		<None Include="..\README.md" Pack="true" PackagePath="\"/>
+		<None Include="assets\icon.png" Pack="true" PackagePath="\"/>
+		<None Include="README.md" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -38,7 +42,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**;content\**\.vs\**;content\**\.vscode\**;content\**\.idea\**;content\**\wwwroot\dist\**;content\**\.git\**;content\**\demo\**;"/>
+		<Content Include="content\**\*" Exclude="content\**\node_modules\**;content\**\bin\**;content\**\obj\**;content\**\.vs\**;content\**\.vscode\**;content\**\.idea\**;content\**\wwwroot\dist\**;content\**\.git\**;content\**\demo\**;"/>
 		<Compile Remove="**\*"/>
 	</ItemGroup>
 

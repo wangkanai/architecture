@@ -22,14 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5E26
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blazor", "Blazor", "{89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}"
-	ProjectSection(SolutionItems) = preProject
-		content\Blazor\Architecture.Blazor.sln = content\Blazor\Architecture.Blazor.sln
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Muai", "Muai", "{747A1D18-A320-4C16-AC43-F329D1367810}"
-	ProjectSection(SolutionItems) = preProject
-		content\Maui\Architecture.Muai.sln = content\Maui\Architecture.Muai.sln
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Domain", "content\Blazor\src\Domain\Wangkanai.Architecture.Domain.csproj", "{32328CA7-F460-47D1-90E6-1FDAC83D0043}"
 EndProject
@@ -42,13 +36,42 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutions", ".solutions", 
 		content\Blazor\Directory.Packages.props = content\Blazor\Directory.Packages.props
 		content\Blazor\ef-migrations.ps1 = content\Blazor\ef-migrations.ps1
 		content\Blazor\README.md = content\Blazor\README.md
+		content\Blazor\Architecture.Blazor.sln = content\Blazor\Architecture.Blazor.sln
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutions", ".solutions", "{DEA82E64-4D68-4527-884B-A861401DF3FE}"
+	ProjectSection(SolutionItems) = preProject
+		content\Maui\Architecture.Muai.sln = content\Maui\Architecture.Muai.sln
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application", "content\Blazor\src\Application\Wangkanai.Architecture.Application.csproj", "{BB180B9B-C204-40FE-A3DF-19975B79A095}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Templates", "Wangkanai.Architecture.Templates.csproj", "{997A05ED-1D66-43A0-81E5-16C46383E342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Infrastructure", "content\Blazor\src\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj", "{3C407CDE-A8FE-41C2-8EB2-624B72472CFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Client", "content\Blazor\src\Client\Wangkanai.Architecture.Client.csproj", "{1CDCF76B-6797-4140-A768-6CC969015102}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmark", "benchmark", "{E37C3946-C81B-4C4C-8E5F-225E0F1911C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CBEF3FE4-0033-4013-80D8-EC93F1B04357}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application.UnitTests", "content\Blazor\tests\Application\Wangkanai.Architecture.Application.UnitTests.csproj", "{082C300D-C616-46A2-A99F-A2A73A6D9EE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Server", "content\Blazor\src\Server\Wangkanai.Architecture.Server.csproj", "{B8E75BAA-52D0-4158-B73D-B8DDE1F1D1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Benchmark", "content\Blazor\benchmark\Wangkanai.Architecture.Benchmark.csproj", "{7BC1305B-B786-4F27-B76B-FDEF3F6E89D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".template.config", "{380CD3BC-AD14-4AFE-BAC7-8F58888EEEBE}"
+	ProjectSection(SolutionItems) = preProject
+		content\Blazor\.template.config\dotnetcli.host.json = content\Blazor\.template.config\dotnetcli.host.json
+		content\Blazor\.template.config\ide.host.json = content\Blazor\.template.config\ide.host.json
+		content\Blazor\.template.config\template.json = content\Blazor\.template.config\template.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application.IntegrationTests", "content\Blazor\tests\Integration\Wangkanai.Architecture.Application.IntegrationTests.csproj", "{8174F1EF-DB00-4A3F-87F0-B7D2C436EAF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Domain.UnitTests", "content\Blazor\tests\Domain\Wangkanai.Architecture.Domain.UnitTests.csproj", "{493BC0F7-F7BB-4C8E-8698-333781AA5368}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +91,34 @@ Global
 		{997A05ED-1D66-43A0-81E5-16C46383E342}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{997A05ED-1D66-43A0-81E5-16C46383E342}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{997A05ED-1D66-43A0-81E5-16C46383E342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C407CDE-A8FE-41C2-8EB2-624B72472CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C407CDE-A8FE-41C2-8EB2-624B72472CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C407CDE-A8FE-41C2-8EB2-624B72472CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C407CDE-A8FE-41C2-8EB2-624B72472CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CDCF76B-6797-4140-A768-6CC969015102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CDCF76B-6797-4140-A768-6CC969015102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CDCF76B-6797-4140-A768-6CC969015102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CDCF76B-6797-4140-A768-6CC969015102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{082C300D-C616-46A2-A99F-A2A73A6D9EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082C300D-C616-46A2-A99F-A2A73A6D9EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082C300D-C616-46A2-A99F-A2A73A6D9EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082C300D-C616-46A2-A99F-A2A73A6D9EE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8E75BAA-52D0-4158-B73D-B8DDE1F1D1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E75BAA-52D0-4158-B73D-B8DDE1F1D1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E75BAA-52D0-4158-B73D-B8DDE1F1D1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E75BAA-52D0-4158-B73D-B8DDE1F1D1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BC1305B-B786-4F27-B76B-FDEF3F6E89D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC1305B-B786-4F27-B76B-FDEF3F6E89D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC1305B-B786-4F27-B76B-FDEF3F6E89D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC1305B-B786-4F27-B76B-FDEF3F6E89D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8174F1EF-DB00-4A3F-87F0-B7D2C436EAF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8174F1EF-DB00-4A3F-87F0-B7D2C436EAF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8174F1EF-DB00-4A3F-87F0-B7D2C436EAF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8174F1EF-DB00-4A3F-87F0-B7D2C436EAF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{493BC0F7-F7BB-4C8E-8698-333781AA5368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{493BC0F7-F7BB-4C8E-8698-333781AA5368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{493BC0F7-F7BB-4C8E-8698-333781AA5368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{493BC0F7-F7BB-4C8E-8698-333781AA5368}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,5 +128,15 @@ Global
 		{6178C3F7-259F-4EC0-92E1-8B95AB8497F6} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
 		{DEA82E64-4D68-4527-884B-A861401DF3FE} = {747A1D18-A320-4C16-AC43-F329D1367810}
 		{BB180B9B-C204-40FE-A3DF-19975B79A095} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
+		{3C407CDE-A8FE-41C2-8EB2-624B72472CFC} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
+		{1CDCF76B-6797-4140-A768-6CC969015102} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
+		{E37C3946-C81B-4C4C-8E5F-225E0F1911C8} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
+		{CBEF3FE4-0033-4013-80D8-EC93F1B04357} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
+		{082C300D-C616-46A2-A99F-A2A73A6D9EE6} = {CBEF3FE4-0033-4013-80D8-EC93F1B04357}
+		{B8E75BAA-52D0-4158-B73D-B8DDE1F1D1E8} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
+		{7BC1305B-B786-4F27-B76B-FDEF3F6E89D2} = {E37C3946-C81B-4C4C-8E5F-225E0F1911C8}
+		{380CD3BC-AD14-4AFE-BAC7-8F58888EEEBE} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
+		{8174F1EF-DB00-4A3F-87F0-B7D2C436EAF4} = {CBEF3FE4-0033-4013-80D8-EC93F1B04357}
+		{493BC0F7-F7BB-4C8E-8698-333781AA5368} = {CBEF3FE4-0033-4013-80D8-EC93F1B04357}
 	EndGlobalSection
 EndGlobal
