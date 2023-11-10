@@ -7,17 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
-		Directory.Build.props = Directory.Build.props
-		Directory.Packages.props = Directory.Packages.props
 		LICENSE = LICENSE
 		README.md = README.md
-		Directory.Build.targets = Directory.Build.targets
-		Architecture.nuspec = Architecture.nuspec
 		pack.ps1 = pack.ps1
 		sonar-begin.ps1 = sonar-begin.ps1
 		sonar-prep.ps1 = sonar-prep.ps1
 		SonarQube.Analysis.xml = SonarQube.Analysis.xml
-		ef-migrations.ps1 = ef-migrations.ps1
+		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5E26445B-FE56-49FD-930F-8E72E031D331}"
@@ -25,16 +21,61 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5E26
 		.github\FUNDING.yml = .github\FUNDING.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blazor", "Blazor", "{89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}"
+	ProjectSection(SolutionItems) = preProject
+		content\Blazor\Architecture.Blazor.sln = content\Blazor\Architecture.Blazor.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Muai", "Muai", "{747A1D18-A320-4C16-AC43-F329D1367810}"
+	ProjectSection(SolutionItems) = preProject
+		content\Maui\Architecture.Muai.sln = content\Maui\Architecture.Muai.sln
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Domain", "content\Blazor\src\Domain\Wangkanai.Architecture.Domain.csproj", "{32328CA7-F460-47D1-90E6-1FDAC83D0043}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutions", ".solutions", "{6178C3F7-259F-4EC0-92E1-8B95AB8497F6}"
+	ProjectSection(SolutionItems) = preProject
+		content\Blazor\.editorconfig = content\Blazor\.editorconfig
+		content\Blazor\.gitignore = content\Blazor\.gitignore
+		content\Blazor\Directory.Build.props = content\Blazor\Directory.Build.props
+		content\Blazor\Directory.Build.targets = content\Blazor\Directory.Build.targets
+		content\Blazor\Directory.Packages.props = content\Blazor\Directory.Packages.props
+		content\Blazor\ef-migrations.ps1 = content\Blazor\ef-migrations.ps1
+		content\Blazor\README.md = content\Blazor\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutions", ".solutions", "{DEA82E64-4D68-4527-884B-A861401DF3FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application", "content\Blazor\src\Application\Wangkanai.Architecture.Application.csproj", "{BB180B9B-C204-40FE-A3DF-19975B79A095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Templates", "Wangkanai.Architecture.Templates.csproj", "{997A05ED-1D66-43A0-81E5-16C46383E342}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32328CA7-F460-47D1-90E6-1FDAC83D0043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32328CA7-F460-47D1-90E6-1FDAC83D0043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32328CA7-F460-47D1-90E6-1FDAC83D0043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32328CA7-F460-47D1-90E6-1FDAC83D0043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB180B9B-C204-40FE-A3DF-19975B79A095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB180B9B-C204-40FE-A3DF-19975B79A095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB180B9B-C204-40FE-A3DF-19975B79A095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB180B9B-C204-40FE-A3DF-19975B79A095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{997A05ED-1D66-43A0-81E5-16C46383E342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997A05ED-1D66-43A0-81E5-16C46383E342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997A05ED-1D66-43A0-81E5-16C46383E342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997A05ED-1D66-43A0-81E5-16C46383E342}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{32328CA7-F460-47D1-90E6-1FDAC83D0043} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
+		{6178C3F7-259F-4EC0-92E1-8B95AB8497F6} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
+		{DEA82E64-4D68-4527-884B-A861401DF3FE} = {747A1D18-A320-4C16-AC43-F329D1367810}
+		{BB180B9B-C204-40FE-A3DF-19975B79A095} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
 	EndGlobalSection
 EndGlobal
