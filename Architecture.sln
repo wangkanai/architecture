@@ -7,13 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
 		LICENSE = LICENSE
-		README.md = README.md
 		pack.ps1 = pack.ps1
+		README.md = README.md
 		sonar-begin.ps1 = sonar-begin.ps1
 		sonar-prep.ps1 = sonar-prep.ps1
 		SonarQube.Analysis.xml = SonarQube.Analysis.xml
-		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5E26445B-FE56-49FD-930F-8E72E031D331}"
@@ -25,42 +25,48 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blazor", "Blazor", "{89BD9D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Muai", "Muai", "{747A1D18-A320-4C16-AC43-F329D1367810}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Domain", "content\Blazor\src\Domain\Wangkanai.Architecture.Domain.csproj", "{32328CA7-F460-47D1-90E6-1FDAC83D0043}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Domain", "content\Blazor\src\Domain\Wangkanai.Architecture.Domain.csproj", "{32328CA7-F460-47D1-90E6-1FDAC83D0043}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutions", ".solutions", "{6178C3F7-259F-4EC0-92E1-8B95AB8497F6}"
 	ProjectSection(SolutionItems) = preProject
 		content\Blazor\.editorconfig = content\Blazor\.editorconfig
 		content\Blazor\.gitignore = content\Blazor\.gitignore
+		content\Blazor\Architecture.Blazor.sln = content\Blazor\Architecture.Blazor.sln
 		content\Blazor\Directory.Build.props = content\Blazor\Directory.Build.props
 		content\Blazor\Directory.Build.targets = content\Blazor\Directory.Build.targets
 		content\Blazor\Directory.Packages.props = content\Blazor\Directory.Packages.props
 		content\Blazor\ef-migrations.ps1 = content\Blazor\ef-migrations.ps1
 		content\Blazor\README.md = content\Blazor\README.md
-		content\Blazor\Architecture.Blazor.sln = content\Blazor\Architecture.Blazor.sln
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutions", ".solutions", "{DEA82E64-4D68-4527-884B-A861401DF3FE}"
 	ProjectSection(SolutionItems) = preProject
 		content\Maui\Architecture.Muai.sln = content\Maui\Architecture.Muai.sln
+		content\Maui\.editorconfig = content\Maui\.editorconfig
+		content\Maui\.gitignore = content\Maui\.gitignore
+		content\Maui\Directory.Build.props = content\Maui\Directory.Build.props
+		content\Maui\Directory.Build.targets = content\Maui\Directory.Build.targets
+		content\Maui\Directory.Packages.props = content\Maui\Directory.Packages.props
+		content\Maui\README.md = content\Maui\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application", "content\Blazor\src\Application\Wangkanai.Architecture.Application.csproj", "{BB180B9B-C204-40FE-A3DF-19975B79A095}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Application", "content\Blazor\src\Application\Wangkanai.Architecture.Application.csproj", "{BB180B9B-C204-40FE-A3DF-19975B79A095}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Templates", "Wangkanai.Architecture.Templates.csproj", "{997A05ED-1D66-43A0-81E5-16C46383E342}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Templates", "Wangkanai.Architecture.Templates.csproj", "{997A05ED-1D66-43A0-81E5-16C46383E342}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Infrastructure", "content\Blazor\src\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj", "{3C407CDE-A8FE-41C2-8EB2-624B72472CFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Infrastructure", "content\Blazor\src\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj", "{3C407CDE-A8FE-41C2-8EB2-624B72472CFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Client", "content\Blazor\src\Client\Wangkanai.Architecture.Client.csproj", "{1CDCF76B-6797-4140-A768-6CC969015102}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Client", "content\Blazor\src\Client\Wangkanai.Architecture.Client.csproj", "{1CDCF76B-6797-4140-A768-6CC969015102}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmark", "benchmark", "{E37C3946-C81B-4C4C-8E5F-225E0F1911C8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CBEF3FE4-0033-4013-80D8-EC93F1B04357}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application.UnitTests", "content\Blazor\tests\Application\Wangkanai.Architecture.Application.UnitTests.csproj", "{082C300D-C616-46A2-A99F-A2A73A6D9EE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Application.UnitTests", "content\Blazor\tests\Application\Wangkanai.Architecture.Application.UnitTests.csproj", "{082C300D-C616-46A2-A99F-A2A73A6D9EE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Server", "content\Blazor\src\Server\Wangkanai.Architecture.Server.csproj", "{B8E75BAA-52D0-4158-B73D-B8DDE1F1D1E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Server", "content\Blazor\src\Server\Wangkanai.Architecture.Server.csproj", "{B8E75BAA-52D0-4158-B73D-B8DDE1F1D1E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Benchmark", "content\Blazor\benchmark\Wangkanai.Architecture.Benchmark.csproj", "{7BC1305B-B786-4F27-B76B-FDEF3F6E89D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Benchmark", "content\Blazor\benchmark\Wangkanai.Architecture.Benchmark.csproj", "{7BC1305B-B786-4F27-B76B-FDEF3F6E89D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".template.config", "{380CD3BC-AD14-4AFE-BAC7-8F58888EEEBE}"
 	ProjectSection(SolutionItems) = preProject
@@ -69,9 +75,34 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".templa
 		content\Blazor\.template.config\template.json = content\Blazor\.template.config\template.json
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application.IntegrationTests", "content\Blazor\tests\Integration\Wangkanai.Architecture.Application.IntegrationTests.csproj", "{8174F1EF-DB00-4A3F-87F0-B7D2C436EAF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Application.IntegrationTests", "content\Blazor\tests\Integration\Wangkanai.Architecture.Application.IntegrationTests.csproj", "{8174F1EF-DB00-4A3F-87F0-B7D2C436EAF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Domain.UnitTests", "content\Blazor\tests\Domain\Wangkanai.Architecture.Domain.UnitTests.csproj", "{493BC0F7-F7BB-4C8E-8698-333781AA5368}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Domain.UnitTests", "content\Blazor\tests\Domain\Wangkanai.Architecture.Domain.UnitTests.csproj", "{493BC0F7-F7BB-4C8E-8698-333781AA5368}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{5F89DA5F-300A-4D93-811E-9C9A49AB170E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".template.config", "{03DEB9F5-418D-46E9-863F-4B6C6C526524}"
+	ProjectSection(SolutionItems) = preProject
+		content\Maui\.template.config\dotnetcli.host.json = content\Maui\.template.config\dotnetcli.host.json
+		content\Maui\.template.config\ide.host.json = content\Maui\.template.config\ide.host.json
+		content\Maui\.template.config\template.json = content\Maui\.template.config\template.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Mobile", "content\Maui\src\Mobile\Wangkanai.Architecture.Mobile.csproj", "{1AF0EE92-5DDB-4436-91BF-1B61994DDD4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Domain", "content\Maui\src\Domain\Wangkanai.Architecture.Domain.csproj", "{6C582A72-2C55-4F66-AD55-D28163886276}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application", "content\Maui\src\Application\Wangkanai.Architecture.Application.csproj", "{CCAF09AC-45F4-4F48-8E33-37211F1B7B2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Infrastructure", "content\Maui\src\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj", "{8135B984-388E-4000-AC49-7EE7FB275F1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{32E84442-9134-410A-9E24-5D19B5F6C80D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Domain.UnitTests", "content\Maui\tests\Domain\Wangkanai.Architecture.Domain.UnitTests.csproj", "{945195EA-9D22-4E1A-90B8-34013E6D1658}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application.UnitTests", "content\Maui\tests\Application\Wangkanai.Architecture.Application.UnitTests.csproj", "{37AD4704-6960-4A3D-A718-AB2E78A53423}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application.IntegrationTests", "content\Maui\tests\Integration\Wangkanai.Architecture.Application.IntegrationTests.csproj", "{45761377-5C33-4B40-B9AC-F51D669CE862}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,11 +150,41 @@ Global
 		{493BC0F7-F7BB-4C8E-8698-333781AA5368}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{493BC0F7-F7BB-4C8E-8698-333781AA5368}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{493BC0F7-F7BB-4C8E-8698-333781AA5368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AF0EE92-5DDB-4436-91BF-1B61994DDD4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF0EE92-5DDB-4436-91BF-1B61994DDD4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF0EE92-5DDB-4436-91BF-1B61994DDD4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF0EE92-5DDB-4436-91BF-1B61994DDD4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C582A72-2C55-4F66-AD55-D28163886276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C582A72-2C55-4F66-AD55-D28163886276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C582A72-2C55-4F66-AD55-D28163886276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C582A72-2C55-4F66-AD55-D28163886276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCAF09AC-45F4-4F48-8E33-37211F1B7B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCAF09AC-45F4-4F48-8E33-37211F1B7B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCAF09AC-45F4-4F48-8E33-37211F1B7B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCAF09AC-45F4-4F48-8E33-37211F1B7B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8135B984-388E-4000-AC49-7EE7FB275F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8135B984-388E-4000-AC49-7EE7FB275F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8135B984-388E-4000-AC49-7EE7FB275F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8135B984-388E-4000-AC49-7EE7FB275F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{945195EA-9D22-4E1A-90B8-34013E6D1658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{945195EA-9D22-4E1A-90B8-34013E6D1658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{945195EA-9D22-4E1A-90B8-34013E6D1658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{945195EA-9D22-4E1A-90B8-34013E6D1658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37AD4704-6960-4A3D-A718-AB2E78A53423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37AD4704-6960-4A3D-A718-AB2E78A53423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37AD4704-6960-4A3D-A718-AB2E78A53423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37AD4704-6960-4A3D-A718-AB2E78A53423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45761377-5C33-4B40-B9AC-F51D669CE862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45761377-5C33-4B40-B9AC-F51D669CE862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45761377-5C33-4B40-B9AC-F51D669CE862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45761377-5C33-4B40-B9AC-F51D669CE862}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{89BD9DA3-946B-4AEA-8267-1CDF03A1DF16} = {5F89DA5F-300A-4D93-811E-9C9A49AB170E}
+		{747A1D18-A320-4C16-AC43-F329D1367810} = {5F89DA5F-300A-4D93-811E-9C9A49AB170E}
 		{32328CA7-F460-47D1-90E6-1FDAC83D0043} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
 		{6178C3F7-259F-4EC0-92E1-8B95AB8497F6} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
 		{DEA82E64-4D68-4527-884B-A861401DF3FE} = {747A1D18-A320-4C16-AC43-F329D1367810}
@@ -138,5 +199,14 @@ Global
 		{380CD3BC-AD14-4AFE-BAC7-8F58888EEEBE} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
 		{8174F1EF-DB00-4A3F-87F0-B7D2C436EAF4} = {CBEF3FE4-0033-4013-80D8-EC93F1B04357}
 		{493BC0F7-F7BB-4C8E-8698-333781AA5368} = {CBEF3FE4-0033-4013-80D8-EC93F1B04357}
+		{03DEB9F5-418D-46E9-863F-4B6C6C526524} = {747A1D18-A320-4C16-AC43-F329D1367810}
+		{1AF0EE92-5DDB-4436-91BF-1B61994DDD4D} = {747A1D18-A320-4C16-AC43-F329D1367810}
+		{6C582A72-2C55-4F66-AD55-D28163886276} = {747A1D18-A320-4C16-AC43-F329D1367810}
+		{CCAF09AC-45F4-4F48-8E33-37211F1B7B2E} = {747A1D18-A320-4C16-AC43-F329D1367810}
+		{8135B984-388E-4000-AC49-7EE7FB275F1B} = {747A1D18-A320-4C16-AC43-F329D1367810}
+		{32E84442-9134-410A-9E24-5D19B5F6C80D} = {747A1D18-A320-4C16-AC43-F329D1367810}
+		{945195EA-9D22-4E1A-90B8-34013E6D1658} = {32E84442-9134-410A-9E24-5D19B5F6C80D}
+		{37AD4704-6960-4A3D-A718-AB2E78A53423} = {32E84442-9134-410A-9E24-5D19B5F6C80D}
+		{45761377-5C33-4B40-B9AC-F51D669CE862} = {32E84442-9134-410A-9E24-5D19B5F6C80D}
 	EndGlobalSection
 EndGlobal
