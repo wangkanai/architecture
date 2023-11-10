@@ -104,6 +104,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Appl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application.IntegrationTests", "content\Maui\tests\Integration\Wangkanai.Architecture.Application.IntegrationTests.csproj", "{45761377-5C33-4B40-B9AC-F51D669CE862}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmark", "benchmark", "{1208BD7F-3289-411A-AF84-34DDFD594F97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Benchmark", "content\Maui\benchmark\Wangkanai.Architecture.Benchmark.csproj", "{7532AB78-8203-47DD-A266-2EF182166389}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -178,6 +182,10 @@ Global
 		{45761377-5C33-4B40-B9AC-F51D669CE862}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45761377-5C33-4B40-B9AC-F51D669CE862}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45761377-5C33-4B40-B9AC-F51D669CE862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7532AB78-8203-47DD-A266-2EF182166389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7532AB78-8203-47DD-A266-2EF182166389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7532AB78-8203-47DD-A266-2EF182166389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7532AB78-8203-47DD-A266-2EF182166389}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -208,5 +216,7 @@ Global
 		{945195EA-9D22-4E1A-90B8-34013E6D1658} = {32E84442-9134-410A-9E24-5D19B5F6C80D}
 		{37AD4704-6960-4A3D-A718-AB2E78A53423} = {32E84442-9134-410A-9E24-5D19B5F6C80D}
 		{45761377-5C33-4B40-B9AC-F51D669CE862} = {32E84442-9134-410A-9E24-5D19B5F6C80D}
+		{1208BD7F-3289-411A-AF84-34DDFD594F97} = {747A1D18-A320-4C16-AC43-F329D1367810}
+		{7532AB78-8203-47DD-A266-2EF182166389} = {1208BD7F-3289-411A-AF84-34DDFD594F97}
 	EndGlobalSection
 EndGlobal
