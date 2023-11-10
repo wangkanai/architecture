@@ -25,13 +25,13 @@ If you find this project useful, please give it a star. Thanks! ⭐
 The easily way to get started using this template is install the following template below:
 
 ```powershell
-dotnet new install wangkanai.architecture.template
+dotnet new install wangkanai.architecture.templates
 ```
 
 Once installed, you can create a new solution using the template. At this customization is still limited and will be improve in the future.
 
 ```powershell
-dotnet new blazor-clean -n YourSolutionName -o YourOutputDirectory
+dotnet new clean-blazor -n YourSolutionName -o YourOutputDirectory
 ```
 
 Launch the app:
@@ -40,9 +40,9 @@ cd src\Server
 dotnet watch
 ```
 
-To learn more about what options are available, run `dotnet new blazor-clean --help`.
+To learn more about what options are available, run `dotnet new clean-blazor --help`.
 ```powershell
-dotnet new blazor-clean --help
+dotnet new clean-blazor --help
 ```
 
 ## Database
@@ -50,7 +50,7 @@ dotnet new blazor-clean --help
 The template is configured to use SQL Server by default. To use a different database, you will need to update the following command:
 
 ```powershell
-dotnet new blazor-clean --use-dbproivder <dbproivder>
+dotnet new clean-blazor --use-dbproivder <dbproivder>
 ```
 
 When you run the application the database will be created (if it does not already exist) and the latest migrations will be applied. Running database migrations is very simple. Just add the flags to your command (assume that you are executing from the repository root):
