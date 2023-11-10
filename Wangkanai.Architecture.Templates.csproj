@@ -35,6 +35,8 @@
 	<ItemGroup>
 		<None Include="assets\icon.png" Pack="true" PackagePath="\"/>
 		<None Include="README.md" Pack="true" PackagePath="\"/>
+		<None Remove="assets\**"/>
+		<None Remove="signed\**" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -44,6 +46,15 @@
 	<ItemGroup>
 		<Content Include="content\**\*" Exclude="content\**\node_modules\**;content\**\bin\**;content\**\obj\**;content\**\.vs\**;content\**\.vscode\**;content\**\.idea\**;content\**\wwwroot\dist\**;content\**\.git\**;content\**\demo\**;"/>
 		<Compile Remove="**\*"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="assets\**"/>
+		<Compile Remove="artifacts\**"/>
+		<Compile Remove="signed\**" />
+		<EmbeddedResource Remove="assets\**"/>
+		<EmbeddedResource Remove="artifacts\**"/>
+		<EmbeddedResource Remove="signed\**" />
 	</ItemGroup>
 
 </Project>
