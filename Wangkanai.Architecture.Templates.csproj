@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<PackageVersion>0.0.4</PackageVersion>
+		<PackageVersion>0.0.6</PackageVersion>
 		<PackageId>Wangkanai.Architecture.Templates</PackageId>
 		<Title>Clean Architecture Solution Template</Title>
 		<Authors>Sarin Na Wangkanai</Authors>
@@ -33,28 +33,28 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Remove="signed\**"/>
-		<None Include="assets\icon.png" Pack="true" PackagePath="\"/>
-		<None Include="README.md" Pack="true" PackagePath="\"/>
+		<None Remove="signed\**" />
+		<None Include="assets\icon.png" Pack="true" PackagePath="\" />
+		<None Include="README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.TemplateEngine.Tasks" Version="*" PrivateAssets="all" IsImplicitlyDefined="true"/>
+		<PackageReference Include="Microsoft.TemplateEngine.Tasks" Version="*" PrivateAssets="all" IsImplicitlyDefined="true" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<Content Include="content\**\*" Exclude="content\**\node_modules\**;content\**\bin\**;content\**\obj\**;content\**\.vs\**;content\**\.vscode\**;content\**\.idea\**;content\**\wwwroot\dist\**;content\**\.git\**;content\**\demo\**;"/>
-		<Compile Remove="**\*"/>
+		<Content Include="content\**\*" Exclude="content\**\node_modules\**;content\**\bin\**;content\**\obj\**;content\**\.vs\**;content\**\.vscode\**;content\**\.idea\**;content\**\wwwroot\dist\**;content\**\.git\**;content\**\demo\**;" />
+		<Compile Remove="**\*" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<Compile Remove="content\**"/>
-		<Compile Remove="assets\**"/>
-		<Compile Remove="artifacts\**"/>
-		<Compile Remove="signed\**"/>
-		<EmbeddedResource Remove="assets\**"/>
-		<EmbeddedResource Remove="artifacts\**"/>
-		<EmbeddedResource Remove="signed\**"/>
+		<Compile Remove="content\**" />
+		<Compile Remove="assets\**" />
+		<Compile Remove="artifacts\**" />
+		<Compile Remove="signed\**" />
+		<EmbeddedResource Remove="assets\**" />
+		<EmbeddedResource Remove="artifacts\**" />
+		<EmbeddedResource Remove="signed\**" />
 	</ItemGroup>
 
 </Project>

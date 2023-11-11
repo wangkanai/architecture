@@ -12,3 +12,5 @@ dotnet nuget push .\signed\*.nupkg -k $env:NUGET_API_KEY  -s https://api.nuget.o
 remove-item -path .\bin -recurse -force
 remove-item -path .\obj -recurse -force
 remove-item -path .\artifacts\*.*
+
+version.ps1
