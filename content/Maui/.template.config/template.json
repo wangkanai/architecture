@@ -1,19 +1,19 @@
 {
 	"$schema": "http://json.schemastore.org/template",
 	"author": "Sarin Na Wangkanai",
-	"name": "Blazor Clean Architecture",
-	"shortName": "blazor-clean",
-	"identity": "Wangkanai.Architecture.Template",
-	"sourceName": "Wangkanai.Architecture",
+	"name": "Maui Clean Architecture",
+	"shortName": "clean-maui",
+	"identity": "Wangkanai.Architecture.Maui",
+	"sourceName": "CleanMaui-CSharp",
 	"preferNameDirectory": true,
 	"tags": {
 		"language": "C#",
 		"type": "item"
 	},
 	"classifications": [
-		"Web",
-		"Blazor",
-		"Clean"
+		"Clean" ,
+		"Mobile",
+		"Maui"
 	],
 	"symbols": {
 	},
@@ -24,21 +24,12 @@
 			"exclude": [
 				".template.config/**/*",
 				".idea/**/*",
-				"templates/**/*",
-				"assets/**/*",
-				"artifacts/**/*",
-				"packed/**/*",
-				"demo/**/*",
 				"**/*.filelist",
 				"**/*.user",
 				"**/*.lock.json",
-				"**/FUNDING.yml",
-				"*.nuspec",
-				"*.ps1",
-				"*.xml"
+				"*.nuspec"
 			],
 			"rename": {
-				"README-template.md": "README.md"
 			}
 		}
 	]

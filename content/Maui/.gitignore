@@ -6,10 +6,7 @@
 .vs/
 .idea/
 lib/
-Migrations/
-demo/
-artifacts/
-packed/
+
 
 package-lock.json
 

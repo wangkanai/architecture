@@ -12,11 +12,27 @@
 [![Patreon](https://img.shields.io/badge/patreon-support%20me-d9643a.svg)](https://www.patreon.com/wangkanai)
 [![GitHub](https://img.shields.io/github/license/wangkanai/detection)](https://github.com/wangkanai/Detection/blob/dev/LICENSE)
 
+Elevate your development experience across the board with our comprehensive Clean Architecture template,
+thoughtfully designed to cater to a wide range of .NET 8 applications,
+including Blazor, Maui for mobile platforms, and the upcoming support for ASP.NET Core MVC and Razor Pages.
+This cutting-edge template is embedded with an advanced Blazor Identity UI,
+boasting additional functionality and a [Tabler](https://github.com/tabler/tabler) admin portal integration
+for a sophisticated, modern user interface.
 
-Blazor Clean Architecture design template build natively for .NET 8 using Blazor Identity UI (added extend functionality) with Tabler admin portal.
-This is template is designed to be a starting point for your Blazor application using the principle of domain driven design (DDD). The application design architecture is to have everything in their separate project.
-This allows for the application to be broken down into smaller pieces and allows for easier maintenance and development.
-The application template utilizes lots of NuGet packages dependencies from [wangkanai](https://github.com/wangkanai/wangkanai). It’s provide extra tools and extensions to help simplify software development and let you focus on what is important to get everything startup and running as soon as possible.
+Our template embodies the Domain-Driven Design (DDD) philosophy,
+offering a robust and flexible starting point for crafting scalable and maintainable web and mobile applications.
+It’s architected to encourage a separation of concerns, with each functionality neatly encapsulated within its own project.
+This modular approach streamlines both maintenance and evolution of your applications, accommodating changes and growth with ease.
+
+Dive into a rich ecosystem of NuGet packages from [wangkanai](https://github.com/wangkanai/wangkanai),
+providing an array of tools and extensions that are handpicked to accelerate your development workflow.
+This template isn’t just a launchpad—it’s a comprehensive toolkit designed to boost your productivity,
+allowing you to concentrate on innovative features and core functionalities.
+
+As you embark on building responsive web applications or native mobile experiences,
+our template ensures you’re well-equipped for the present and prepared for the future.
+Embrace the full spectrum of .NET 8 capabilities and join a community of
+developers who are pushing the boundaries of technology with our Blazor Clean Architecture template.
 
 If you find this project useful, please give it a star. Thanks! ⭐
 
@@ -25,13 +41,13 @@ If you find this project useful, please give it a star. Thanks! ⭐
 The easily way to get started using this template is install the following template below:
 
 ```powershell
-dotnet new install wangkanai.architecture.template
+dotnet new install wangkanai.architecture.templates
 ```
 
 Once installed, you can create a new solution using the template. At this customization is still limited and will be improve in the future.
 
 ```powershell
-dotnet new blazor-clean -n YourSolutionName -o YourOutputDirectory
+dotnet new clean-blazor -n YourSolutionName -o YourOutputDirectory
 ```
 
 Launch the app:
@@ -40,9 +56,9 @@ cd src\Server
 dotnet watch
 ```
 
-To learn more about what options are available, run `dotnet new blazor-clean --help`.
+To learn more about what options are available, run `dotnet new clean-blazor --help`.
 ```powershell
-dotnet new blazor-clean --help
+dotnet new clean-blazor --help
 ```
 
 ## Database
@@ -50,7 +66,7 @@ dotnet new blazor-clean --help
 The template is configured to use SQL Server by default. To use a different database, you will need to update the following command:
 
 ```powershell
-dotnet new blazor-clean --use-dbproivder <dbproivder>
+dotnet new clean-blazor --use-dbproivder <dbproivder>
 ```
 
 When you run the application the database will be created (if it does not already exist) and the latest migrations will be applied. Running database migrations is very simple. Just add the flags to your command (assume that you are executing from the repository root):

@@ -1,0 +1,36 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+	"author": "Sarin Na Wangkanai",
+	"name": "Blazor Clean Architecture",
+	"shortName": "clean-blazor",
+	"identity": "Wangkanai.Architecture.Blazor",
+	"sourceName": "CleanBlazor-CSharp",
+	"preferNameDirectory": true,
+	"tags": {
+		"language": "C#",
+		"type": "item"
+	},
+	"classifications": [
+		"Clean",
+		"Web",
+		"Blazor"
+	],
+	"symbols": {
+	},
+	"sources": [
+		{
+			"source": "./",
+			"target": "./",
+			"exclude": [
+				".template.config/**/*",
+				".idea/**/*",
+				"**/*.filelist",
+				"**/*.user",
+				"**/*.lock.json",
+				"*.nuspec"
+			],
+			"rename": {
+			}
+		}
+	]
+}
