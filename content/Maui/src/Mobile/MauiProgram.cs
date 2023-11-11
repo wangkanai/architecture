@@ -6,6 +6,8 @@ namespace Wangkanai.Architecture
 {
 	public static class MauiProgram
 	{
+		public static void Main(string[] args) => CreateMauiApp();
+
 		public static MauiApp CreateMauiApp()
 		{
 			var builder = MauiApp.CreateBuilder();

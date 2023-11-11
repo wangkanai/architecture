@@ -36,7 +36,7 @@
 		<None Include="assets\icon.png" Pack="true" PackagePath="\"/>
 		<None Include="README.md" Pack="true" PackagePath="\"/>
 		<None Remove="assets\**"/>
-		<None Remove="signed\**" />
+		<None Remove="signed\**"/>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -49,12 +49,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<Compile Remove="content\**"/>
 		<Compile Remove="assets\**"/>
 		<Compile Remove="artifacts\**"/>
-		<Compile Remove="signed\**" />
+		<Compile Remove="signed\**"/>
 		<EmbeddedResource Remove="assets\**"/>
 		<EmbeddedResource Remove="artifacts\**"/>
-		<EmbeddedResource Remove="signed\**" />
+		<EmbeddedResource Remove="signed\**"/>
 	</ItemGroup>
 
 </Project>
