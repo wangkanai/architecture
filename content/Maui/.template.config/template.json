@@ -4,7 +4,7 @@
 	"name": "Maui Clean Architecture",
 	"shortName": "clean-maui",
 	"identity": "Wangkanai.Architecture.Maui",
-	"sourceName": "CleanBlazor-CSharp",
+	"sourceName": "CleanMaui-CSharp",
 	"preferNameDirectory": true,
 	"tags": {
 		"language": "C#",

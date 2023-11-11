@@ -79,8 +79,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Appl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Domain.UnitTests", "content\Blazor\tests\Domain\Wangkanai.Architecture.Domain.UnitTests.csproj", "{493BC0F7-F7BB-4C8E-8698-333781AA5368}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{5F89DA5F-300A-4D93-811E-9C9A49AB170E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".template.config", "{03DEB9F5-418D-46E9-863F-4B6C6C526524}"
 	ProjectSection(SolutionItems) = preProject
 		content\Maui\.template.config\dotnetcli.host.json = content\Maui\.template.config\dotnetcli.host.json
@@ -191,8 +189,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{89BD9DA3-946B-4AEA-8267-1CDF03A1DF16} = {5F89DA5F-300A-4D93-811E-9C9A49AB170E}
-		{747A1D18-A320-4C16-AC43-F329D1367810} = {5F89DA5F-300A-4D93-811E-9C9A49AB170E}
 		{32328CA7-F460-47D1-90E6-1FDAC83D0043} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
 		{6178C3F7-259F-4EC0-92E1-8B95AB8497F6} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
 		{DEA82E64-4D68-4527-884B-A861401DF3FE} = {747A1D18-A320-4C16-AC43-F329D1367810}
