@@ -11,9 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{
 		LICENSE = LICENSE
 		pack.ps1 = pack.ps1
 		README.md = README.md
-		sonar-begin.ps1 = sonar-begin.ps1
-		sonar-prep.ps1 = sonar-prep.ps1
-		SonarQube.Analysis.xml = SonarQube.Analysis.xml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5E26445B-FE56-49FD-930F-8E72E031D331}"
@@ -105,6 +102,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmark", "benchmark", "{1208BD7F-3289-411A-AF84-34DDFD594F97}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Benchmark", "content\Maui\benchmark\Wangkanai.Architecture.Benchmark.csproj", "{7532AB78-8203-47DD-A266-2EF182166389}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".sonar", ".sonar", "{45E0A010-44F4-4879-9986-5C1848466427}"
+	ProjectSection(SolutionItems) = preProject
+		sonar-begin.ps1 = sonar-begin.ps1
+		sonar-prep.ps1 = sonar-prep.ps1
+		SonarQube.Analysis.xml = SonarQube.Analysis.xml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
