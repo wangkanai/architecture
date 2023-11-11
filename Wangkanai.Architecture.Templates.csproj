@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<PackageVersion>0.0.3</PackageVersion>
+		<PackageVersion>0.0.4</PackageVersion>
 		<PackageId>Wangkanai.Architecture.Templates</PackageId>
 		<Title>Clean Architecture Solution Template</Title>
 		<Authors>Sarin Na Wangkanai</Authors>
