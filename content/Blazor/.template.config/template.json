@@ -8,7 +8,7 @@
 	"preferNameDirectory": true,
 	"tags": {
 		"language": "C#",
-		"type": "item"
+		"type": "project"
 	},
 	"classifications": [
 		"Clean",
@@ -32,6 +32,22 @@
 			"rename": {
 				"Architecture.Blazor.sln": "Wangkanai.Architecture.sln"
 			}
+		}
+	],
+	"postActions": [
+		{
+			"description": "Blazor Install.ps1",
+			"actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+			"manualInstructions": [
+				{
+					"text": "Run 'Blazor install.ps1'"
+				}
+			],
+			"args": {
+				"executable": "powershell",
+				"args": "-File install.ps1"
+			},
+			"continueOnError": true
 		}
 	]
 }

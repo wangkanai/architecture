@@ -8,10 +8,10 @@
 	"preferNameDirectory": true,
 	"tags": {
 		"language": "C#",
-		"type": "item"
+		"type": "project"
 	},
 	"classifications": [
-		"Clean" ,
+		"Clean",
 		"Maui",
 		"Blazor"
 	],
@@ -33,5 +33,21 @@
 				"Architecture.Maui.sln": "Wangkanai.Architecture.sln"
 			}
 		}
+	],
+	"postActions": [
+		{
+			"description": "Maui Install.ps1",
+			"actionId": "3d5bea9d-9f8c-4f7e-8e1b-8f4f4a7b5a4d",
+			"manualInstructions": [
+				{
+					"text": "Run 'Maui install.ps1'"
+				}
+			],
+			"args": {
+				"executable": "powershell",
+				"args": "-File install.ps1"
+			},
+			"continueOnError": true
+		}
 	]
-}                                            g
+}
