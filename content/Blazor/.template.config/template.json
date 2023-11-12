@@ -1,14 +1,14 @@
 {
 	"$schema": "http://json.schemastore.org/template",
-	"author": "Sarin Na Wangkanai",
+	"author": "wangkanai",
 	"name": "Clean Architecture Blazor Solution",
 	"shortName": "clean-blazor",
-	"identity": "Wangkanai.Architecture.Blazor",
-	"sourceName": "CleanBlazor-CSharp",
+	"identity": "CleanBlazor-CSharp",
+	"sourceName": "Wangkanai.Architecture",
 	"preferNameDirectory": true,
 	"tags": {
 		"language": "C#",
-		"type": "item"
+		"type": "project"
 	},
 	"classifications": [
 		"Clean",
@@ -30,6 +30,7 @@
 				"*.nuspec"
 			],
 			"rename": {
+				"Architecture.Blazor.sln": "Wangkanai.Architecture.sln"
 			}
 		}
 	]
