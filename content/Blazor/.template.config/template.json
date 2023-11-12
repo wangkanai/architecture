@@ -30,6 +30,7 @@
 				"*.nuspec"
 			],
 			"rename": {
+				"Architecture.Blazor.sln": "Wangkanai.Architecture.sln"
 			}
 		}
 	]

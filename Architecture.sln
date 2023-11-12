@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5E26
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blazor", "Blazor", "{89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Muai", "Muai", "{747A1D18-A320-4C16-AC43-F329D1367810}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Maui", "Maui", "{747A1D18-A320-4C16-AC43-F329D1367810}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Domain", "content\Blazor\src\Domain\Wangkanai.Architecture.Domain.csproj", "{32328CA7-F460-47D1-90E6-1FDAC83D0043}"
 EndProject

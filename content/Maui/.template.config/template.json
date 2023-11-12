@@ -30,7 +30,8 @@
 				"*.nuspec"
 			],
 			"rename": {
+				"Architecture.Maui.sln": "Wangkanai.Architecture.sln"
 			}
 		}
 	]
-}
+}                                            g
