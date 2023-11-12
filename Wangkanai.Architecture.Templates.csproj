@@ -3,8 +3,8 @@
 	<PropertyGroup>
 		<PackageVersion>0.0.8</PackageVersion>
 		<PackageId>Wangkanai.Architecture.Templates</PackageId>
-		<Title>Clean Architecture Solution Template</Title>
-		<Authors>Sarin Na Wangkanai</Authors>
+		<Title>Clean Architecture Solutions</Title>
+		<Authors>wangkanai</Authors>
 		<Description>Unleash the power of .NET 8 with our Clean Architecture NuGet package: a versatile template tailored for Blazor, Maui, and future ASP.NET Core MVC and Razor Page applications. Designed with Domain-Driven Design principles, it provides a modular foundation for building scalable, maintainable web and mobile applications. Benefit from an enhanced Blazor Identity UI, seamless Tabler admin portal integration, and a curated selection of wangkanai tools and extensions for accelerated development. Perfect for developers seeking a robust, ready-to-implement architecture that adapts to evolving project needs.</Description>
 		<PackageTags>clean-architecture;project;template;csharp;dotnet;blazor;maui;</PackageTags>
 
@@ -36,6 +36,7 @@
 		<None Remove="signed\**" />
 		<None Include="assets\icon.png" Pack="true" PackagePath="\" />
 		<None Include="README.md" Pack="true" PackagePath="\" />
+		<None Remove="assets\**" />
 	</ItemGroup>
 
 	<ItemGroup>
