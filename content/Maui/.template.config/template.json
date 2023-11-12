@@ -3,8 +3,8 @@
 	"author": "wangkanai",
 	"name": "Clean Architecture Maui Solution",
 	"shortName": "clean-maui",
-	"identity": "Wangkanai.Architecture.Maui",
-	"sourceName": "CleanMaui-CSharp",
+	"identity": "CleanMaui-CSharp",
+	"sourceName": "Wangkanai.Architecture",
 	"preferNameDirectory": true,
 	"tags": {
 		"language": "C#",

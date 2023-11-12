@@ -110,6 +110,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".sonar", ".sonar", "{45E0A0
 		SonarQube.Analysis.xml = SonarQube.Analysis.xml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tools", ".tools", "{9F9774D9-FC88-4C88-A24F-C5412E33CFDC}"
+	ProjectSection(SolutionItems) = preProject
+		content\Maui\ef-migrations.ps1 = content\Maui\ef-migrations.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tools", ".tools", "{3711FCE4-399B-4BE6-878C-3979DB478303}"
+	ProjectSection(SolutionItems) = preProject
+		content\Blazor\ef-migrations.ps1 = content\Blazor\ef-migrations.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -218,5 +228,7 @@ Global
 		{45761377-5C33-4B40-B9AC-F51D669CE862} = {32E84442-9134-410A-9E24-5D19B5F6C80D}
 		{1208BD7F-3289-411A-AF84-34DDFD594F97} = {747A1D18-A320-4C16-AC43-F329D1367810}
 		{7532AB78-8203-47DD-A266-2EF182166389} = {1208BD7F-3289-411A-AF84-34DDFD594F97}
+		{9F9774D9-FC88-4C88-A24F-C5412E33CFDC} = {747A1D18-A320-4C16-AC43-F329D1367810}
+		{3711FCE4-399B-4BE6-878C-3979DB478303} = {89BD9DA3-946B-4AEA-8267-1CDF03A1DF16}
 	EndGlobalSection
 EndGlobal

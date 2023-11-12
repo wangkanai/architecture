@@ -19,7 +19,7 @@
 		<IncludeContentInPack>true</IncludeContentInPack>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<ContentTargetFolders>content</ContentTargetFolders>
-		<NoWarn>$(NoWarn);NU5128</NoWarn>
+		<NoWarn>$(NoWarn);NU5128;NU5110;</NoWarn>
 		<NoDefaultExcludes>true</NoDefaultExcludes>
 	</PropertyGroup>
 
@@ -33,10 +33,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Remove="signed\**" />
-		<None Include="assets\icon.png" Pack="true" PackagePath="\" />
 		<None Include="README.md" Pack="true" PackagePath="\" />
-		<None Remove="assets\**" />
+		<None Include="assets\icon.png" Pack="true" PackagePath="\" />
+		<None Remove="signed\**" />
 	</ItemGroup>
 
 	<ItemGroup>
