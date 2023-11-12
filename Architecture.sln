@@ -33,7 +33,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutions", ".solutions", 
 		content\Blazor\Directory.Build.props = content\Blazor\Directory.Build.props
 		content\Blazor\Directory.Build.targets = content\Blazor\Directory.Build.targets
 		content\Blazor\Directory.Packages.props = content\Blazor\Directory.Packages.props
-		content\Blazor\ef-migrations.ps1 = content\Blazor\ef-migrations.ps1
 		content\Blazor\README.md = content\Blazor\README.md
 	EndProjectSection
 EndProject

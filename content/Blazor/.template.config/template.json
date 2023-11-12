@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json.schemastore.org/template",
 	"author": "Sarin Na Wangkanai",
-	"name": "Blazor Clean Architecture",
+	"name": "Clean Architecture Blazor Solution",
 	"shortName": "clean-blazor",
 	"identity": "Wangkanai.Architecture.Blazor",
 	"sourceName": "CleanBlazor-CSharp",
