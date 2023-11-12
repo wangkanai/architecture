@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{
 		pack.ps1 = pack.ps1
 		README.md = README.md
 		version.ps1 = version.ps1
+		demo.ps1 = demo.ps1
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5E26445B-FE56-49FD-930F-8E72E031D331}"
@@ -38,13 +39,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutions", ".solutions", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutions", ".solutions", "{DEA82E64-4D68-4527-884B-A861401DF3FE}"
 	ProjectSection(SolutionItems) = preProject
-		content\Maui\Architecture.Muai.sln = content\Maui\Architecture.Muai.sln
 		content\Maui\.editorconfig = content\Maui\.editorconfig
 		content\Maui\.gitignore = content\Maui\.gitignore
 		content\Maui\Directory.Build.props = content\Maui\Directory.Build.props
 		content\Maui\Directory.Build.targets = content\Maui\Directory.Build.targets
 		content\Maui\Directory.Packages.props = content\Maui\Directory.Packages.props
 		content\Maui\README.md = content\Maui\README.md
+		content\Maui\Architecture.Maui.sln = content\Maui\Architecture.Maui.sln
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Application", "content\Blazor\src\Application\Wangkanai.Architecture.Application.csproj", "{BB180B9B-C204-40FE-A3DF-19975B79A095}"
@@ -119,8 +120,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tools", ".tools", "{3711FC
 	ProjectSection(SolutionItems) = preProject
 		content\Blazor\ef-migrations.ps1 = content\Blazor\ef-migrations.ps1
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tools", ".tools", "{ADCBB280-BFE1-4355-92F5-A222003A93E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

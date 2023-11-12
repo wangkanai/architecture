@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<PackageVersion>0.0.10</PackageVersion>
+		<PackageVersion>0.0.11</PackageVersion>
 		<PackageId>Wangkanai.Architecture.Templates</PackageId>
 		<Title>Clean Architecture Solutions</Title>
 		<Authors>wangkanai</Authors>
@@ -21,6 +21,11 @@
 		<ContentTargetFolders>content</ContentTargetFolders>
 		<NoWarn>$(NoWarn);NU5128;NU5110;NU5111;</NoWarn>
 		<NoDefaultExcludes>true</NoDefaultExcludes>
+		
+		<SuppressDependenciesWhenPacking>True</SuppressDependenciesWhenPacking>
+		<IsPackable>true</IsPackable>
+		<IsShipping>true</IsShipping>
+		<IsShippingPackage>true</IsShippingPackage>
 	</PropertyGroup>
 
 	<PropertyGroup>
