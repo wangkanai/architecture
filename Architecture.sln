@@ -120,6 +120,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tools", ".tools", "{3711FC
 		content\Blazor\ef-migrations.ps1 = content\Blazor\ef-migrations.ps1
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tools", ".tools", "{ADCBB280-BFE1-4355-92F5-A222003A93E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

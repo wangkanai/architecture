@@ -9,7 +9,7 @@ remove-item -path .\artifacts\*.* -Force
 new-item -Path artifacts -ItemType Directory -Force | out-null
 new-item -Path signed    -ItemType Directory -Force | out-null
 
-dotnet build  Wangkanai.Architecture.Templates.csproj -c Release
+#dotnet build  Wangkanai.Architecture.Templates.csproj -c Release
 dotnet pack   Wangkanai.Architecture.Templates.csproj -c Release -o .\artifacts
 dotnet nuget sign .\artifacts\*.nupkg -v diag --timestamper http://timestamp.digicert.com --certificate-subject-name "Sarin Na Wangkanai" -o .\signed
 remove-item -path .\artifacts\*.*

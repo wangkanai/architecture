@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<PackageVersion>0.0.8</PackageVersion>
+		<PackageVersion>0.0.9</PackageVersion>
 		<PackageId>Wangkanai.Architecture.Templates</PackageId>
 		<Title>Clean Architecture Solutions</Title>
 		<Authors>wangkanai</Authors>
@@ -19,7 +19,7 @@
 		<IncludeContentInPack>true</IncludeContentInPack>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<ContentTargetFolders>content</ContentTargetFolders>
-		<NoWarn>$(NoWarn);NU5128;NU5110;</NoWarn>
+		<NoWarn>$(NoWarn);NU5128;NU5110;NU5111;</NoWarn>
 		<NoDefaultExcludes>true</NoDefaultExcludes>
 	</PropertyGroup>
 
@@ -33,13 +33,13 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="README.md" Pack="true" PackagePath="\" />
-		<None Include="assets\icon.png" Pack="true" PackagePath="\" />
-		<None Remove="signed\**" />
+		<PackageReference Include="Microsoft.TemplateEngine.Tasks" Version="*" PrivateAssets="all" IsImplicitlyDefined="true" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.TemplateEngine.Tasks" Version="*" PrivateAssets="all" IsImplicitlyDefined="true" />
+		<None Include="README.md" Pack="true" PackagePath="\" />
+		<None Include="assets\icon.png" Pack="true" PackagePath="\" />
+		<None Include="tools\**" Pack="true" PackagePath="\tools\" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -48,13 +48,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Compile Remove="content\**" />
+		<None Remove="artifacts\**" />
+		<None Remove="signed\**" />
+		<None Remove="demo\**\*" />
 		<Compile Remove="assets\**" />
-		<Compile Remove="artifacts\**" />
-		<Compile Remove="signed\**" />
 		<EmbeddedResource Remove="assets\**" />
-		<EmbeddedResource Remove="artifacts\**" />
-		<EmbeddedResource Remove="signed\**" />
+		<Compile Remove="content\**" />
 	</ItemGroup>
 
 </Project>
