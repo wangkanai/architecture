@@ -9,15 +9,23 @@ At this customization is still limited and will be improve in the future.
 dotnet new clean-maui -n YourSolutionName -o YourOutputDirectory
 ```
 
-Launch the app:
+To learn more about what options are available, run `dotnet new clean-maui --help`.
+```powershell
+dotnet new clean-maui --help
+```
+
+Launch the server app:
 ```powershell
 cd src\Server
 dotnet watch
 ```
 
-To learn more about what options are available, run `dotnet new clean-maui --help`.
+Navigate to https://localhost:9000. The application will automatically reload if you change any of the source files.
+
+Launch the mobile app:
 ```powershell
-dotnet new clean-maui --help
+cd src\Mobile
+dotnet watch
 ```
 
 ## Database

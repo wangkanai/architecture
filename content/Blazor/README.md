@@ -8,8 +8,7 @@ Run `dotnet build -tl` to build the solution.
 
 ## Run
 
-To run the web application:
-
+To run the web server app:
 ```powershell
 cd .\src\Server\
 dotnet watch
@@ -31,7 +30,6 @@ dotnet test --filter "FullyQualifiedName!~AcceptanceTests"
 ```
 
 To run the acceptance tests, first start the application:
-
 ```powershell
 cd .\src\Server\
 dotnet run
@@ -44,5 +42,6 @@ dotnet test
 ```
 
 ## Help
+
 To learn more about the template go to the [project website](https://github.com/wangkanai/architecture).
 Here you can find additional guidance, request new features, report a bug, and discuss the template with other users.

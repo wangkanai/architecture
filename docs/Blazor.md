@@ -9,21 +9,20 @@ At this customization is still limited and will be improve in the future.
 dotnet new clean-blazor -n YourSolutionName -o YourOutputDirectory
 ```
 
-Launch the app:
-```powershell
-cd src\Server
-dotnet watch
-```
-
 To learn more about what options are available, run `dotnet new clean-blazor --help`.
 ```powershell
 dotnet new clean-blazor --help
 ```
 
+To run the web server app:
+```powershell
+cd .\src\Server\
+dotnet watch
+```
+
 ## Database
 
 The template is configured to use SQL Server by default. To use a different database, you will need to update the following command:
-
 ```powershell
 dotnet new clean-blazor --use-dbproivder <dbproivder>
 ```
@@ -35,7 +34,6 @@ When you run the application the database will be created (if it does not alread
 * `--output-dir Data\Migrations`
 
 For example, too add a new migration named `Initial` you would run the following command from the root folder:
-
 ```powershell
 dotnet ef migrations add "Initial" --project src\Infrastructure --startup-project src\Server --output-dir Data\Migrations
 ```
