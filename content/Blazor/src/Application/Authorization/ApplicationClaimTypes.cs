@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
 
-namespace Wangkanai.Architecture.Application.Authorization;
+namespace Wangkanai.Architecture.Authorization;
 
 public static class ApplicationClaimTypes
 {

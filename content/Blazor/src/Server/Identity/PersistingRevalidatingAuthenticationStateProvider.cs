@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 
-using Wangkanai.Architecture.Client;
 using Wangkanai.Architecture.Data;
 
 namespace Wangkanai.Architecture.Identity;
@@ -57,13 +56,9 @@ public class PersistingRevalidatingAuthenticationStateProvider : RevalidatingSer
 	{
 		ApplicationUser? user = await userManager.GetUserAsync(principal);
 		if (user == null)
-		{
 			return false;
-		}
 		else if (!userManager.SupportsUserSecurityStamp)
-		{
 			return true;
-		}
 		else
 		{
 			string? principalStamp = principal.FindFirstValue(_options.ClaimsIdentity.SecurityStampClaimType);
@@ -80,10 +75,8 @@ public class PersistingRevalidatingAuthenticationStateProvider : RevalidatingSer
 	private async Task OnPersistingAsync()
 	{
 		if (_authenticationStateTask is null)
-		{
 			throw new UnreachableException(
 				$"Authentication state not set in {nameof(RevalidatingServerAuthenticationStateProvider)}.{nameof(OnPersistingAsync)}().");
-		}
 
 		AuthenticationState? authenticationState = await _authenticationStateTask;
 		ClaimsPrincipal?     principal           = authenticationState.User;
@@ -94,9 +87,7 @@ public class PersistingRevalidatingAuthenticationStateProvider : RevalidatingSer
 			string? email  = principal.FindFirst(_options.ClaimsIdentity.EmailClaimType)?.Value;
 
 			if (userId != null && email != null)
-			{
 				_state.PersistAsJson(nameof(UserInfo), new UserInfo { UserId = userId, Email = email });
-			}
 		}
 	}
 

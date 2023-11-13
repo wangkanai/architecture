@@ -6,7 +6,7 @@
 		<SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
 	</PropertyGroup>
 
-	<PropertyGroup  Condition="!$(MSBuildProjectName.Contains('Tests'))">
+	<PropertyGroup Condition="!$(MSBuildProjectName.Contains('Tests'))">
 		<RootNamespace>Wangkanai.Architecture</RootNamespace>
 	</PropertyGroup>
 </Project>

@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Doma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application.IntegrationTests", "tests\Integration\Wangkanai.Architecture.Application.IntegrationTests.csproj", "{D75ABDE0-92F8-494E-9D6C-81D678418A7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Server.AcceptanceTests", "tests\Acceptance\Wangkanai.Architecture.Server.AcceptanceTests.csproj", "{DDF6D5B6-244D-46E1-A57C-3D2B65482444}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,11 +83,16 @@ Global
 		{D75ABDE0-92F8-494E-9D6C-81D678418A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D75ABDE0-92F8-494E-9D6C-81D678418A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D75ABDE0-92F8-494E-9D6C-81D678418A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF6D5B6-244D-46E1-A57C-3D2B65482444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF6D5B6-244D-46E1-A57C-3D2B65482444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF6D5B6-244D-46E1-A57C-3D2B65482444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF6D5B6-244D-46E1-A57C-3D2B65482444}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CAF53D28-F8F7-4C8D-916B-3B6ABFDF2031} = {08918D66-9639-4CD7-8D48-4AD67FBB104A}
 		{EDB1C738-B3F2-476D-A938-D06D1C0CB196} = {36630124-4643-4900-841B-06DB0B0017A6}
 		{669F51AD-5802-4D2A-AA19-EBE39322D994} = {36630124-4643-4900-841B-06DB0B0017A6}
 		{D75ABDE0-92F8-494E-9D6C-81D678418A7C} = {36630124-4643-4900-841B-06DB0B0017A6}
+		{DDF6D5B6-244D-46E1-A57C-3D2B65482444} = {36630124-4643-4900-841B-06DB0B0017A6}
 	EndGlobalSection
 EndGlobal
