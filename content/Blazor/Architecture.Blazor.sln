@@ -38,6 +38,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Appl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Server.AcceptanceTests", "tests\Acceptance\Wangkanai.Architecture.Server.AcceptanceTests.csproj", "{DDF6D5B6-244D-46E1-A57C-3D2B65482444}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".template.config", "{B39E045A-5EFB-4015-9558-E32BBFFCB940}"
+	ProjectSection(SolutionItems) = preProject
+		.template.config\dotnetcli.host.json = .template.config\dotnetcli.host.json
+		.template.config\ide.host.json = .template.config\ide.host.json
+		.template.config\template.json = .template.config\template.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
