@@ -1,6 +1,6 @@
 # Wangkanai Clean Architecture
 
-[![Build Status](https://dev.azure.com/wangkanai/GitHub/_apis/build/status%2Farchitecture-ai?branchName=refs%2Fpull%2F3%2Fmerge)](https://dev.azure.com/wangkanai/GitHub/_build/latest?definitionId=38&branchName=refs%2Fpull%2F3%2Fmerge)
+[![Build status](https://dev.azure.com/wangkanai/GitHub/_apis/build/status/architecture-ai)](https://dev.azure.com/wangkanai/GitHub/_build/latest?definitionId=38)
 [![Nuget](https://img.shields.io/nuget/v/Wangkanai.Architecture.Templates?label=NuGet)](https://www.nuget.org/packages/Wangkanai.Architecture.Templates)
 [![Nuget](https://img.shields.io/nuget/dt/Wangkanai.Architecture.Templates?label=Downloads)](https://www.nuget.org/packages/Wangkanai.Architecture.Templates)
 

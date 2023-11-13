@@ -2,19 +2,19 @@ root=true
 
 # All files
 [*]
-charset=utf-8
-indent_style=tab
-indent_size=4
-tab_width=4
-end_of_line=crlf
+charset                 =utf-8
+indent_style            =tab
+indent_size             =4
+tab_width               =4
+end_of_line             =crlf
 trim_trailing_whitespace=true
-insert_final_newline=false
+insert_final_newline    =false
 
 # Code style settings
 [.editorconfig]
-ij_editorconfig_align_group_field_declarations=true
+ij_editorconfig_align_group_field_declarations    =true
 ij_editorconfig_spaces_around_assignment_operators=false
-ij_editorconfig_space_after_colon=false
-ij_editorconfig_space_after_comma=false
-ij_editorconfig_space_before_colon=false
-ij_editorconfig_space_before_comma=false
+ij_editorconfig_space_after_colon                 =false
+ij_editorconfig_space_after_comma                 =false
+ij_editorconfig_space_before_colon                =false
+ij_editorconfig_space_before_comma                =false
