@@ -20,7 +20,7 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
 		ApplicationRoleClaim,
 		ApplicationUserToken>(options)
 {
-	public DbSet<Country>      Countries     { get; set; }
+	public DbSet<Country> Countries { get; set; }
 
 	protected override void OnModelCreating(ModelBuilder builder)
 	{

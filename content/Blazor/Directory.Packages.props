@@ -30,8 +30,8 @@
 		<PackageVersion Include="xunit.runner.visualstudio" Version="2.5.3" PrivateAssets="all"/>
 		<PackageVersion Include="coverlet.collector" Version="6.0.0" PrivateAssets="all"/>
 		<PackageVersion Include="coverlet.msbuild" Version="6.0.0" PrivateAssets="all"/>
-		<PackageVersion Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
-		<PackageVersion Include="SpecFlow.xUnit" Version="3.9.74" />
+		<PackageVersion Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57"/>
+		<PackageVersion Include="SpecFlow.xUnit" Version="3.9.74"/>
 
 		<!--benchmark-->
 		<PackageVersion Include="BenchmarkDotNet" Version="0.13.9"/>

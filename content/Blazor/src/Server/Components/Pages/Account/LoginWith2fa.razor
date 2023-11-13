@@ -49,14 +49,11 @@
 	private string? _message;
 	private ApplicationUser _user = default!;
 
-	[SupplyParameterFromForm]
-	private InputModel Input { get; set; } = default!;
+	[SupplyParameterFromForm] private InputModel Input { get; set; } = default!;
 
-	[SupplyParameterFromQuery]
-	private string? ReturnUrl { get; set; }
+	[SupplyParameterFromQuery] private string? ReturnUrl { get; set; }
 
-	[SupplyParameterFromQuery]
-	private bool RememberMe { get; set; }
+	[SupplyParameterFromQuery] private bool RememberMe { get; set; }
 
 	protected override async Task OnInitializedAsync()
 	{

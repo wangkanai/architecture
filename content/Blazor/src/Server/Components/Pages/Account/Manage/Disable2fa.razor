@@ -34,8 +34,7 @@
 @code {
 	private ApplicationUser _user = default!;
 
-	[CascadingParameter]
-	private HttpContext HttpContext { get; set; } = default!;
+	[CascadingParameter] private HttpContext HttpContext { get; set; } = default!;
 
 	protected override async Task OnInitializedAsync()
 	{
@@ -47,6 +46,7 @@
 			{
 				throw new InvalidOperationException($"Cannot disable 2FA for user as it's not currently enabled.");
 			}
+
 			return;
 		}
 	}

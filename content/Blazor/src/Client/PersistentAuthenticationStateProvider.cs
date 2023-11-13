@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Components.Authorization;
 
 namespace Wangkanai.Architecture;
 
-public class PersistentAuthenticationStateProvider
-	(PersistentComponentState persistentState) : AuthenticationStateProvider
+public class PersistentAuthenticationStateProvider(PersistentComponentState persistentState)
+	: AuthenticationStateProvider
 {
 	private static readonly Task<AuthenticationState> _unauthenticatedTask =
 		Task.FromResult(new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity())));
@@ -20,10 +20,12 @@ public class PersistentAuthenticationStateProvider
 			return _unauthenticatedTask;
 		}
 
-		Claim[] claims = [
+		Claim[] claims =
+		[
 			new Claim(ClaimTypes.NameIdentifier, userInfo.UserId),
 			new Claim(ClaimTypes.Name, userInfo.Email),
-			new Claim(ClaimTypes.Email, userInfo.Email)];
+			new Claim(ClaimTypes.Email, userInfo.Email)
+		];
 
 		return Task.FromResult(
 			new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity(claims,

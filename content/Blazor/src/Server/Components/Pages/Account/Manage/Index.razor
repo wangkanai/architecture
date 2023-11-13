@@ -41,8 +41,7 @@
 	private string? _username;
 	private string? _phoneNumber;
 
-	[SupplyParameterFromForm]
-	private InputModel Input { get; set; } = default!;
+	[SupplyParameterFromForm] private InputModel Input { get; set; } = default!;
 
 	protected override async Task OnInitializedAsync()
 	{

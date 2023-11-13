@@ -13,7 +13,7 @@
 
 @if (_recoveryCodes is not null)
 {
-	<ShowRecoveryCodes RecoveryCodes="_recoveryCodes.ToArray()" StatusMessage="@_message"/>
+	<ShowRecoveryCodes RecoveryCodes="_recoveryCodes.ToArray()" StatusMessage="@_message" />
 }
 else
 {
@@ -33,7 +33,7 @@ else
 	</div>
 	<div>
 		<form @formname="generate-recovery-codes" @onsubmit="OnSubmitAsync" method="post">
-			<AntiforgeryToken/>
+			<AntiforgeryToken />
 			<button class="btn btn-danger" type="submit">Generate Recovery Codes</button>
 		</form>
 	</div>

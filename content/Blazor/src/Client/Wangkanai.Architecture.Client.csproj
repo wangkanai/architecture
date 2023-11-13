@@ -1,19 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
-	<PropertyGroup>
-		<NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
-		<StaticWebAssetProjectMode>Default</StaticWebAssetProjectMode>
-	</PropertyGroup>
+  <PropertyGroup>
+    <NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
+    <StaticWebAssetProjectMode>Default</StaticWebAssetProjectMode>
+  </PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly"/>
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication"/>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly"/>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication"/>
 
-		<PackageReference Include="Wangkanai.Tabler"/>
-	</ItemGroup>
+    <PackageReference Include="Wangkanai.Tabler"/>
+  </ItemGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\Application\Wangkanai.Architecture.Application.csproj"/>
-	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Wangkanai.Architecture.Application.csproj"/>
+  </ItemGroup>
 
 </Project>

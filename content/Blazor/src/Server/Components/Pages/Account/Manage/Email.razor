@@ -61,8 +61,7 @@
 	private string? _email;
 	private bool _isEmailConfirmed;
 
-	[SupplyParameterFromForm]
-	private InputModel Input { get; set; } = default!;
+	[SupplyParameterFromForm] private InputModel Input { get; set; } = default!;
 
 	protected override async Task OnInitializedAsync()
 	{

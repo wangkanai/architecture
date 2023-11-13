@@ -9,6 +9,7 @@ Run `dotnet build -tl` to build the solution.
 ## Run
 
 Launch the server app:
+
 ```powershell
 cd src\Server
 dotnet watch
@@ -17,6 +18,7 @@ dotnet watch
 Navigate to https://localhost:9000. The application will automatically reload if you change any of the source files.
 
 Launch the mobile app:
+
 ```powershell
 cd src\Mobile
 dotnet watch
@@ -31,17 +33,20 @@ The **.editorconfig** file defines the coding styles applicable to this solution
 The solution contains unit, integration, functional, and acceptance tests.
 
 To run the unit, integration, and functional tests (excluding acceptance tests):
+
 ```powershell
 dotnet test --filter "FullyQualifiedName!~AcceptanceTests"
 ```
 
 To run the acceptance tests, first start the application:
+
 ```powershell
 cd .\src\Server\
 dotnet run
 ```
 
 Then, in a new console, run the tests:
+
 ```powershell
 cd .\src\Server\
 dotnet test
