@@ -21,14 +21,11 @@
 	private string? _message;
 	private ApplicationUser _user = default!;
 
-	[SupplyParameterFromQuery]
-	private string? UserId { get; set; }
+	[SupplyParameterFromQuery] private string? UserId { get; set; }
 
-	[SupplyParameterFromQuery]
-	private string? Email { get; set; }
+	[SupplyParameterFromQuery] private string? Email { get; set; }
 
-	[SupplyParameterFromQuery]
-	private string? Code { get; set; }
+	[SupplyParameterFromQuery] private string? Code { get; set; }
 
 	protected override async Task OnInitializedAsync()
 	{
@@ -49,8 +46,8 @@
 			return;
 		}
 
-	// In our UI email and user name are one and the same, so when we update the email
-	// we need to update the user name.
+		// In our UI email and user name are one and the same, so when we update the email
+		// we need to update the user name.
 		IdentityResult? setUserNameResult = await UserManager.SetUserNameAsync(_user, Email);
 		if (!setUserNameResult.Succeeded)
 		{

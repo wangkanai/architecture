@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 
-using Wangkanai.Architecture.Client;
 using Wangkanai.Architecture.Data;
 
 namespace Wangkanai.Architecture.Identity;

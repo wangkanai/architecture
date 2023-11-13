@@ -16,11 +16,9 @@
 @code {
 	string? statusMessage;
 
-	[SupplyParameterFromQuery]
-	public string? UserId { get; set; }
+	[SupplyParameterFromQuery] public string? UserId { get; set; }
 
-	[SupplyParameterFromQuery]
-	public string? Code { get; set; }
+	[SupplyParameterFromQuery] public string? Code { get; set; }
 
 	protected override async Task OnInitializedAsync()
 	{
@@ -33,7 +31,7 @@
 			ApplicationUser? user = await UserManager.FindByIdAsync(UserId);
 			if (user == null)
 			{
-	// Need a way to trigger a 404 from Blazor: https://github.com/dotnet/aspnetcore/issues/45654
+				// Need a way to trigger a 404 from Blazor: https://github.com/dotnet/aspnetcore/issues/45654
 				statusMessage = $"Error loading user with ID {UserId}";
 			}
 			else

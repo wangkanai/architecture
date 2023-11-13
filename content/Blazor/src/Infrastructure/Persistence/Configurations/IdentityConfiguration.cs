@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 using Wangkanai.Architecture.Identity;
 
-namespace Wangkanai.Architecture.Infrastructure.Persistence.Configurations;
+namespace Wangkanai.Architecture.Persistence.Configurations;
 
 public class ApplicationUserConfiguration : IEntityTypeConfiguration<ApplicationUser>
 {

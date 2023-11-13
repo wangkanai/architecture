@@ -1,15 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>
-		<RootNamespace>Wangkanai.Architecture</RootNamespace>
-	</PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
 
-	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
-
-		<PackageReference Include="Wangkanai.System"/>
-		<PackageReference Include="Wangkanai.Domain"/>
-		<PackageReference Include="Wangkanai.Validation"/>
-	</ItemGroup>
+    <PackageReference Include="Wangkanai.System"/>
+    <PackageReference Include="Wangkanai.Domain"/>
+    <PackageReference Include="Wangkanai.Validation"/>
+  </ItemGroup>
 
 </Project>

@@ -68,7 +68,7 @@ else
 }
 
 @code {
-		private const string AuthenticatorUriFormat = "otpauth://totp/{0}:{1}?secret={2}&issuer={0}&digits=6";
+	private const string AuthenticatorUriFormat = "otpauth://totp/{0}:{1}?secret={2}&issuer={0}&digits=6";
 
 	private ApplicationUser _user = default!;
 	private string? _sharedKey;
@@ -77,8 +77,7 @@ else
 	private IEnumerable<string>? _recoveryCodes;
 	private string? _message;
 
-	[SupplyParameterFromForm]
-	private InputModel Input { get; set; } = default!;
+	[SupplyParameterFromForm] private InputModel Input { get; set; } = default!;
 
 	protected override async Task OnInitializedAsync()
 	{
@@ -91,7 +90,7 @@ else
 
 	private async Task OnValidSubmitAsync()
 	{
-	// Strip spaces and hyphens
+		// Strip spaces and hyphens
 		string? verificationCode = Input.Code!.Replace(" ", string.Empty).Replace("-", string.Empty);
 
 		bool is2faTokenValid = await UserManager.VerifyTwoFactorTokenAsync(
@@ -122,7 +121,7 @@ else
 
 	private async ValueTask LoadSharedKeyAndQrCodeUriAsync(ApplicationUser user)
 	{
-	// Load the authenticator key & QR code URI to display on the form
+		// Load the authenticator key & QR code URI to display on the form
 		string? unformattedKey = await UserManager.GetAuthenticatorKeyAsync(user);
 		if (string.IsNullOrEmpty(unformattedKey))
 		{
@@ -138,13 +137,14 @@ else
 
 	private string FormatKey(string unformattedKey)
 	{
-		StringBuilder? result = new StringBuilder();
+		StringBuilder? result = new();
 		int currentPosition = 0;
 		while (currentPosition + 4 < unformattedKey.Length)
 		{
 			result.Append(unformattedKey.AsSpan(currentPosition, 4)).Append(' ');
 			currentPosition += 4;
 		}
+
 		if (currentPosition < unformattedKey.Length)
 		{
 			result.Append(unformattedKey.AsSpan(currentPosition));

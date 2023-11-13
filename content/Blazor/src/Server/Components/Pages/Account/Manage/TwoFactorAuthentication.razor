@@ -78,8 +78,7 @@ else
 	private bool _is2faEnabled;
 	private bool _isMachineRemembered;
 
-	[CascadingParameter]
-	private HttpContext HttpContext { get; set; } = default!;
+	[CascadingParameter] private HttpContext HttpContext { get; set; } = default!;
 
 	protected override async Task OnInitializedAsync()
 	{

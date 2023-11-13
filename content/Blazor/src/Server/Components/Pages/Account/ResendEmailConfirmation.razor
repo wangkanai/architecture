@@ -38,8 +38,7 @@
 @code {
 	private string? _message;
 
-	[SupplyParameterFromForm]
-	private InputModel Input { get; set; } = default!;
+	[SupplyParameterFromForm] private InputModel Input { get; set; } = default!;
 
 	protected override void OnInitialized()
 	{
@@ -71,9 +70,7 @@
 
 	private sealed class InputModel
 	{
-		[Required]
-		[EmailAddress]
-		public string? Email { get; set; }
+		[Required] [EmailAddress] public string? Email { get; set; }
 	}
 
 }

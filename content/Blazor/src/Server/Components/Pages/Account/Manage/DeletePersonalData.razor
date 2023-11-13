@@ -44,8 +44,7 @@
 	private ApplicationUser _user = default!;
 	private bool _requirePassword;
 
-	[SupplyParameterFromForm]
-	private InputModel Input { get; set; } = default!;
+	[SupplyParameterFromForm] private InputModel Input { get; set; } = default!;
 
 	protected override async Task OnInitializedAsync()
 	{
@@ -79,8 +78,7 @@
 
 	private sealed class InputModel
 	{
-		[DataType(DataType.Password)]
-		public string? Password { get; set; }
+		[DataType(DataType.Password)] public string? Password { get; set; }
 	}
 
 }

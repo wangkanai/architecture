@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin"/>
+    <PackageReference Include="SpecFlow.xUnit"/>
+  </ItemGroup>
+
+</Project>

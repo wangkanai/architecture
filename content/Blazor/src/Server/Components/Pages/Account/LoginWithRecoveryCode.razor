@@ -40,17 +40,15 @@
 	private string? _message;
 	private ApplicationUser _user = default!;
 
-	[SupplyParameterFromForm]
-	private InputModel Input { get; set; } = default!;
+	[SupplyParameterFromForm] private InputModel Input { get; set; } = default!;
 
-	[SupplyParameterFromQuery]
-	private string? ReturnUrl { get; set; }
+	[SupplyParameterFromQuery] private string? ReturnUrl { get; set; }
 
 	protected override async Task OnInitializedAsync()
 	{
 		Input ??= new InputModel();
 
-	// Ensure the user has gone through the username & password screen first
+		// Ensure the user has gone through the username & password screen first
 		ApplicationUser? user = await SignInManager.GetTwoFactorAuthenticationUserAsync();
 		if (user is null)
 		{
@@ -73,6 +71,7 @@
 			Logger.LogInformation("User with ID '{UserId}' logged in with a recovery code.", _user.Id);
 			RedirectManager.RedirectTo(ReturnUrl ?? "/");
 		}
+
 		if (result.IsLockedOut)
 		{
 			Logger.LogWarning("User account locked out.");

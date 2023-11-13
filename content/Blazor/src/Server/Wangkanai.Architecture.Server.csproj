@@ -1,37 +1,33 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-	<PropertyGroup>
-	  <RootNamespace>Wangkanai.Architecture</RootNamespace>
-	</PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Client\Wangkanai.Architecture.Client.csproj"/>
+    <ProjectReference Include="..\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj"/>
 
-	<ItemGroup>
-		<ProjectReference Include="..\Client\Wangkanai.Architecture.Client.csproj"/>
-		<ProjectReference Include="..\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj"/>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server"/>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore"/>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools"/>
 
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server"/>
-		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore"/>
-		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
-		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer"/>
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools"/>
+    <PackageReference Include="Wangkanai.Hosting"/>
+    <PackageReference Include="Wangkanai.Detection"/>
+    <PackageReference Include="Wangkanai.Blazor"/>
+  </ItemGroup>
 
-		<PackageReference Include="Wangkanai.Hosting" />
-		<PackageReference Include="Wangkanai.Detection"/>
-		<PackageReference Include="Wangkanai.Blazor"/>
-	</ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\lib\**"/>
+    <Content Include="wwwroot\lib\**" Watch="false"/>
+  </ItemGroup>
 
-	<ItemGroup>
-		<Content Remove="wwwroot\lib\**"/>
-		<Content Include="wwwroot\lib\**" Watch="false"/>
-	</ItemGroup>
-
-	<Target Name="NpmInstall" Inputs="package.json" Outputs="node_modules/.install-stamp">
-		<Exec Command="npm ci" Condition="$(RestorePackagesWithLockFile) == 'true'"/>
-		<Exec Command="npm install" Condition="$(RestorePackagesWithLockFile) != 'true'"/>
-		<Touch Files="node_modules/.install-stamp" AlwaysCreate="true"/>
-	</Target>
-	<Target Name="NpmRunBuild" DependsOnTargets="NpmInstall" BeforeTargets="BeforeBuild">
-		<Exec Command="npm run --silent lib" Condition="$(Configuration) != 'DEBUG'"/>
-		<Exec Command="npm run --silent scss" Condition="$(Configuration) != 'DEBUG'"/>
-	</Target>
+  <Target Name="NpmInstall" Inputs="package.json" Outputs="node_modules/.install-stamp">
+    <Exec Command="npm ci" Condition="$(RestorePackagesWithLockFile) == 'true'"/>
+    <Exec Command="npm install" Condition="$(RestorePackagesWithLockFile) != 'true'"/>
+    <Touch Files="node_modules/.install-stamp" AlwaysCreate="true"/>
+  </Target>
+  <Target Name="NpmRunBuild" DependsOnTargets="NpmInstall" BeforeTargets="BeforeBuild">
+    <Exec Command="npm run --silent lib" Condition="$(Configuration) != 'DEBUG'"/>
+    <Exec Command="npm run --silent scss" Condition="$(Configuration) != 'DEBUG'"/>
+  </Target>
 
 </Project>

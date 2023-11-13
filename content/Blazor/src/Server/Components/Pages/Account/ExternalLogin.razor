@@ -50,26 +50,21 @@
 </div>
 
 @code {
-		public const string LoginCallbackAction = "LoginCallback";
+	public const string LoginCallbackAction = "LoginCallback";
 
 	private string? _message;
 	private ExternalLoginInfo _externalLoginInfo = default!;
 	private IUserEmailStore<ApplicationUser> _emailStore = default!;
 
-	[SupplyParameterFromQuery]
-	private string? RemoteError { get; set; }
+	[SupplyParameterFromQuery] private string? RemoteError { get; set; }
 
-	[CascadingParameter]
-	public HttpContext HttpContext { get; set; } = default!;
+	[CascadingParameter] public HttpContext HttpContext { get; set; } = default!;
 
-	[SupplyParameterFromForm]
-	private InputModel Input { get; set; } = default!;
+	[SupplyParameterFromForm] private InputModel Input { get; set; } = default!;
 
-	[SupplyParameterFromQuery]
-	private string ReturnUrl { get; set; } = default!;
+	[SupplyParameterFromQuery] private string ReturnUrl { get; set; } = default!;
 
-	[SupplyParameterFromQuery]
-	private string? Action { get; set; } = default!;
+	[SupplyParameterFromQuery] private string? Action { get; set; } = default!;
 
 	protected override async Task OnInitializedAsync()
 	{
@@ -100,8 +95,8 @@
 				return;
 			}
 
-	// We should only reach this page via the login callback, so redirect back to
-	// the login page if we get here some other way.
+			// We should only reach this page via the login callback, so redirect back to
+			// the login page if we get here some other way.
 			RedirectManager.RedirectTo("/Account/Login");
 			return;
 		}
@@ -109,7 +104,7 @@
 
 	private async Task OnLoginCallbackAsync()
 	{
-	// Sign in the user with this external login provider if the user already has a login.
+		// Sign in the user with this external login provider if the user already has a login.
 		SignInResult? result = await SignInManager.ExternalLoginSignInAsync(
 			_externalLoginInfo.LoginProvider,
 			_externalLoginInfo.ProviderKey,
@@ -131,7 +126,7 @@
 			return;
 		}
 
-	// If the user does not have an account, then ask the user to create an account.
+		// If the user does not have an account, then ask the user to create an account.
 		if (_externalLoginInfo.Principal.HasClaim(c => c.Type == ClaimTypes.Email))
 		{
 			Input.Email = _externalLoginInfo.Principal.FindFirstValue(ClaimTypes.Email);
@@ -163,7 +158,7 @@
 				await EmailSender.SendEmailAsync(Input.Email!, "Confirm your email",
 					$"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
-	// If account confirmation is required, we need to show the link if we don't have a real email sender
+				// If account confirmation is required, we need to show the link if we don't have a real email sender
 				if (UserManager.Options.SignIn.RequireConfirmedAccount)
 				{
 					RedirectManager.RedirectTo("/Account/RegisterConfirmation", new Dictionary<string, object?> { ["Email"] = Input.Email });
@@ -200,14 +195,13 @@
 		{
 			throw new NotSupportedException("The default UI requires a user store with email support.");
 		}
+
 		return (IUserEmailStore<ApplicationUser>)UserStore;
 	}
 
 	private sealed class InputModel
 	{
-		[Required]
-		[EmailAddress]
-		public string? Email { get; set; }
+		[Required] [EmailAddress] public string? Email { get; set; }
 	}
 
 }

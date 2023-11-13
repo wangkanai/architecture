@@ -1,6 +1,6 @@
-# Blazor Clean Architecture
+# Wangkanai Clean Architecture
 
-[![Build Status](https://dev.azure.com/wangkanai/GitHub/_apis/build/status%2Farchitecture-ai?branchName=refs%2Fpull%2F3%2Fmerge)](https://dev.azure.com/wangkanai/GitHub/_build/latest?definitionId=38&branchName=refs%2Fpull%2F3%2Fmerge)
+[![Build status](https://dev.azure.com/wangkanai/GitHub/_apis/build/status/architecture-ai)](https://dev.azure.com/wangkanai/GitHub/_build/latest?definitionId=38)
 [![Nuget](https://img.shields.io/nuget/v/Wangkanai.Architecture.Templates?label=NuGet)](https://www.nuget.org/packages/Wangkanai.Architecture.Templates)
 [![Nuget](https://img.shields.io/nuget/dt/Wangkanai.Architecture.Templates?label=Downloads)](https://www.nuget.org/packages/Wangkanai.Architecture.Templates)
 
@@ -44,42 +44,10 @@ The easily way to get started using this template is install the following templ
 dotnet new install wangkanai.architecture.templates
 ```
 
-Once installed, you can create a new solution using the template. At this customization is still limited and will be improve in the future.
+## Templates
 
-```powershell
-dotnet new clean-blazor -n YourSolutionName -o YourOutputDirectory
-```
-
-Launch the app:
-```powershell
-cd src\Server
-dotnet watch
-```
-
-To learn more about what options are available, run `dotnet new clean-blazor --help`.
-```powershell
-dotnet new clean-blazor --help
-```
-
-## Database
-
-The template is configured to use SQL Server by default. To use a different database, you will need to update the following command:
-
-```powershell
-dotnet new clean-blazor --use-dbproivder <dbproivder>
-```
-
-When you run the application the database will be created (if it does not already exist) and the latest migrations will be applied. Running database migrations is very simple. Just add the flags to your command (assume that you are executing from the repository root):
-
-* `--project src\Infrastructure`
-* `--startup-project src\Server`
-* `--output-dir Data\Migrations`
-
-For example, too add a new migration named `Initial` you would run the following command from the root folder:
-
-```powershell
-dotnet ef migrations add "Initial" --project src\Infrastructure --startup-project src\Server --output-dir Data\Migrations
-```
+- [Blazor Clean Architecture](docs/Blazor.md)
+- [Maui Clean Architectur](docs/Maui.md)
 
 ## Support
 

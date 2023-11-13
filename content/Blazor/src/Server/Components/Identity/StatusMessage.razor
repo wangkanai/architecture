@@ -20,11 +20,9 @@
 
 @code {
 
-	[Parameter]
-	public string? Message { get; set; }
+	[Parameter] public string? Message { get; set; }
 
-	[CascadingParameter]
-	private HttpContext HttpContext { get; set; } = default!;
+	[CascadingParameter] private HttpContext HttpContext { get; set; } = default!;
 
 	private string? MessageFromCookie => HttpContext.Request.Cookies[IdentityRedirectManager.StatusCookieName];
 }

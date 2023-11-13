@@ -3,6 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutions", ".solutions", "{55614A24-039F-454A-BFF8-DD8C7E806100}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		Directory.Packages.props = Directory.Packages.props
+		ef-migrations.ps1 = ef-migrations.ps1
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".template.config", "{ED5925E3-85AB-454E-A2A2-AC379C7AC2C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmark", "benchmark", "{DB5D1EEE-C0C2-4EC1-BB64-118502ABFBBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9E386252-22DE-45FE-8F3C-09F9A82EF519}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Benchmark", "benchmark\Wangkanai.Architecture.Benchmark.csproj", "{3F5B726A-290F-4F08-A10C-D1935B2715A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Domain", "src\Domain\Wangkanai.Architecture.Domain.csproj", "{35CD170E-7A4F-4DAA-8FC7-EAD92CE37EE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +31,18 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F5B726A-290F-4F08-A10C-D1935B2715A0} = {DB5D1EEE-C0C2-4EC1-BB64-118502ABFBBA}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F5B726A-290F-4F08-A10C-D1935B2715A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F5B726A-290F-4F08-A10C-D1935B2715A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F5B726A-290F-4F08-A10C-D1935B2715A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F5B726A-290F-4F08-A10C-D1935B2715A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35CD170E-7A4F-4DAA-8FC7-EAD92CE37EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35CD170E-7A4F-4DAA-8FC7-EAD92CE37EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35CD170E-7A4F-4DAA-8FC7-EAD92CE37EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35CD170E-7A4F-4DAA-8FC7-EAD92CE37EE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

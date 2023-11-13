@@ -12,10 +12,8 @@ using Microsoft.Extensions.Primitives;
 
 using Wangkanai.Architecture.Components.Pages.Account;
 using Wangkanai.Architecture.Components.Pages.Account.Manage;
-using Wangkanai.Architecture.Data;
-using Wangkanai.Architecture.Identity;
 
-namespace Microsoft.AspNetCore.Routing;
+namespace Wangkanai.Architecture.Identity.Extensions;
 
 internal static class IdentityComponentsEndpointRouteBuilderExtensions
 {
@@ -32,9 +30,11 @@ internal static class IdentityComponentsEndpointRouteBuilderExtensions
 			[FromForm]     string                         provider,
 			[FromForm]     string                         returnUrl) =>
 		{
-			IEnumerable<KeyValuePair<string, StringValues>> query = [
+			IEnumerable<KeyValuePair<string, StringValues>> query =
+			[
 				new KeyValuePair<string, StringValues>("ReturnUrl", returnUrl),
-				new KeyValuePair<string, StringValues>("Action", ExternalLogin.LoginCallbackAction)];
+				new KeyValuePair<string, StringValues>("Action", ExternalLogin.LoginCallbackAction)
+			];
 
 			string? redirectUrl = UriHelper.BuildRelative(
 				context.Request.PathBase,
@@ -84,7 +84,7 @@ internal static class IdentityComponentsEndpointRouteBuilderExtensions
 			downloadLogger.LogInformation("User with ID '{UserId}' asked for their personal data.", userId);
 
 			// Only include personal data for download
-			Dictionary<string, string>? personalData = new Dictionary<string, string>();
+			Dictionary<string, string>? personalData = new();
 			IEnumerable<PropertyInfo>? personalDataProps = typeof(ApplicationUser).GetProperties().Where(
 				prop => Attribute.IsDefined(prop, typeof(PersonalDataAttribute)));
 			foreach (PropertyInfo? p in personalDataProps)

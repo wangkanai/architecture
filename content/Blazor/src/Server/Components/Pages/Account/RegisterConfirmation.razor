@@ -34,11 +34,9 @@ else
 	string? emailConfirmationLink;
 	string? statusMessage;
 
-	[SupplyParameterFromQuery]
-	public string? Email { get; set; }
+	[SupplyParameterFromQuery] public string? Email { get; set; }
 
-	[SupplyParameterFromQuery]
-	public string ReturnUrl { get; set; } = "/";
+	[SupplyParameterFromQuery] public string ReturnUrl { get; set; } = "/";
 
 	protected override async Task OnInitializedAsync()
 	{
@@ -51,12 +49,12 @@ else
 			ApplicationUser? user = await UserManager.FindByEmailAsync(Email);
 			if (user == null)
 			{
-	// Need a way to trigger a 404 from Blazor: https://github.com/dotnet/aspnetcore/issues/45654
+				// Need a way to trigger a 404 from Blazor: https://github.com/dotnet/aspnetcore/issues/45654
 				statusMessage = $"Error finding user for unspecified email";
 			}
 			else if (EmailSender is NoOpEmailSender)
 			{
-	// Once you add a real email sender, you should remove this code that lets you confirm the account
+				// Once you add a real email sender, you should remove this code that lets you confirm the account
 				string? userId = await UserManager.GetUserIdAsync(user);
 				string? code = await UserManager.GenerateEmailConfirmationTokenAsync(user);
 				code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));

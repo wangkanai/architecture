@@ -47,7 +47,7 @@ public class Color : ValueObject
 
 	public static Color From(string code)
 	{
-		Color? color = new Color { Code = code };
+		Color color = new() { Code = code };
 		if (!SupportedColors.Contains(color))
 		{
 			throw new UnreachableException();
