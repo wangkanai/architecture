@@ -4,4 +4,8 @@
     <OutputType>Exe</OutputType>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\src\Domain\Wangkanai.Architecture.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
