@@ -46,8 +46,8 @@ dotnet new install wangkanai.architecture.templates
 
 ## Templates
 
-- [Blazor Clean Architecture](docs/Blazor.md)
-- [Maui Clean Architectur](docs/Maui.md)
+- [Blazor Clean Architecture](https://github.com/wangkanai/architecture/blob/main/docs/Blazor.md)
+- [Maui Clean Architectur](https://github.com/wangkanai/architecture/blob/main/docs/Maui.md)
 
 ## Support
 
