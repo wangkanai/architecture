@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
 
@@ -7,5 +6,4 @@
     <PackageReference Include="Wangkanai.Domain"/>
     <PackageReference Include="Wangkanai.Validation"/>
   </ItemGroup>
-
 </Project>

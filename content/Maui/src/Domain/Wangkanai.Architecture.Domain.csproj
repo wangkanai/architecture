@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
-
+    <PackageReference Include="Wangkanai.System"/>
+    <PackageReference Include="Wangkanai.Domain"/>
+    <PackageReference Include="Wangkanai.Validation"/>
+  </ItemGroup>
 </Project>

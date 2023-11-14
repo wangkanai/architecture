@@ -5,4 +5,13 @@
 		<Nullable>enable</Nullable>
 		<SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
 	</PropertyGroup>
+
+	<PropertyGroup Condition="!$(MSBuildProjectName.Contains('Tests'))">
+		<RootNamespace>Wangkanai.Architecture</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="$(MSBuildProjectName.Contains('Tests'))">
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+	</PropertyGroup>
 </Project>
