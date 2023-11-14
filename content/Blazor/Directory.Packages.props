@@ -43,5 +43,6 @@
 		<PackageVersion Include="Wangkanai.Detection" Version="8.7.0"/>
 		<PackageVersion Include="Wangkanai.Blazor" Version="3.6.0"/>
 		<PackageVersion Include="Wangkanai.Tabler" Version="3.6.0"/>
+		<PackageVersion Include="Wangkanai.Testing" Version="0.7.0"/>
 	</ItemGroup>
 </Project>
