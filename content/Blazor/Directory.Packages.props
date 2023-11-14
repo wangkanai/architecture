@@ -23,13 +23,13 @@
 		<PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(FrameworkVersion)" PrivateAssets="all"/>
 		<!--tests-->
 		<PackageVersion Include="Microsoft.AspNetCore.TestHost" Version="$(FrameworkVersion)"/>
-		<PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.7.2"/>
+		<PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
 		<PackageVersion Include="Moq" Version="4.20.69"/>
 		<PackageVersion Include="xunit" Version="2.6.1"/>
 		<PackageVersion Include="xunit.runner.visualstudio" Version="2.5.3" PrivateAssets="all"/>
 		<PackageVersion Include="coverlet.collector" Version="6.0.0" PrivateAssets="all"/>
 		<PackageVersion Include="coverlet.msbuild" Version="6.0.0" PrivateAssets="all"/>
-		<PackageVersion Include="FluentAssertions" Version="6.2.0"/>
+		<PackageVersion Include="FluentAssertions" Version="6.12.0"/>
 		<PackageVersion Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57"/>
 		<PackageVersion Include="SpecFlow.xUnit" Version="3.9.74"/>
 		<!--benchmark-->
