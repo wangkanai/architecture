@@ -12,6 +12,8 @@
 		<PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)"/>
 		<PackageVersion Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)"/>
 		<PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)"/>
+		<PackageVersion Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="$(FrameworkVersion)"/>
+		<PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="$(FrameworkVersion)"/>
 		<PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0-rc.2.23479.6"/>
 		<!--entity framework-->
 		<PackageVersion Include="Microsoft.EntityFrameworkCore" Version="$(EntityFrameworkVersion)"/>
