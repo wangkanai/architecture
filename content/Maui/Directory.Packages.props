@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 		<FrameworkVersion>8.0.0</FrameworkVersion>
-		<MauiVersion>8.0.0</MauiVersion>
+		<MauiVersion>8.0.3</MauiVersion>
 		<EntityFrameworkVersion>8.0.0</EntityFrameworkVersion>
 	</PropertyGroup>
 	<ItemGroup>
