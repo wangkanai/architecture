@@ -13,4 +13,8 @@
 
     <PackageReference Include="Wangkanai.Tabler"/>
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageVersion Update="Wangkanai.Tabler" Version="4.0.0" />
+  </ItemGroup>
 </Project>
