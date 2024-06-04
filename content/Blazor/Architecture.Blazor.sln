@@ -9,7 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutions", ".solutions", 
 		.gitignore = .gitignore
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets
-		Directory.Packages.props = Directory.Packages.props
 		ef-migrations.ps1 = ef-migrations.ps1
 		README.md = README.md
 	EndProjectSection

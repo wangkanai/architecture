@@ -14,7 +14,7 @@ insert_final_newline    =false
 indent_size =2
 indent_style=tab
 
-[*.{csproj,props,targets}]
+[*.{csproj, props, targets}]
 indent_size =2
 indent_style=tab
 
