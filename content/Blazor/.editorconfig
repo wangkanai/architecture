@@ -3,7 +3,7 @@ root=true
 # All files
 [*]
 charset                                                               =utf-8
-indent_style                                                          =tab
+indent_style                                                          =space
 indent_size                                                           =4
 tab_width                                                             =4
 end_of_line                                                           =crlf
@@ -29,9 +29,9 @@ resharper_html_space_after_last_pi_attribute                          =true
 resharper_html_space_before_self_closing                              =true
 resharper_modifiers_order                                             =public private protected internal static extern new virtual abstract sealed override readonly unsafe volatile async file required
 # resharper_normalize_tag_names=true
-resharper_no_indent_inside_elements                                   =thead, tbody, tfoot
+resharper_no_indent_inside_elements                                   =thead,tbody,tfoot
 resharper_no_indent_inside_if_element_longer_than                     =200
-resharper_parentheses_group_non_obvious_operations                    =none, arithmetic, relational, conditional
+resharper_parentheses_group_non_obvious_operations                    =none,arithmetic,relational,conditional
 resharper_sort_attributes                                             =false
 resharper_use_heuristics_for_body_style                               =false
 resharper_use_indent_from_vs                                          =false
@@ -75,7 +75,7 @@ indent_size=2
 # Csproj files
 [*.{csproj, props, targets}]
 indent_size =2
-indent_style=space
+indent_style=tab
 
 # Json files
 [*.json]
@@ -91,15 +91,21 @@ max_line_length          =500
 resharper_attribute_style=on_single_line
 
 [*.{razor, html, cshtml}]
-indent_size=2
-# resharper_html_allow_far_alignment=true
-# resharper_html_linebreaks_inside_tags_for_elements_with_child_elements=true
-# ij_html_do_not_indent_children_of_tags = false
+indent_size                                      =2
+indent_style                                     =tab
+max_line_length                                  =500
+resharper_html_allow_far_alignment               =true
+resharper_html_attribute_indent                  =single_indent
+resharper_html_attribute_style                   =on_single_line
+resharper_html_linebreak_before_elements         =body,div,p,main,section,article,form,h1,h2,h3
+resharper_normalize_tag_names                    =true
+resharper_no_indent_inside_if_element_longer_than=1000
+resharper_no_indent_inside_elements              =html,thead,tbody,tfoot
 
 
 #### .NET Coding Conventions ####
 [*.{cs, vb, cpp, h}]
-file_header_template                                            =Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
+file_header_template                                            =Copyright (c) 2014-2024 Sarin Na Wangkanai,All Rights Reserved.
 
 # Organize usings
 dotnet_separate_import_directive_groups                         =true
@@ -205,7 +211,7 @@ csharp_style_conditional_delegate_call                                  =true:su
 
 # Modifier preferences
 csharp_prefer_static_local_function                                     =true:warning
-csharp_preferred_modifier_order                                         =public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent
+csharp_preferred_modifier_order                                         =public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:silent
 
 # Code-block preferences
 csharp_prefer_braces                                                    =true:silent
@@ -356,43 +362,43 @@ dotnet_naming_rule.non_field_members_should_be_pascalcase.style                =
 # Symbol specifications
 
 dotnet_naming_symbols.interfaces.applicable_kinds                              =interface
-dotnet_naming_symbols.interfaces.applicable_accessibilities                    =public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.interfaces.applicable_accessibilities                    =public,internal,private,protected,protected_internal,private_protected
 dotnet_naming_symbols.interfaces.required_modifiers                            =
 
 dotnet_naming_symbols.enums.applicable_kinds                                   =enum
-dotnet_naming_symbols.enums.applicable_accessibilities                         =public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.enums.applicable_accessibilities                         =public,internal,private,protected,protected_internal,private_protected
 dotnet_naming_symbols.enums.required_modifiers                                 =
 
 dotnet_naming_symbols.events.applicable_kinds                                  =event
-dotnet_naming_symbols.events.applicable_accessibilities                        =public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.events.applicable_accessibilities                        =public,internal,private,protected,protected_internal,private_protected
 dotnet_naming_symbols.events.required_modifiers                                =
 
 dotnet_naming_symbols.methods.applicable_kinds                                 =method
-dotnet_naming_symbols.methods.applicable_accessibilities                       =public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.methods.applicable_accessibilities                       =public,internal,private,protected,protected_internal,private_protected
 dotnet_naming_symbols.methods.required_modifiers                               =
 
 dotnet_naming_symbols.properties.applicable_kinds                              =property
-dotnet_naming_symbols.properties.applicable_accessibilities                    =public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.properties.applicable_accessibilities                    =public,internal,private,protected,protected_internal,private_protected
 dotnet_naming_symbols.properties.required_modifiers                            =
 
 dotnet_naming_symbols.public_fields.applicable_kinds                           =field
-dotnet_naming_symbols.public_fields.applicable_accessibilities                 =public, internal
+dotnet_naming_symbols.public_fields.applicable_accessibilities                 =public,internal
 dotnet_naming_symbols.public_fields.required_modifiers                         =
 
 dotnet_naming_symbols.private_fields.applicable_kinds                          =field
-dotnet_naming_symbols.private_fields.applicable_accessibilities                =private, protected, protected_internal, private_protected
+dotnet_naming_symbols.private_fields.applicable_accessibilities                =private,protected,protected_internal,private_protected
 dotnet_naming_symbols.private_fields.required_modifiers                        =
 
 dotnet_naming_symbols.private_static_fields.applicable_kinds                   =field
-dotnet_naming_symbols.private_static_fields.applicable_accessibilities         =private, protected, protected_internal, private_protected
+dotnet_naming_symbols.private_static_fields.applicable_accessibilities         =private,protected,protected_internal,private_protected
 dotnet_naming_symbols.private_static_fields.required_modifiers                 =static
 
-dotnet_naming_symbols.types_and_namespaces.applicable_kinds                    =namespace, class, struct, interface, enum
-dotnet_naming_symbols.types_and_namespaces.applicable_accessibilities          =public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.types_and_namespaces.applicable_kinds                    =namespace,class,struct,interface,enum
+dotnet_naming_symbols.types_and_namespaces.applicable_accessibilities          =public,internal,private,protected,protected_internal,private_protected
 dotnet_naming_symbols.types_and_namespaces.required_modifiers                  =
 
-dotnet_naming_symbols.non_field_members.applicable_kinds                       =property, event, method
-dotnet_naming_symbols.non_field_members.applicable_accessibilities             =public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.non_field_members.applicable_kinds                       =property,event,method
+dotnet_naming_symbols.non_field_members.applicable_accessibilities             =public,internal,private,protected,protected_internal,private_protected
 dotnet_naming_symbols.non_field_members.required_modifiers                     =
 
 dotnet_naming_symbols.type_parameters.applicable_kinds                         =namespace
@@ -400,7 +406,7 @@ dotnet_naming_symbols.type_parameters.applicable_accessibilities               =
 dotnet_naming_symbols.type_parameters.required_modifiers                       =
 
 dotnet_naming_symbols.private_constant_fields.applicable_kinds                 =field
-dotnet_naming_symbols.private_constant_fields.applicable_accessibilities       =private, protected, protected_internal, private_protected
+dotnet_naming_symbols.private_constant_fields.applicable_accessibilities       =private,protected,protected_internal,private_protected
 dotnet_naming_symbols.private_constant_fields.required_modifiers               =const
 
 dotnet_naming_symbols.local_variables.applicable_kinds                         =local
@@ -416,16 +422,16 @@ dotnet_naming_symbols.parameters.applicable_accessibilities                    =
 dotnet_naming_symbols.parameters.required_modifiers                            =
 
 dotnet_naming_symbols.public_constant_fields.applicable_kinds                  =field
-dotnet_naming_symbols.public_constant_fields.applicable_accessibilities        =public, internal
+dotnet_naming_symbols.public_constant_fields.applicable_accessibilities        =public,internal
 dotnet_naming_symbols.public_constant_fields.required_modifiers                =const
 
 dotnet_naming_symbols.public_static_readonly_fields.applicable_kinds           =field
-dotnet_naming_symbols.public_static_readonly_fields.applicable_accessibilities =public, internal
-dotnet_naming_symbols.public_static_readonly_fields.required_modifiers         =readonly, static
+dotnet_naming_symbols.public_static_readonly_fields.applicable_accessibilities =public,internal
+dotnet_naming_symbols.public_static_readonly_fields.required_modifiers         =readonly,static
 
 dotnet_naming_symbols.private_static_readonly_fields.applicable_kinds          =field
-dotnet_naming_symbols.private_static_readonly_fields.applicable_accessibilities=private, protected, protected_internal, private_protected
-dotnet_naming_symbols.private_static_readonly_fields.required_modifiers        =readonly, static
+dotnet_naming_symbols.private_static_readonly_fields.applicable_accessibilities=private,protected,protected_internal,private_protected
+dotnet_naming_symbols.private_static_readonly_fields.required_modifiers        =readonly,static
 
 dotnet_naming_symbols.local_functions.applicable_kinds                         =local_function
 dotnet_naming_symbols.local_functions.applicable_accessibilities               =*

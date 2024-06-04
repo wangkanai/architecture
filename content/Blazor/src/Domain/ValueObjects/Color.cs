@@ -4,6 +4,7 @@ using System.Diagnostics;
 
 using Microsoft.EntityFrameworkCore;
 
+using Wangkanai.Domain;
 using Wangkanai.Domain.Common;
 
 namespace Wangkanai.Architecture.ValueObjects;
