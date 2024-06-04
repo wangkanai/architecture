@@ -6,7 +6,9 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<!--sourcelink-->
-		<PackageVersion Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+		<PackageVersion Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0"/>
+		<PackageVersion Include="Microsoft.SourceLink.AzureRepos.Git" Version="$(FrameworkVersion)" PrivateAssets="All"/>
+		<PackageVersion Include="Microsoft.SourceLink.GitHub" Version="$(FrameworkVersion)" PrivateAssets="All"/>
 		<!--framework-->
 		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly" Version="$(FrameworkVersion)"/>
 		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="$(FrameworkVersion)"/>
@@ -37,13 +39,13 @@
 		<!--benchmark-->
 		<PackageVersion Include="BenchmarkDotNet" Version="0.13.9"/>
 		<!--wangkanai-->
-		<PackageVersion Include="Wangkanai.System" Version="3.7.0"/>
-		<PackageVersion Include="Wangkanai.Validation" Version="3.7.0"/>
-		<PackageVersion Include="Wangkanai.Domain" Version="3.7.0"/>
-		<PackageVersion Include="Wangkanai.Hosting" Version="2.6.0"/>
-		<PackageVersion Include="Wangkanai.Detection" Version="8.8.0"/>
-		<PackageVersion Include="Wangkanai.Blazor" Version="3.7.0"/>
-		<PackageVersion Include="Wangkanai.Tabler" Version="3.7.0"/>
-		<PackageVersion Include="Wangkanai.Testing" Version="0.8.0"/>
+		<PackageVersion Include="Wangkanai.System" Version="4.0.0"/>
+		<PackageVersion Include="Wangkanai.Validation" Version="4.0.0"/>
+		<PackageVersion Include="Wangkanai.Domain" Version="3.10.0"/>
+		<PackageVersion Include="Wangkanai.Hosting" Version="3.0.0"/>
+		<PackageVersion Include="Wangkanai.Detection" Version="8.11.0"/>
+		<PackageVersion Include="Wangkanai.Blazor" Version="3.10.0"/>
+		<PackageVersion Include="Wangkanai.Tabler" Version="3.10.0"/>
+		<PackageVersion Include="Wangkanai.Testing" Version="1.0.0"/>
 	</ItemGroup>
 </Project>
