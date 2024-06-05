@@ -3,7 +3,22 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.SourceLink.GitHub"/>
     </ItemGroup>
+
+<!--    &lt;!&ndash; Benchmark &ndash;&gt;-->
+<!--    <PropertyGroup Condition="$(MSBuildProjectName.Contains('Benchmark'))">-->
+<!--        <OutputType>Exe</OutputType>-->
+<!--        <Optimize>true</Optimize>-->
+<!--        <IsPackable>false</IsPackable>-->
+<!--        <SonarQubeExclude>true</SonarQubeExclude>-->
+<!--    </PropertyGroup>-->
+<!--    <ItemGroup Condition="$(MSBuildProjectName.Contains('Benchmark'))">-->
+<!--        <PackageReference Include="BenchmarkDotNet"/>-->
+<!--    </ItemGroup>-->
+
     <!-- xUnit Tests-->
+    <ItemGroup Condition="$(MSBuildProjectName.Contains('Tests'))">
+        <Using Include="Xunit" />
+    </ItemGroup>
     <ItemGroup Condition="$(MSBuildProjectName.Contains('Tests'))">
         <PackageReference Include="Microsoft.AspNetCore.TestHost"/>
         <PackageReference Include="Microsoft.NET.Test.Sdk"/>
