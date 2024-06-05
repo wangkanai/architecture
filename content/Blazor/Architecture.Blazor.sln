@@ -11,6 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutions", ".solutions", 
 		Directory.Build.targets = Directory.Build.targets
 		ef-migrations.ps1 = ef-migrations.ps1
 		README.md = README.md
+		benchmark.ps1 = benchmark.ps1
+		build.ps1 = build.ps1
+		Directory.Packages.props = Directory.Packages.props
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Domain", "src\Domain\Wangkanai.Architecture.Domain.csproj", "{738EA23C-10CB-4F08-B666-3B633377BD6C}"
@@ -29,20 +32,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmark", "benchmark", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Benchmark", "benchmark\Wangkanai.Architecture.Benchmark.csproj", "{CAF53D28-F8F7-4C8D-916B-3B6ABFDF2031}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application.UnitTests", "tests\Application\Wangkanai.Architecture.Application.UnitTests.csproj", "{EDB1C738-B3F2-476D-A938-D06D1C0CB196}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Domain.UnitTests", "tests\Domain\Wangkanai.Architecture.Domain.UnitTests.csproj", "{669F51AD-5802-4D2A-AA19-EBE39322D994}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application.IntegrationTests", "tests\Integration\Wangkanai.Architecture.Application.IntegrationTests.csproj", "{D75ABDE0-92F8-494E-9D6C-81D678418A7C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Server.AcceptanceTests", "tests\Acceptance\Wangkanai.Architecture.Server.AcceptanceTests.csproj", "{DDF6D5B6-244D-46E1-A57C-3D2B65482444}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".template.config", "{B39E045A-5EFB-4015-9558-E32BBFFCB940}"
 	ProjectSection(SolutionItems) = preProject
 		.template.config\dotnetcli.host.json = .template.config\dotnetcli.host.json
 		.template.config\ide.host.json = .template.config\ide.host.json
 		.template.config\template.json = .template.config\template.json
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.UnitTests", "tests\Unit\Wangkanai.Architecture.UnitTests.csproj", "{633DD6BA-33A2-4419-86A0-622689AEA17F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.IntegrationTests", "tests\Integration\Wangkanai.Architecture.IntegrationTests.csproj", "{6F0F5145-887A-432D-A39A-A860AC5E5689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.FunctionalTests", "tests\Functional\Wangkanai.Architecture.FunctionalTests.csproj", "{7DAC1917-1550-42EA-8C42-F5FAB2FD41C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,28 +78,23 @@ Global
 		{CAF53D28-F8F7-4C8D-916B-3B6ABFDF2031}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAF53D28-F8F7-4C8D-916B-3B6ABFDF2031}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAF53D28-F8F7-4C8D-916B-3B6ABFDF2031}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EDB1C738-B3F2-476D-A938-D06D1C0CB196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EDB1C738-B3F2-476D-A938-D06D1C0CB196}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EDB1C738-B3F2-476D-A938-D06D1C0CB196}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EDB1C738-B3F2-476D-A938-D06D1C0CB196}.Release|Any CPU.Build.0 = Release|Any CPU
-		{669F51AD-5802-4D2A-AA19-EBE39322D994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{669F51AD-5802-4D2A-AA19-EBE39322D994}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{669F51AD-5802-4D2A-AA19-EBE39322D994}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{669F51AD-5802-4D2A-AA19-EBE39322D994}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D75ABDE0-92F8-494E-9D6C-81D678418A7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D75ABDE0-92F8-494E-9D6C-81D678418A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D75ABDE0-92F8-494E-9D6C-81D678418A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D75ABDE0-92F8-494E-9D6C-81D678418A7C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DDF6D5B6-244D-46E1-A57C-3D2B65482444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DDF6D5B6-244D-46E1-A57C-3D2B65482444}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DDF6D5B6-244D-46E1-A57C-3D2B65482444}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DDF6D5B6-244D-46E1-A57C-3D2B65482444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{633DD6BA-33A2-4419-86A0-622689AEA17F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633DD6BA-33A2-4419-86A0-622689AEA17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633DD6BA-33A2-4419-86A0-622689AEA17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633DD6BA-33A2-4419-86A0-622689AEA17F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0F5145-887A-432D-A39A-A860AC5E5689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0F5145-887A-432D-A39A-A860AC5E5689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0F5145-887A-432D-A39A-A860AC5E5689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0F5145-887A-432D-A39A-A860AC5E5689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DAC1917-1550-42EA-8C42-F5FAB2FD41C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DAC1917-1550-42EA-8C42-F5FAB2FD41C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DAC1917-1550-42EA-8C42-F5FAB2FD41C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DAC1917-1550-42EA-8C42-F5FAB2FD41C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CAF53D28-F8F7-4C8D-916B-3B6ABFDF2031} = {08918D66-9639-4CD7-8D48-4AD67FBB104A}
-		{EDB1C738-B3F2-476D-A938-D06D1C0CB196} = {36630124-4643-4900-841B-06DB0B0017A6}
-		{669F51AD-5802-4D2A-AA19-EBE39322D994} = {36630124-4643-4900-841B-06DB0B0017A6}
-		{D75ABDE0-92F8-494E-9D6C-81D678418A7C} = {36630124-4643-4900-841B-06DB0B0017A6}
-		{DDF6D5B6-244D-46E1-A57C-3D2B65482444} = {36630124-4643-4900-841B-06DB0B0017A6}
+		{633DD6BA-33A2-4419-86A0-622689AEA17F} = {36630124-4643-4900-841B-06DB0B0017A6}
+		{6F0F5145-887A-432D-A39A-A860AC5E5689} = {36630124-4643-4900-841B-06DB0B0017A6}
+		{7DAC1917-1550-42EA-8C42-F5FAB2FD41C6} = {36630124-4643-4900-841B-06DB0B0017A6}
 	EndGlobalSection
 EndGlobal

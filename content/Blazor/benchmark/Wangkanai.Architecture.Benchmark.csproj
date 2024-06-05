@@ -1,11 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\src\Domain\Wangkanai.Architecture.Domain.csproj" />
-  </ItemGroup>
-
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<Optimize>true</Optimize>
+		<IsPackable>false</IsPackable>
+		<SonarQubeExclude>true</SonarQubeExclude>
+		<TargetFrameworks>net8.0;net6.0;net7.0</TargetFrameworks>
+		<TargetFramework />
+	</PropertyGroup>
+	<ItemGroup>
+		<!--		<ProjectReference Include="..\src\Domain\Wangkanai.Architecture.Domain.csproj"/>-->
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="BenchmarkDotNet"/>
+	</ItemGroup>
 </Project>
