@@ -5,8 +5,9 @@
 		<IsPackable>false</IsPackable>
 		<SonarQubeExclude>true</SonarQubeExclude>
 	</PropertyGroup>
-	<ItemGroup>
-		<!--		<ProjectReference Include="..\src\Domain\Wangkanai.Architecture.Domain.csproj"/>-->
+	<ItemGroup><!--		<ProjectReference Include="..\src\Domain\Wangkanai.Architecture.Domain.csproj"/>-->
+	
+	  <ProjectReference Include="..\src\Application\Wangkanai.Architecture.Application.csproj" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="BenchmarkDotNet"/>

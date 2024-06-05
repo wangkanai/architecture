@@ -13,4 +13,8 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Application\Wangkanai.Architecture.Application.csproj" />
+  </ItemGroup>
+
 </Project>
