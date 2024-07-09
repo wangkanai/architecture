@@ -3,6 +3,9 @@
 using System.Reflection;
 using System.Text.Json;
 
+using Architecture.Components.Pages.Account;
+using Architecture.Components.Pages.Account.Manage;
+
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Http.Extensions;
@@ -10,10 +13,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 
-using Wangkanai.Architecture.Components.Pages.Account;
-using Wangkanai.Architecture.Components.Pages.Account.Manage;
-
-namespace Wangkanai.Architecture.Identity.Extensions;
+namespace Architecture.Identity.Extensions;
 
 internal static class IdentityComponentsEndpointRouteBuilderExtensions
 {

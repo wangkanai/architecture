@@ -10,7 +10,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\src\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj" />
+		<Using Include="Xunit" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\src\Infrastructure\Architecture.Infrastructure.csproj" />
 	</ItemGroup>
 
 </Project>

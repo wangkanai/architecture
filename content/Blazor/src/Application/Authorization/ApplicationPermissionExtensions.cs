@@ -2,7 +2,7 @@
 
 using Wangkanai.Extensions;
 
-namespace Wangkanai.Architecture.Authorization;
+namespace Architecture.Authorization;
 
 public static class ApplicationPermissionExtensions
 {

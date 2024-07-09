@@ -4,7 +4,7 @@
 	"name": "Clean Architecture Blazor Solution",
 	"shortName": "clean-blazor",
 	"identity": "CleanBlazor-CSharp",
-	"sourceName": "Wangkanai.Architecture",
+	"sourceName": "Architecture",
 	"preferNameDirectory": true,
 	"tags": {
 		"language": "C#",
@@ -30,7 +30,7 @@
 				"*.nuspec"
 			],
 			"rename": {
-				"Architecture.Blazor.sln": "Wangkanai.Architecture.sln"
+				"Architecture.Blazor.sln": "Architecture.sln"
 			}
 		}
 	]

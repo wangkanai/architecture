@@ -1,9 +1,9 @@
 // Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
 
+using Architecture;
+
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-
-using Wangkanai.Architecture;
 
 WebAssemblyHostBuilder? builder = WebAssemblyHostBuilder.CreateDefault(args);
 

@@ -1,10 +1,10 @@
 ﻿// Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
 
+using Architecture.Models;
+
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-using Wangkanai.Architecture.Models;
-
-namespace Wangkanai.Architecture.Persistence.Configurations;
+namespace Architecture.Persistence.Configurations;
 
 public class CountryConfiguration : IEntityTypeConfiguration<Country>
 {

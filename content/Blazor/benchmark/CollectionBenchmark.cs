@@ -3,7 +3,7 @@
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 
-namespace Wangkanai.Architecture;
+namespace Architecture;
 
 [SimpleJob(RuntimeMoniker.Net80)]
 [RPlotExporter]

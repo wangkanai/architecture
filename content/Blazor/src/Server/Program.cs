@@ -1,18 +1,17 @@
 // Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
 
-using System.Reflection;
+using Architecture.Data;
+using Architecture.Identity;
+using Architecture.Identity.Extensions;
+using Architecture.Persistence;
 
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
-using Wangkanai.Architecture.Identity;
-using Wangkanai.Architecture.Data;
-using Wangkanai.Architecture.Components;
-using Wangkanai.Architecture.Identity.Extensions;
-using Wangkanai.Architecture.Pages;
-using Wangkanai.Architecture.Persistence;
+using Architecture.Components;
+using Architecture.Pages;
 
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 

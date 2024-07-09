@@ -1,10 +1,10 @@
 ﻿// Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
 
+using Architecture.Identity;
+
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-using Wangkanai.Architecture.Identity;
-
-namespace Wangkanai.Architecture.Persistence.Configurations;
+namespace Architecture.Persistence.Configurations;
 
 public class ApplicationUserConfiguration : IEntityTypeConfiguration<ApplicationUser>
 {

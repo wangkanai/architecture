@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Application\Wangkanai.Architecture.Application.csproj"/>
+    <ProjectReference Include="..\Application\Architecture.Application.csproj" />
 
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly"/>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication"/>

@@ -10,9 +10,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 
-using Wangkanai.Architecture.Data;
-
-namespace Wangkanai.Architecture.Identity;
+namespace Architecture.Identity;
 
 public class PersistingRevalidatingAuthenticationStateProvider : RevalidatingServerAuthenticationStateProvider
 {

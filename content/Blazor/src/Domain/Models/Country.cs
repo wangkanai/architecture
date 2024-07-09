@@ -2,7 +2,7 @@
 
 using Wangkanai.Domain;
 
-namespace Wangkanai.Architecture.Models;
+namespace Architecture.Models;
 
 public class Country : Entity<int>
 {

@@ -2,12 +2,12 @@
 
 using System.Reflection;
 
+using Architecture.Identity;
+using Architecture.Models;
+
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
-using Wangkanai.Architecture.Identity;
-using Wangkanai.Architecture.Models;
-
-namespace Wangkanai.Architecture.Persistence;
+namespace Architecture.Persistence;
 
 public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
 	: IdentityDbContext<

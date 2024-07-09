@@ -2,11 +2,11 @@
 
 using System.Security.Claims;
 
+using Architecture.Identity;
+
 using Microsoft.AspNetCore.Identity;
 
-using Wangkanai.Architecture.Identity;
-
-namespace Wangkanai.Architecture.Data;
+namespace Architecture.Data;
 
 internal sealed class UserAccessor(
 	IHttpContextAccessor         httpContextAccessor,
